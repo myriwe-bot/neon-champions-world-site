@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Champions Design Bridge · Neon Champions</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Neon Champions World"/><meta property="og:title" content="Champions Design Bridge · Neon Champions"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Champions Design Bridge · Neon Champions"/><meta name="twitter:description" content="Champions Design Bridge Source Lore Links: champions champion-worship chorus-exchange biotech-and-mutation digital-net echo-identity-and-death virtual-intelligence-and-compute-scarcity Player-Facing Decision The first design assumption is: Champions are primarily HoMM3-style hero/commander units: st..."/><meta property="og:description" content="Champions Design Bridge Source Lore Links: champions champion-worship chorus-exchange biotech-and-mutation digital-net echo-identity-and-death virtual-intelligence-and-compute-scarcity Player-Facing Decision The first design assumption is: Champions are primarily HoMM3-style hero/commander units: st..."/><meta property="og:image:alt" content="Champions Design Bridge Source Lore Links: champions champion-worship chorus-exchange biotech-and-mutation digital-net echo-identity-and-death virtual-intelligence-and-compute-scarcity Player-Facing Decision The first design assumption is: Champions are primarily HoMM3-style hero/commander units: st..."/><meta property="twitter:domain" content="myriwe-bot.github.io/neon-champions-world-site"/><meta property="og:url" content="https://myriwe-bot.github.io/neon-champions-world-site/design-bridges/champions-design-bridge"/><meta property="twitter:url" content="https://myriwe-bot.github.io/neon-champions-world-site/design-bridges/champions-design-bridge"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Champions Design Bridge Source Lore Links: champions champion-worship chorus-exchange biotech-and-mutation digital-net echo-identity-and-death virtual-intelligence-and-compute-scarcity Player-Facing Decision The first design assumption is: Champions are primarily HoMM3-style hero/commander units: st..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvbmVvbi1jaGFtcGlvbnMtd29ybGQvbmVvbi1jaGFtcGlvbnMtd29ybGQvcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://myriwe-bot.github.io/neon-champions-world-site/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://myriwe-bot.github.io/neon-champions-world-site/design-bridges/champions-design-bridge-og-image.webp"/><meta property="og:image:url" content="https://myriwe-bot.github.io/neon-champions-world-site/design-bridges/champions-design-bridge-og-image.webp"/><meta name="twitter:image" content="https://myriwe-bot.github.io/neon-champions-world-site/design-bridges/champions-design-bridge-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="design-bridges/champions-design-bridge"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Neon Champions World</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-50" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../design-bridges/">design bridges</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Champions Design Bridge</a></div></nav><h1 class="article-title">Champions Design Bridge</h1><p show-comma="true" class="content-meta"><time datetime="2026-05-22T00:00:00.000Z">May 22, 2026</time><span>10 min read</span></p><ul class="tags"><li><a href="../tags/champions" class="internal tag-link">champions</a></li><li><a href="../tags/gameplay-bridge" class="internal tag-link">gameplay-bridge</a></li><li><a href="../tags/heroes" class="internal tag-link">heroes</a></li><li><a href="../tags/units" class="internal tag-link">units</a></li><li><a href="../tags/progression" class="internal tag-link">progression</a></li><li><a href="../tags/faction-design" class="internal tag-link">faction-design</a></li><li><a href="../tags/system-hook" class="internal tag-link">system-hook</a></li><li><a href="../tags/narrative-hook" class="internal tag-link">narrative-hook</a></li></ul></div></div><article class="popover-hint"><h1 id="champions-design-bridge">Champions Design Bridge<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#champions-design-bridge" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="source-lore">Source Lore<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#source-lore" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Links:</p>
+<ul>
+<li><a href="../canon/world-rules/champions" class="internal" data-slug="canon/world-rules/champions">champions</a></li>
+<li><a href="../cultures/champion-worship" class="internal" data-slug="cultures/champion-worship">champion-worship</a></li>
+<li><a href="../organizations/chorus-exchange" class="internal" data-slug="organizations/chorus-exchange">chorus-exchange</a></li>
+<li><a href="../technologies/biotech-and-mutation" class="internal" data-slug="technologies/biotech-and-mutation">biotech-and-mutation</a></li>
+<li><a href="../canon/world-rules/digital-net" class="internal" data-slug="canon/world-rules/digital-net">digital-net</a></li>
+<li><a href="../canon/world-rules/echo-identity-and-death" class="internal" data-slug="canon/world-rules/echo-identity-and-death">echo-identity-and-death</a></li>
+<li><a href="../canon/world-rules/virtual-intelligence-and-compute-scarcity" class="internal" data-slug="canon/world-rules/virtual-intelligence-and-compute-scarcity">virtual-intelligence-and-compute-scarcity</a></li>
+</ul>
+<h2 id="player-facing-decision">Player-Facing Decision<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#player-facing-decision" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The first design assumption is:</p>
+<blockquote>
+<p>Champions are primarily <strong>HoMM3-style hero/commander units</strong>: strategic map leaders who command armies, grow over time, carry equipment/bodyware/relic-equivalents, project faction identity, and anchor the player’s emotional attachment to a force.</p>
+</blockquote>
+<p>They are not just powerful battlefield units. They are the interface between army, faction, territory, reputation, body modification, and story.</p>
+<h2 id="core-player-fantasy">Core Player Fantasy<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#core-player-fantasy" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>A Champion is the person who makes an army feel like <strong>your army</strong>.</p>
+<p>The player fantasy is not “I have a superhero who solos the map.” It is:</p>
+<ul>
+<li>I recruit or win over a historically loaded figure.</li>
+<li>I build an army around their doctrine, body, reputation, and constraints.</li>
+<li>I risk them on the map because their presence changes morale, logistics, scouting, legitimacy, and combat.</li>
+<li>I watch them become famous, compromised, injured, mythologized, or replaced.</li>
+<li>I decide whether to treat them as a person, a weapon, a symbol, an investment, or a martyr.</li>
+</ul>
+<h2 id="design-role">Design Role<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#design-role" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="primary-role-strategic-hero--commander">Primary Role: Strategic Hero / Commander<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#primary-role-strategic-hero--commander" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Champions should fill the HoMM3 hero niche:</p>
+<ul>
+<li>move across the strategic map;</li>
+<li>command unit stacks or squads;</li>
+<li>explore territory;</li>
+<li>capture sites;</li>
+<li>carry upgrades and artifacts-equivalents;</li>
+<li>gain experience;</li>
+<li>specialize through skills;</li>
+<li>represent faction doctrine;</li>
+<li>trigger events, diplomacy, and story hooks.</li>
+</ul>
+<h3 id="secondary-role-faction-signal">Secondary Role: Faction Signal<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#secondary-role-faction-signal" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Each faction’s Champions should reveal what that faction believes humanity should become.</p>
+<p>Examples:</p>
+<ul>
+<li>corporate stabilization faction: audited celebrity commanders, insured bodies, media-trained presence;</li>
+<li>body-sovereignty faction: scarred self-owned mutation leaders, unstable but hard to repossess;</li>
+<li>Free-Net faction: low-visibility archive ghosts, sensor spoofers, dead-zone guides;</li>
+<li>Blue Restorationists: sabotage saints and sky martyrs;</li>
+<li>human-exceptionalist leagues: charismatic anti-AI commanders sold as proof that people still matter;</li>
+<li>machine-emergence sects: VI-haunted commanders whose autonomy is always suspect.</li>
+</ul>
+<h3 id="tertiary-role-public--reputation-object">Tertiary Role: Public / Reputation Object<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tertiary-role-public--reputation-object" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Because of <a href="../organizations/chorus-exchange" class="internal" data-slug="organizations/chorus-exchange">chorus-exchange</a>, Champions also have publics. A Champion’s fame, scandal, martyrdom, and monetization can become strategic pressure.</p>
+<p>This should be secondary at first. Do not let fame systems replace the core hero/commander role.</p>
+<h2 id="what-champions-are-not-mechanically">What Champions Are Not, Mechanically<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#what-champions-are-not-mechanically" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Champions should not initially be:</p>
+<ul>
+<li>direct fantasy spellcasters;</li>
+<li>generic RPG party members;</li>
+<li>simple “super units” that replace armies;</li>
+<li>interchangeable stat sticks;</li>
+<li>purely narrative NPCs with no strategic map function;</li>
+<li>every important character in the setting.</li>
+</ul>
+<p>A Champion is a commander first. Their body, myth, and public matter because those things modify command.</p>
+<h2 id="baseline-champion-model">Baseline Champion Model<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#baseline-champion-model" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Each Champion should have these design-facing fields:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Field</th><th>Purpose</th></tr></thead><tbody><tr><td>Origin</td><td>How they became recognized: war, biotech, media, mutation, cult, corporation, city, Net event.</td></tr><tr><td>Faction Relationship</td><td>Owned, sponsored, allied, coerced, defected, illegal, folk-recognized, or self-claimed.</td></tr><tr><td>Command Doctrine</td><td>What kind of army they make stronger.</td></tr><tr><td>Body / Interface</td><td>Biological, prosthetic, neural, VI-assisted, Echo-linked, unmodified but symbolically powerful.</td></tr><tr><td>Public</td><td>Who follows, fears, funds, worships, or hates them.</td></tr><tr><td>Cost</td><td>What must be paid to keep them effective.</td></tr><tr><td>Failure Mode</td><td>How they break, defect, burn out, get exposed, become obsolete, or become dangerous.</td></tr><tr><td>Strategic Hook</td><td>What map/combat/economy decision they create.</td></tr></tbody></table></div>
+<h2 id="candidate-stat-categories">Candidate Stat Categories<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#candidate-stat-categories" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Avoid final numbers now. Use categories for design exploration.</p>
+<h3 id="command">Command<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#command" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>How effectively the Champion coordinates units under stress.</p>
+<p>Possible effects:</p>
+<ul>
+<li>army morale;</li>
+<li>initiative;</li>
+<li>formation recovery;</li>
+<li>retreat discipline;</li>
+<li>mixed-unit coordination;</li>
+<li>resistance to panic, feed corruption, or VI spoofing.</li>
+</ul>
+<h3 id="reach">Reach<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reach" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>How far the Champion’s operational influence extends.</p>
+<p>Possible effects:</p>
+<ul>
+<li>map movement;</li>
+<li>scouting radius;</li>
+<li>relay use;</li>
+<li>remote detachment control;</li>
+<li>ability to operate through degraded networks.</li>
+</ul>
+<h3 id="presence">Presence<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#presence" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>How strongly the Champion affects human behavior.</p>
+<p>Possible effects:</p>
+<ul>
+<li>recruitment;</li>
+<li>surrender chance;</li>
+<li>intimidation;</li>
+<li>revolt suppression or ignition;</li>
+<li>public morale;</li>
+<li>enemy obsession.</li>
+</ul>
+<h3 id="interface">Interface<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#interface" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>How well the Champion works with systems.</p>
+<p>Possible effects:</p>
+<ul>
+<li>drones;</li>
+<li>battlefield mesh;</li>
+<li>Axiom-certified records;</li>
+<li>Free-Net fragments;</li>
+<li>cyberwar resistance;</li>
+<li>Echo or VI adjacency.</li>
+</ul>
+<h3 id="body">Body<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#body" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>How far the Champion’s physical substrate has been pushed.</p>
+<p>Possible effects:</p>
+<ul>
+<li>survival;</li>
+<li>injury recovery;</li>
+<li>hostile-climate operation;</li>
+<li>dueling;</li>
+<li>mutation risk;</li>
+<li>upkeep burden.</li>
+</ul>
+<h3 id="legitimacy">Legitimacy<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#legitimacy" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>How accepted the Champion is as a real commander, symbol, or legal person.</p>
+<p>Possible effects:</p>
+<ul>
+<li>access to city contracts;</li>
+<li>militia loyalty;</li>
+<li>faction diplomacy;</li>
+<li>Chorus ranking;</li>
+<li>Axiom recognition;</li>
+<li>black-market bounties.</li>
+</ul>
+<h2 id="progression-model">Progression Model<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#progression-model" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>A Champion should progress along several axes, not just gain combat stats.</p>
+<h3 id="experience">Experience<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#experience" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Traditional campaign/combat experience. Unlocks doctrine, command, and survival improvements.</p>
+<h3 id="bodyware--grafts--protocols">Bodyware / Grafts / Protocols<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bodyware--grafts--protocols" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Artifact-equivalent slot system.</p>
+<p>Possible slot types:</p>
+<ul>
+<li>neural command lattice;</li>
+<li>climate organ lease;</li>
+<li>prosthetic combat frame;</li>
+<li>battlefield sensor crown;</li>
+<li>immune stabilizer;</li>
+<li>memory/Echo co-processor;</li>
+<li>drone-swarm interface;</li>
+<li>ceremonial relic with morale value;</li>
+<li>Axiom-certified identity seal;</li>
+<li>Chorus public contract.</li>
+</ul>
+<p>These replace fantasy artifacts, spellbooks, and enchanted gear.</p>
+<h3 id="reputation">Reputation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reputation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Public recognition and fear.</p>
+<p>Can improve recruitment, morale, diplomacy, and intimidation, but also increase targeting, scandal risk, bounty pressure, and loss impact.</p>
+<h3 id="doctrine">Doctrine<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#doctrine" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Faction-specific command tree.</p>
+<p>Examples:</p>
+<ul>
+<li>swarm warfare;</li>
+<li>insurgent mobility;</li>
+<li>body horror shock troops;</li>
+<li>civil-defense resilience;</li>
+<li>feed manipulation;</li>
+<li>logistics denial;</li>
+<li>polar survival;</li>
+<li>climate-zone adaptation;</li>
+<li>anti-Champion discipline.</li>
+</ul>
+<h3 id="dependency">Dependency<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dependency" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>The hidden cost track.</p>
+<p>A Champion may depend on:</p>
+<ul>
+<li>a clinic contract;</li>
+<li>body-subscription maintenance;</li>
+<li>compute allocation;</li>
+<li>Chorus public liquidity;</li>
+<li>faction legitimacy;</li>
+<li>Axiom recognition;</li>
+<li>drugs/stabilizers;</li>
+<li>private handlers;</li>
+<li>Echo reconstruction;</li>
+<li>battlefield telemetry.</li>
+</ul>
+<p>Progress should make Champions stronger but also more entangled.</p>
+<h2 id="equipment--artifact-equivalents">Equipment / Artifact Equivalents<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#equipment--artifact-equivalents" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Fantasy artifacts become disputed, maintainable cyberpunk objects.</p>
+<p>Candidate categories:</p>
+<ol>
+<li><strong>Bodyware</strong> — organs, prosthetics, glands, combat frames, reflex grafts.</li>
+<li><strong>Command Interfaces</strong> — tactical crowns, war-OS keys, drone relays, encrypted field desks.</li>
+<li><strong>Identity Seals</strong> — Axiom records, legal immunities, citizenship exceptions, treaty clearances.</li>
+<li><strong>Public Contracts</strong> — Chorus ranking bands, Patron Channel access, sponsorship insulation, scandal insurance.</li>
+<li><strong>Relics</strong> — dead Champion gear, battlefield flags, old war helmets, Echo-bearing objects.</li>
+<li><strong>Climate Adaptations</strong> — lungs, skin, cooling packs, radiation/chemical filters, zone-specific body licenses.</li>
+<li><strong>Net Keys</strong> — Free-Net maps, municipal sensor backdoors, dead archive access, hostile model containment tokens.</li>
+</ol>
+<p>Each item should have:</p>
+<ul>
+<li>benefit;</li>
+<li>maintenance cost;</li>
+<li>legal risk;</li>
+<li>faction reaction;</li>
+<li>narrative hook.</li>
+</ul>
+<h2 id="army-relationship">Army Relationship<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#army-relationship" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Champions should not replace armies. They should reshape armies.</p>
+<p>A Champion can:</p>
+<ul>
+<li>raise unit capacity;</li>
+<li>unlock faction unit variants;</li>
+<li>improve certain unit families;</li>
+<li>make weak units strategically useful;</li>
+<li>enable mixed-force coordination;</li>
+<li>reduce terrain/climate penalties;</li>
+<li>provide combat-start doctrine bonuses;</li>
+<li>affect post-battle casualties, capture, retreat, or propaganda.</li>
+</ul>
+<p>A Champion should also create vulnerabilities:</p>
+<ul>
+<li>assassination target;</li>
+<li>morale collapse if killed or exposed;</li>
+<li>faction schism if they defect;</li>
+<li>upkeep burden;</li>
+<li>dependency on specific infrastructure;</li>
+<li>scandal or de-legitimization by Chorus/Axiom;</li>
+<li>body maintenance crises.</li>
+</ul>
+<h2 id="death-injury-and-echoes">Death, Injury, and Echoes<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#death-injury-and-echoes" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Champion loss should matter more than ordinary unit loss.</p>
+<p>Possible states:</p>
+<ul>
+<li><strong>Wounded</strong> — temporarily weakened, needs clinic/repair/stabilizer.</li>
+<li><strong>Burned Out</strong> — alive but loses access to some abilities until dependency is resolved.</li>
+<li><strong>Captured</strong> — ransom, propaganda, forced conversion, body extraction, Echo risk.</li>
+<li><strong>Dead</strong> — removed physically, but their public may persist.</li>
+<li><strong>Echoed</strong> — partial continuity through <a href="../canon/world-rules/echo-identity-and-death" class="internal" data-slug="canon/world-rules/echo-identity-and-death">echo-identity-and-death</a>, legally contested and mechanically changed.</li>
+<li><strong>Martyred</strong> — death strengthens public/faction but removes command function.</li>
+<li><strong>Exposed as Manufactured</strong> — not dead, but legitimacy collapses.</li>
+</ul>
+<p>Do not make resurrection easy. Echo continuity should be powerful, partial, expensive, and politically dangerous.</p>
+<h2 id="recognition--certification">Recognition / Certification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#recognition--certification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>For gameplay, Champion status should have tiers of recognition.</p>
+<h3 id="field-recognized">Field-Recognized<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#field-recognized" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Troops follow them. They may have no legal status.</p>
+<h3 id="faction-recognized">Faction-Recognized<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#faction-recognized" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>A faction treats them as a Champion and unlocks faction-specific mechanics.</p>
+<h3 id="axiom-recognized">Axiom-Recognized<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#axiom-recognized" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Their identity, history, and command authority are legally admissible.</p>
+<h3 id="chorus-recognized">Chorus-Recognized<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#chorus-recognized" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>They have public reach, ranking, monetization, and scandal risk.</p>
+<h3 id="unp--treaty-recognized">UNP / Treaty-Recognized<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#unp--treaty-recognized" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Rare top-tier Champions whose actions create diplomatic consequences.</p>
+<p>These tiers let the game distinguish between folk heroes, corporate products, legal commanders, public idols, and treaty anomalies.</p>
+<h2 id="false-failed-and-illegal-champions">False, Failed, and Illegal Champions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#false-failed-and-illegal-champions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>These categories should be design tools, not edge lore.</p>
+<h3 id="false-champion">False Champion<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#false-champion" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>A manufactured or fraudulent Champion whose public exceeds their real command/body capacity.</p>
+<p>Gameplay use:</p>
+<ul>
+<li>morale and recruitment bonuses;</li>
+<li>collapse if exposed;</li>
+<li>strong Chorus interaction;</li>
+<li>weak under direct battlefield pressure.</li>
+</ul>
+<h3 id="failed-champion">Failed Champion<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#failed-champion" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>A real candidate who survived alteration but broke physically, mentally, legally, or socially.</p>
+<p>Gameplay use:</p>
+<ul>
+<li>unstable powers;</li>
+<li>high upkeep;</li>
+<li>black-clinic or outlaw factions;</li>
+<li>tragic recruitment events.</li>
+</ul>
+<h3 id="illegal-champion">Illegal Champion<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#illegal-champion" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>A commander whose body, VI interface, Echo status, or command method violates law or compact rules.</p>
+<p>Gameplay use:</p>
+<ul>
+<li>strong abilities;</li>
+<li>Axiom/Helvetia/UNP pressure;</li>
+<li>bounty and sanction risk.</li>
+</ul>
+<h3 id="refused-champion">Refused Champion<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#refused-champion" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>A person treated as a Champion despite rejecting the role.</p>
+<p>Gameplay use:</p>
+<ul>
+<li>strong story hooks;</li>
+<li>loyalty and morale tension;</li>
+<li>lower public-management control.</li>
+</ul>
+<h2 id="resource-hooks">Resource Hooks<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#resource-hooks" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Champions can connect to strategic resources:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Resource</th><th>Champion Use</th></tr></thead><tbody><tr><td>Energy</td><td>bodyware, clinics, cooling, command relays.</td></tr><tr><td>Compute</td><td>tactical prediction, drone coordination, Echo reconstruction, lawful-cognition tools.</td></tr><tr><td>Biotech</td><td>grafts, organs, stabilizers, mutation management.</td></tr><tr><td>Attention</td><td>recruitment, morale, sponsorship, public pressure.</td></tr><tr><td>Proof</td><td>Axiom recognition, scandal defense, legal command authority.</td></tr><tr><td>Logistics</td><td>body maintenance, equipment supply, army movement, rescue.</td></tr><tr><td>Food / Care</td><td>keeping troops and body-modified forces functional.</td></tr></tbody></table></div>
+<h2 id="possible-mechanics">Possible Mechanics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#possible-mechanics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="strategic-map">Strategic Map<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#strategic-map" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Champion movement points.</li>
+<li>Terrain/climate affinity.</li>
+<li>Control-zone or aura effects.</li>
+<li>Site capture and negotiation.</li>
+<li>Scouting and feed-integrity checks.</li>
+<li>Champion-specific event chains.</li>
+<li>Rival Champion tracking.</li>
+</ul>
+<h3 id="army-management">Army Management<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#army-management" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Unit capacity.</li>
+<li>Unit-family bonuses.</li>
+<li>Doctrine unlocks.</li>
+<li>Morale and cohesion.</li>
+<li>Maintenance costs.</li>
+<li>Injury recovery.</li>
+<li>Compatibility problems with certain units.</li>
+</ul>
+<h3 id="combat">Combat<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#combat" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Pre-battle doctrine choice.</li>
+<li>Limited active command abilities, grounded as orders, bodyware, drones, feed hacks, or morale shocks.</li>
+<li>Duel or confrontation events, if appropriate.</li>
+<li>Emergency retreat / sacrifice choices.</li>
+<li>Public consequences after major victories or defeats.</li>
+</ul>
+<h3 id="campaign--narrative">Campaign / Narrative<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#campaign--narrative" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Defection events.</li>
+<li>Scandal attacks.</li>
+<li>Body repossession threats.</li>
+<li>Echo inheritance disputes.</li>
+<li>Fan cult incidents.</li>
+<li>Axiom certification challenges.</li>
+<li>Chorus ranking manipulation.</li>
+<li>Illegal upgrade opportunities.</li>
+</ul>
+<h2 id="anti-magic-translation">Anti-Magic Translation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#anti-magic-translation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>HoMM3 magic equivalents should become command-tech, body-tech, network operations, logistics, and public effects.</p>
+<p>Examples:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Fantasy Function</th><th>Neon Champions Translation</th></tr></thead><tbody><tr><td>Haste</td><td>stimulant protocol, drone-guided routing, predictive command burst.</td></tr><tr><td>Slow</td><td>feed corruption, terrain denial, logistics choke, fear broadcast.</td></tr><tr><td>Bless</td><td>morale ritual, legal immunity, verified heroic footage, command sync.</td></tr><tr><td>Curse</td><td>scandal packet, Axiom dispute, misinformation fog, bodyware instability.</td></tr><tr><td>Resurrection</td><td>battlefield triage, organ packs, drone extraction, contested Echo restoration.</td></tr><tr><td>Town Portal</td><td>Janus-Kestrel emergency clearance, bonded corridor priority, illicit relay jump.</td></tr><tr><td>Vision</td><td>Free-Net archive map, satellite/civic sensor access, Axiom-certified reconnaissance.</td></tr></tbody></table></div>
+<p>This keeps the design inheritance from HoMM3 without adding direct magic.</p>
+<h2 id="initial-champion-archetypes">Initial Champion Archetypes<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#initial-champion-archetypes" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>These are design placeholders, not final characters.</p>
+<h3 id="the-war-os-commander">The War-OS Commander<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-war-os-commander" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>A Vezha-derived commander whose value is coordination under jamming, blackout, and drone saturation.</p>
+<ul>
+<li>Strong with drones, militias, civil-defense units.</li>
+<li>Weakness: dependence on battlefield telemetry and legal war-OS licenses.</li>
+<li>Risk: accused of being VI-commanded rather than human-led.</li>
+</ul>
+<h3 id="the-climate-saint">The Climate Saint<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-climate-saint" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>A White Sky / Blue Week figure whose body and public are tied to climate survival or restoration.</p>
+<ul>
+<li>Strong in climate-stressed territories.</li>
+<li>Inspires loyalists or restorationists depending on interpretation.</li>
+<li>Weakness: body upkeep and propaganda vulnerability.</li>
+</ul>
+<h3 id="the-body-sovereign">The Body Sovereign<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-body-sovereign" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>A self-owned or black-clinic Champion who rejects subscription flesh.</p>
+<ul>
+<li>Strong with irregulars, mutation units, anti-corporate factions.</li>
+<li>Weakness: instability, limited legal support, difficult healing.</li>
+</ul>
+<h3 id="the-chorus-idol-commander">The Chorus Idol-Commander<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-chorus-idol-commander" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>A media-native Champion whose public funds and follows their campaigns.</p>
+<ul>
+<li>Strong recruitment and morale.</li>
+<li>Can convert victories into resources.</li>
+<li>Weakness: scandal, overexposure, public backlash.</li>
+</ul>
+<h3 id="the-free-net-warden">The Free-Net Warden<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-free-net-warden" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>A low-visibility Champion who navigates archives, dead zones, polluted feeds, and sensor ghosts.</p>
+<ul>
+<li>Strong scouting, deception resistance, hidden routes.</li>
+<li>Weakness: poor public legitimacy and limited formal command.</li>
+</ul>
+<h3 id="the-echo-bound-veteran">The Echo-Bound Veteran<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-echo-bound-veteran" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>A commander with partial Echo continuity or dead-comrade advisory layers.</p>
+<ul>
+<li>Strong memory, resilience, morale around veteran units.</li>
+<li>Weakness: legal/personhood disputes and possible AGI Compact scrutiny.</li>
+</ul>
+<h2 id="key-risks">Key Risks<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-risks" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li><strong>Champion bloat</strong> — if every named character is a Champion, the category loses force.</li>
+<li><strong>Superhero drift</strong> — direct powers can break the no-magic / cyberpunk grounding.</li>
+<li><strong>Commander irrelevance</strong> — if Champions only fight personally, the HoMM3 inheritance is lost.</li>
+<li><strong>Fame overcomplexity</strong> — Chorus systems should enrich, not swamp, the core hero loop.</li>
+<li><strong>Easy resurrection</strong> — Echoes should complicate loss, not erase it.</li>
+<li><strong>Faction sameness</strong> — each faction’s Champions need different doctrine, upkeep, and moral cost.</li>
+</ol>
+<h2 id="decisions-needed">Decisions Needed<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#decisions-needed" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>Should every player-controlled hero be a Champion, or should some commanders be non-Champion officers?</li>
+<li>Should Champion combat include personal active abilities, or mostly army-wide command effects?</li>
+<li>How many Champions should a faction plausibly field at one time?</li>
+<li>Should Champion equipment/bodyware be swappable like artifacts, or partly permanent/scarring?</li>
+<li>Can a Champion be permanently killed, or always converted into some aftereffect?</li>
+<li>Should Chorus fame be a visible game resource in the first prototype, or a later campaign layer?</li>
+</ol>
+<h2 id="recommended-next-design-step">Recommended Next Design Step<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#recommended-next-design-step" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Create a small prototype-facing Champion schema with 3 sample Champions:</p>
+<ol>
+<li>one corporate/stabilization commander;</li>
+<li>one rebel/body-sovereignty commander;</li>
+<li>one Free-Net or Echo-adjacent commander.</li>
+</ol>
+<p>Each should include:</p>
+<ul>
+<li>faction fit;</li>
+<li>map role;</li>
+<li>army bonuses;</li>
+<li>bodyware/artifact slots;</li>
+<li>upkeep/dependency;</li>
+<li>failure state;</li>
+<li>one narrative event hook.</li>
+</ul>
+<h2 id="related-pages">Related Pages<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#related-pages" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../canon/world-rules/champions" class="internal" data-slug="canon/world-rules/champions">champions</a></li>
+<li><a href="../cultures/champion-worship" class="internal" data-slug="cultures/champion-worship">champion-worship</a></li>
+<li><a href="../organizations/chorus-exchange" class="internal" data-slug="organizations/chorus-exchange">chorus-exchange</a></li>
+<li><a href="../technologies/biotech-and-mutation" class="internal" data-slug="technologies/biotech-and-mutation">biotech-and-mutation</a></li>
+<li><a href="../canon/world-rules/digital-net" class="internal" data-slug="canon/world-rules/digital-net">digital-net</a></li>
+<li><a href="../canon/world-rules/echo-identity-and-death" class="internal" data-slug="canon/world-rules/echo-identity-and-death">echo-identity-and-death</a></li>
+<li><a href="../canon/world-rules/virtual-intelligence-and-compute-scarcity" class="internal" data-slug="canon/world-rules/virtual-intelligence-and-compute-scarcity">virtual-intelligence-and-compute-scarcity</a></li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-17" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#champions-design-bridge" data-for="champions-design-bridge">Champions Design Bridge</a></li><li class="depth-1"><a href="#source-lore" data-for="source-lore">Source Lore</a></li><li class="depth-1"><a href="#player-facing-decision" data-for="player-facing-decision">Player-Facing Decision</a></li><li class="depth-1"><a href="#core-player-fantasy" data-for="core-player-fantasy">Core Player Fantasy</a></li><li class="depth-1"><a href="#design-role" data-for="design-role">Design Role</a></li><li class="depth-2"><a href="#primary-role-strategic-hero--commander" data-for="primary-role-strategic-hero--commander">Primary Role: Strategic Hero / Commander</a></li><li class="depth-2"><a href="#secondary-role-faction-signal" data-for="secondary-role-faction-signal">Secondary Role: Faction Signal</a></li><li class="depth-2"><a href="#tertiary-role-public--reputation-object" data-for="tertiary-role-public--reputation-object">Tertiary Role: Public / Reputation Object</a></li><li class="depth-1"><a href="#what-champions-are-not-mechanically" data-for="what-champions-are-not-mechanically">What Champions Are Not, Mechanically</a></li><li class="depth-1"><a href="#baseline-champion-model" data-for="baseline-champion-model">Baseline Champion Model</a></li><li class="depth-1"><a href="#candidate-stat-categories" data-for="candidate-stat-categories">Candidate Stat Categories</a></li><li class="depth-2"><a href="#command" data-for="command">Command</a></li><li class="depth-2"><a href="#reach" data-for="reach">Reach</a></li><li class="depth-2"><a href="#presence" data-for="presence">Presence</a></li><li class="depth-2"><a href="#interface" data-for="interface">Interface</a></li><li class="depth-2"><a href="#body" data-for="body">Body</a></li><li class="depth-2"><a href="#legitimacy" data-for="legitimacy">Legitimacy</a></li><li class="depth-1"><a href="#progression-model" data-for="progression-model">Progression Model</a></li><li class="depth-2"><a href="#experience" data-for="experience">Experience</a></li><li class="depth-2"><a href="#bodyware--grafts--protocols" data-for="bodyware--grafts--protocols">Bodyware / Grafts / Protocols</a></li><li class="depth-2"><a href="#reputation" data-for="reputation">Reputation</a></li><li class="depth-2"><a href="#doctrine" data-for="doctrine">Doctrine</a></li><li class="depth-2"><a href="#dependency" data-for="dependency">Dependency</a></li><li class="depth-1"><a href="#equipment--artifact-equivalents" data-for="equipment--artifact-equivalents">Equipment / Artifact Equivalents</a></li><li class="depth-1"><a href="#army-relationship" data-for="army-relationship">Army Relationship</a></li><li class="depth-1"><a href="#death-injury-and-echoes" data-for="death-injury-and-echoes">Death, Injury, and Echoes</a></li><li class="depth-1"><a href="#recognition--certification" data-for="recognition--certification">Recognition / Certification</a></li><li class="depth-2"><a href="#field-recognized" data-for="field-recognized">Field-Recognized</a></li><li class="depth-2"><a href="#faction-recognized" data-for="faction-recognized">Faction-Recognized</a></li><li class="depth-2"><a href="#axiom-recognized" data-for="axiom-recognized">Axiom-Recognized</a></li><li class="depth-2"><a href="#chorus-recognized" data-for="chorus-recognized">Chorus-Recognized</a></li><li class="depth-2"><a href="#unp--treaty-recognized" data-for="unp--treaty-recognized">UNP / Treaty-Recognized</a></li><li class="depth-1"><a href="#false-failed-and-illegal-champions" data-for="false-failed-and-illegal-champions">False, Failed, and Illegal Champions</a></li><li class="depth-2"><a href="#false-champion" data-for="false-champion">False Champion</a></li><li class="depth-2"><a href="#failed-champion" data-for="failed-champion">Failed Champion</a></li><li class="depth-2"><a href="#illegal-champion" data-for="illegal-champion">Illegal Champion</a></li><li class="depth-2"><a href="#refused-champion" data-for="refused-champion">Refused Champion</a></li><li class="depth-1"><a href="#resource-hooks" data-for="resource-hooks">Resource Hooks</a></li><li class="depth-1"><a href="#possible-mechanics" data-for="possible-mechanics">Possible Mechanics</a></li><li class="depth-2"><a href="#strategic-map" data-for="strategic-map">Strategic Map</a></li><li class="depth-2"><a href="#army-management" data-for="army-management">Army Management</a></li><li class="depth-2"><a href="#combat" data-for="combat">Combat</a></li><li class="depth-2"><a href="#campaign--narrative" data-for="campaign--narrative">Campaign / Narrative</a></li><li class="depth-1"><a href="#anti-magic-translation" data-for="anti-magic-translation">Anti-Magic Translation</a></li><li class="depth-1"><a href="#initial-champion-archetypes" data-for="initial-champion-archetypes">Initial Champion Archetypes</a></li><li class="depth-2"><a href="#the-war-os-commander" data-for="the-war-os-commander">The War-OS Commander</a></li><li class="depth-2"><a href="#the-climate-saint" data-for="the-climate-saint">The Climate Saint</a></li><li class="depth-2"><a href="#the-body-sovereign" data-for="the-body-sovereign">The Body Sovereign</a></li><li class="depth-2"><a href="#the-chorus-idol-commander" data-for="the-chorus-idol-commander">The Chorus Idol-Commander</a></li><li class="depth-2"><a href="#the-free-net-warden" data-for="the-free-net-warden">The Free-Net Warden</a></li><li class="depth-2"><a href="#the-echo-bound-veteran" data-for="the-echo-bound-veteran">The Echo-Bound Veteran</a></li><li class="depth-1"><a href="#key-risks" data-for="key-risks">Key Risks</a></li><li class="depth-1"><a href="#decisions-needed" data-for="decisions-needed">Decisions Needed</a></li><li class="depth-1"><a href="#recommended-next-design-step" data-for="recommended-next-design-step">Recommended Next Design Step</a></li><li class="depth-1"><a href="#related-pages" data-for="related-pages">Related Pages</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../design-bridges/digital-net-and-polluted-feeds" class="internal">Digital-Net and Polluted Feeds Design Bridge</a></li><li><a href="../design-bridges/world-map-and-campaign-crisis" class="internal">World Map and Campaign Crisis Design Bridge</a></li><li><a href="../" class="internal">index</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript.js" type="module" data-persist="true"></script></html>

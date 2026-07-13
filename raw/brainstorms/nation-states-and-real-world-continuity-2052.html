@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Nation-States and Real-World Continuity — 2052 · Neon Champions</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Neon Champions World"/><meta property="og:title" content="Nation-States and Real-World Continuity — 2052 · Neon Champions"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Nation-States and Real-World Continuity — 2052 · Neon Champions"/><meta name="twitter:description" content="Nation-States and Real-World Continuity — 2052 Purpose This page preserves a corrective brainstorming pass: Neon Champions should not replace the world map with only abstract region labels like “Rainfall Compensation District” or “Bonded Cloud Zone.” Those labels remain useful, but they should sit o..."/><meta property="og:description" content="Nation-States and Real-World Continuity — 2052 Purpose This page preserves a corrective brainstorming pass: Neon Champions should not replace the world map with only abstract region labels like “Rainfall Compensation District” or “Bonded Cloud Zone.” Those labels remain useful, but they should sit o..."/><meta property="og:image:alt" content="Nation-States and Real-World Continuity — 2052 Purpose This page preserves a corrective brainstorming pass: Neon Champions should not replace the world map with only abstract region labels like “Rainfall Compensation District” or “Bonded Cloud Zone.” Those labels remain useful, but they should sit o..."/><meta property="twitter:domain" content="myriwe-bot.github.io/neon-champions-world-site"/><meta property="og:url" content="https://myriwe-bot.github.io/neon-champions-world-site/raw/brainstorms/nation-states-and-real-world-continuity-2052"/><meta property="twitter:url" content="https://myriwe-bot.github.io/neon-champions-world-site/raw/brainstorms/nation-states-and-real-world-continuity-2052"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="Nation-States and Real-World Continuity — 2052 Purpose This page preserves a corrective brainstorming pass: Neon Champions should not replace the world map with only abstract region labels like “Rainfall Compensation District” or “Bonded Cloud Zone.” Those labels remain useful, but they should sit o..."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvbmVvbi1jaGFtcGlvbnMtd29ybGQvbmVvbi1jaGFtcGlvbnMtd29ybGQvcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://myriwe-bot.github.io/neon-champions-world-site/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://myriwe-bot.github.io/neon-champions-world-site/raw/brainstorms/nation-states-and-real-world-continuity-2052-og-image.webp"/><meta property="og:image:url" content="https://myriwe-bot.github.io/neon-champions-world-site/raw/brainstorms/nation-states-and-real-world-continuity-2052-og-image.webp"/><meta name="twitter:image" content="https://myriwe-bot.github.io/neon-champions-world-site/raw/brainstorms/nation-states-and-real-world-continuity-2052-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="raw/brainstorms/nation-states-and-real-world-continuity-2052"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">Neon Champions World</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-121"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-121" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../raw/">raw</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../raw/brainstorms/">brainstorms</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Nation States and Real World Continuity — 2052</a></div></nav><h1 class="article-title">Nation-States and Real-World Continuity — 2052</h1><p show-comma="true" class="content-meta"><time datetime="2026-05-20T00:00:00.000Z">May 20, 2026</time><span>17 min read</span></p><ul class="tags"><li><a href="../../tags/brainstorm" class="internal tag-link">brainstorm</a></li><li><a href="../../tags/map" class="internal tag-link">map</a></li><li><a href="../../tags/nations" class="internal tag-link">nations</a></li><li><a href="../../tags/states" class="internal tag-link">states</a></li><li><a href="../../tags/geopolitics" class="internal tag-link">geopolitics</a></li><li><a href="../../tags/climate" class="internal tag-link">climate</a></li><li><a href="../../tags/corporate" class="internal tag-link">corporate</a></li><li><a href="../../tags/borders" class="internal tag-link">borders</a></li><li><a href="../../tags/alliances" class="internal tag-link">alliances</a></li></ul></div></div><article class="popover-hint"><h1 id="nation-states-and-real-world-continuity--2052">Nation-States and Real-World Continuity — 2052<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#nation-states-and-real-world-continuity--2052" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="purpose">Purpose<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#purpose" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>This page preserves a corrective brainstorming pass: Neon Champions should not replace the world map with only abstract region labels like “Rainfall Compensation District” or “Bonded Cloud Zone.”</p>
+<p>Those labels remain useful, but they should sit on top of recognizable countries, cities, rivers, coasts, ports, and cultural regions. The world should feel like our world was stressed, mortgaged, repaired, partitioned, and partially overlaid — not like a fantasy map with cyberpunk terms.</p>
+<h2 id="core-correction">Core Correction<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#core-correction" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Most current nation-states should still exist in 2052.</p>
+<p>Reasons:</p>
+<ul>
+<li>states are sticky institutions;</li>
+<li>passports, militaries, courts, languages, school systems, debts, and national myths persist;</li>
+<li>corporations usually prefer states to remain formally responsible for unrest, welfare, policing, and debt;</li>
+<li>citizens still organize politically through national identity;</li>
+<li>international law still needs signatories;</li>
+<li>climate compensation, albedo liability, migration, water, and resource disputes require state actors.</li>
+</ul>
+<p>The world should not be “post-national.” It should be post-clean-sovereignty.</p>
+<p>Recommended rule:</p>
+<blockquote>
+<p>The official map looks mostly familiar. The lived map does not.</p>
+</blockquote>
+<h2 id="how-to-use-region-labels">How to Use Region Labels<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#how-to-use-region-labels" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Earlier terms like <a href="../../canon/world-rules/world-map-and-political-economy" class="internal alias" data-slug="canon/world-rules/world-map-and-political-economy">maintained territories</a>, sacrificed zones, compute concessions, coastal protection authorities, rainfall claims boards, and receiver districts should be overlays, not replacements.</p>
+<p>Example:</p>
+<ul>
+<li>Nigeria still exists.</li>
+<li>Lagos still exists.</li>
+<li>But parts of Lagos may be inside a Lagos Lagoon Receiver District, a Gulf of Guinea Coastal Protection Authority, a port continuity corridor, a corporate flood-defense concession, a feed-provenance jurisdiction, and several insurer redlines at the same time.</li>
+</ul>
+<p>That is stronger than renaming Nigeria into an invented cyberpunk bloc.</p>
+<h2 id="state-continuity-categories">State Continuity Categories<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#state-continuity-categories" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="1-strong-continuity-states">1. Strong Continuity States<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-strong-continuity-states" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Countries whose institutions remain recognizable, even if strained.</p>
+<p>Likely examples:</p>
+<ul>
+<li>United States</li>
+<li>Canada</li>
+<li>United Kingdom</li>
+<li>France</li>
+<li>Germany</li>
+<li>Poland</li>
+<li>Japan</li>
+<li>South Korea</li>
+<li>Australia</li>
+<li>New Zealand</li>
+<li>India</li>
+<li>China</li>
+<li>Turkey</li>
+<li>Iran</li>
+<li>Saudi Arabia</li>
+<li>Egypt</li>
+<li>Indonesia</li>
+<li>Brazil</li>
+<li>Mexico</li>
+<li>South Africa</li>
+</ul>
+<p>These states may have emergency laws, corporate concessions, climate migration politics, internal secessionist pressures, or privatized infrastructure, but they still appear as countries on official maps.</p>
+<p>Use them when you need:</p>
+<ul>
+<li>diplomacy;</li>
+<li>armies;</li>
+<li>sanctions;</li>
+<li>intelligence services;</li>
+<li>climate courts;</li>
+<li>White Sky treaty politics;</li>
+<li>national myth and propaganda.</li>
+</ul>
+<h3 id="2-federal--fragmented-continuity-states">2. Federal / Fragmented Continuity States<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-federal--fragmented-continuity-states" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Countries that still exist legally, but feel internally uneven because provinces, states, autonomous regions, city-regions, private concessions, or emergency authorities matter as much as the capital.</p>
+<p>Likely examples:</p>
+<ul>
+<li>United States</li>
+<li>India</li>
+<li>Nigeria</li>
+<li>Brazil</li>
+<li>Mexico</li>
+<li>Indonesia</li>
+<li>Pakistan</li>
+<li>Democratic Republic of the Congo</li>
+<li>Ethiopia</li>
+<li>South Africa</li>
+<li>Russia</li>
+<li>China</li>
+</ul>
+<p>These are excellent for Neon Champions because they allow recognizable states plus local variation.</p>
+<p>Examples:</p>
+<ul>
+<li>The United States remains the United States, but California water/compute law, Gulf storm insurance, interior heat corridors, and Arctic logistics politics create very different lived sovereignties.</li>
+<li>India remains India, but heat law, monsoon politics, water compacts, coastal risk, platform identity, and state-level industrial corridors create strong internal map layers.</li>
+<li>Nigeria remains Nigeria, but Lagos, the Niger Delta, northern water/security zones, and mineral/logistics corridors feel like different political worlds.</li>
+</ul>
+<h3 id="3-receiver--concession-states">3. Receiver / Concession States<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-receiver--concession-states" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Countries that remain internationally recognized but have ceded major infrastructure, budgetary, port, water, health, or energy functions to corporate consortia, creditors, or climate-rescue authorities.</p>
+<p>This should be common in climate-bankrupted economies, but not only in poor countries. Rich cities and regions can also enter receivership.</p>
+<p>Likely forms:</p>
+<ul>
+<li>port concessions;</li>
+<li>flood-defense concessions;</li>
+<li>bonded cloud zones;</li>
+<li>water/desalination concessions;</li>
+<li>clinic and body-subscription systems;</li>
+<li>migration work-town compacts;</li>
+<li>resource corridor security agreements;</li>
+<li>emergency debt receiverships.</li>
+</ul>
+<p>Important nuance:</p>
+<p>These are not necessarily “countries bought by corporations” in a cartoon sense. Often the public story is rescue, stabilization, modernization, climate adaptation, or credit restoration.</p>
+<h3 id="4-patchwork--partial-failure-states">4. Patchwork / Partial Failure States<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-patchwork--partial-failure-states" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Countries whose central government remains on maps and at the UN-equivalent, but where large territories are governed by a mix of local authorities, militias, NGOs, private security, religious networks, city governments, Free-Net systems, and concession companies.</p>
+<p>Possible candidates:</p>
+<ul>
+<li>Libya</li>
+<li>Yemen</li>
+<li>Syria</li>
+<li>Sudan / South Sudan area</li>
+<li>parts of the Sahel</li>
+<li>parts of Myanmar</li>
+<li>parts of Haiti</li>
+<li>parts of Afghanistan</li>
+<li>parts of the DRC</li>
+<li>parts of the Amazon frontier</li>
+</ul>
+<p>Use carefully. Avoid turning real places into generic chaos zones. The interesting version has institutions, not absence of institutions.</p>
+<h3 id="5-microstate--city-state-survivors">5. Microstate / City-State Survivors<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-microstate--city-state-survivors" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Small states can become disproportionately important if they control finance, ports, arbitration, data law, orbital launch, cables, or climate courts.</p>
+<p>Likely examples:</p>
+<ul>
+<li>Singapore</li>
+<li>UAE city-emirates, especially Dubai and Abu Dhabi</li>
+<li>Qatar</li>
+<li>Bahrain</li>
+<li>Luxembourg</li>
+<li>Switzerland</li>
+<li>Monaco</li>
+<li>Panama</li>
+<li>Rwanda as a compact governance / data / logistics actor, if chosen</li>
+<li>island states as climate-law plaintiffs and maritime-rights actors</li>
+</ul>
+<p>These should be powerful not because they are huge, but because they host treaties, arbitration, model registries, financial instruments, ports, compute, or climate-liability courts.</p>
+<h3 id="6-displaced--virtualized-states">6. Displaced / Virtualized States<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-displaced--virtualized-states" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Some low-lying island states, heavily flooded deltas, or depopulated territories may retain legal personhood even after large-scale displacement.</p>
+<p>Possible forms:</p>
+<ul>
+<li>governments-in-exile;</li>
+<li>maritime-rights litigation states;</li>
+<li>diaspora citizenship platforms;</li>
+<li>cloud embassies;</li>
+<li>treaty-recognized digital civil registries;</li>
+<li>climate-compensation claimants;</li>
+<li>floating or leased administrative districts.</li>
+</ul>
+<p>This is a good place to use Digital-Net and identity themes without making everything abstract.</p>
+<h2 id="countries-that-probably-still-exist">Countries That Probably Still Exist<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#countries-that-probably-still-exist" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>A useful default: almost all UN-recognized states still exist unless there is a strong story reason otherwise.</p>
+<p>Do not casually erase countries. If a country disappears, it should matter.</p>
+<p>Better defaults:</p>
+<ul>
+<li>survives but is poorer;</li>
+<li>survives but has ceded infrastructure;</li>
+<li>survives but lost coastal districts;</li>
+<li>survives but gained migrants;</li>
+<li>survives but has autonomous regions;</li>
+<li>survives but is locked into a climate treaty;</li>
+<li>survives but is internally split between maintained, sacrificed, and contested territories.</li>
+</ul>
+<h2 id="countries--borders-that-might-change">Countries / Borders That Might Change<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#countries--borders-that-might-change" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Use sparingly. Border changes should come from specific pressures.</p>
+<h3 id="sea-level-and-delta-changes">Sea-Level and Delta Changes<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sea-level-and-delta-changes" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Possible affected areas:</p>
+<ul>
+<li>Bangladesh / Bay of Bengal;</li>
+<li>Nile Delta / Egypt;</li>
+<li>Mekong Delta / Vietnam;</li>
+<li>Mississippi Delta / United States;</li>
+<li>Netherlands / Rhine-Meuse-Scheldt delta;</li>
+<li>Lagos Lagoon / Gulf of Guinea;</li>
+<li>Jakarta / Java coast;</li>
+<li>Shanghai / Yangtze Delta;</li>
+<li>Pearl River Delta;</li>
+<li>small island states.</li>
+</ul>
+<p>Likely political result:</p>
+<p>Not full disappearance, but protected cores, abandoned belts, relocation zones, new port authorities, salinity borders, and litigation over who pays.</p>
+<h3 id="water-basin-politics">Water-Basin Politics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#water-basin-politics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Possible flashpoints:</p>
+<ul>
+<li>Nile Basin;</li>
+<li>Indus Basin;</li>
+<li>Ganges-Brahmaputra-Meghna Basin;</li>
+<li>Mekong Basin;</li>
+<li>Tigris-Euphrates;</li>
+<li>Colorado River;</li>
+<li>La Plata / Parana;</li>
+<li>Zambezi;</li>
+<li>Lake Chad;</li>
+<li>Central Asian water systems.</li>
+</ul>
+<p>Likely political result:</p>
+<p>More compacts, tribunals, emergency releases, sabotage, and basin authorities — not necessarily new nation-states.</p>
+<h3 id="arctic--subarctic-shift">Arctic / Subarctic Shift<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#arctic--subarctic-shift" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Possible affected states:</p>
+<ul>
+<li>Russia;</li>
+<li>Canada;</li>
+<li>United States via Alaska;</li>
+<li>Norway;</li>
+<li>Denmark/Greenland;</li>
+<li>Iceland;</li>
+<li>Finland;</li>
+<li>Sweden.</li>
+</ul>
+<p>Likely political result:</p>
+<p>Not a clean new Arctic empire. Instead: rescue contracts, insurance-approved routes, indigenous sovereignty disputes, mining concessions, naval incidents, cable routes, cold datacenters, and ports that are strategic for only part of the year.</p>
+<h3 id="corporate-state-purchases--receiverships">Corporate-State Purchases / Receiverships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#corporate-state-purchases--receiverships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Most plausible in:</p>
+<ul>
+<li>climate-bankrupt cities;</li>
+<li>port states;</li>
+<li>mineral-export corridors;</li>
+<li>small indebted states;</li>
+<li>special economic zones;</li>
+<li>island states trading legal jurisdiction for survival financing;</li>
+<li>disaster-hit rich-city districts that need flood/cooling bonds.</li>
+</ul>
+<p>This does not require the country to vanish. The corporate zone can sit inside it.</p>
+<h3 id="secession--autonomy-movements">Secession / Autonomy Movements<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#secession--autonomy-movements" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Use only where it adds story.</p>
+<p>Possible categories:</p>
+<ul>
+<li>resource-rich regions resisting capital-city debt deals;</li>
+<li>cities wanting climate autonomy;</li>
+<li>indigenous Arctic/subarctic governance;</li>
+<li>delta regions demanding relocation/compensation authority;</li>
+<li>regions refusing White Sky fees or albedo treaties;</li>
+<li>Free-Net-aligned territories rejecting platform identity.</li>
+</ul>
+<h2 id="recommended-global-state-shape">Recommended Global State Shape<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#recommended-global-state-shape" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="north-america">North America<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#north-america" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="united-states">United States<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#united-states" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Still exists. Probably more internally uneven than collapsed.</p>
+<p>Likely features:</p>
+<ul>
+<li>federal emergency climate and compute law;</li>
+<li>state-level divergence;</li>
+<li>Gulf Coast storm/insurance retreat;</li>
+<li>western water compacts and fire insurance zones;</li>
+<li>Great Lakes climate-migration politics;</li>
+<li>Alaska/Arctic logistics importance;</li>
+<li>corporate receiverships in some cities or infrastructure corridors;</li>
+<li>strong White Sky establishment faction in finance, defense, insurance, and climate services.</li>
+</ul>
+<p>Good tension:</p>
+<p>The United States claims to defend democracy against corporate sovereignty while outsourcing enormous parts of climate survival to corporate contractors.</p>
+<h4 id="canada">Canada<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#canada" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Still exists and becomes more strategically important.</p>
+<p>Likely features:</p>
+<ul>
+<li>Arctic access;</li>
+<li>freshwater politics;</li>
+<li>mineral corridors;</li>
+<li>wildfire displacement;</li>
+<li>indigenous sovereignty conflicts and treaty resurgence;</li>
+<li>cold datacenters;</li>
+<li>migration pressure from south and abroad.</li>
+</ul>
+<p>Canada can be a White Sky beneficiary and a contested Arctic actor at once.</p>
+<h4 id="mexico">Mexico<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mexico" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Still exists, likely pivotal.</p>
+<p>Likely features:</p>
+<ul>
+<li>heat and water stress;</li>
+<li>manufacturing nearshoring / automated industry;</li>
+<li>migration bottleneck and bargaining power;</li>
+<li>Pacific and Gulf port corridors;</li>
+<li>cartel-to-security-company transformations;</li>
+<li>body-labor and clinic economies;</li>
+<li>food and water politics.</li>
+</ul>
+<p>Mexico should not be a passive border zone. It is a manufacturing, labor, migration, and logistics power.</p>
+<h3 id="europe">Europe<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#europe" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Europe should still be recognizable, but politically colder, older, more technocratic, and more defensive.</p>
+<h4 id="european-union">European Union<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#european-union" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Likely still exists in some form, but more treaty-stack than idealistic union.</p>
+<p>Possible name if changed: European Continuity Union, European Climate Union, or simply still the EU.</p>
+<p>Likely features:</p>
+<ul>
+<li>climate courts;</li>
+<li>strict feed provenance;</li>
+<li>migration screening;</li>
+<li>insurance-state politics;</li>
+<li>high support for White Sky because heat deaths and crop shocks were reduced;</li>
+<li>internal fights over southern water stress and northern adaptation costs;</li>
+<li>corporate regulation that is real but often captured through compliance layers.</li>
+</ul>
+<h4 id="united-kingdom-france-germany-poland-italy-spain-netherlands-nordics">United Kingdom, France, Germany, Poland, Italy, Spain, Netherlands, Nordics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#united-kingdom-france-germany-poland-italy-spain-netherlands-nordics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>These mostly survive.</p>
+<p>Interesting internal changes:</p>
+<ul>
+<li>Netherlands becomes an archetypal maintained territory: technically brilliant, expensive, morally exposed because protection is selective.</li>
+<li>Spain/Italy/Greece face heat, water, agriculture, tourism-collapse, and migration politics.</li>
+<li>Nordics gain Arctic/logistics/mineral importance but suffer geopolitical pressure.</li>
+<li>Germany/France remain industrial-regulatory powers but depend on external minerals, energy, and climate stability.</li>
+<li>Poland and Eastern Europe can be defense/manufacturing/logistics frontiers.</li>
+</ul>
+<h3 id="russia-and-post-soviet-space">Russia and Post-Soviet Space<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#russia-and-post-soviet-space" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Russia likely still exists, but weakened, militarized, and highly uneven.</p>
+<p>Options:</p>
+<ol>
+<li>Continuity Russia: still a major state, paranoid, resource-heavy, Arctic-facing, sanctions-adapted.</li>
+<li>Patchwork Russia: formal state persists, but regions, oligarchic infrastructure authorities, military districts, and Arctic concessions matter more.</li>
+<li>Russian Federation plus breakaway resource compacts: more dramatic, but use carefully.</li>
+</ol>
+<p>Likely features:</p>
+<ul>
+<li>Arctic routes;</li>
+<li>permafrost infrastructure damage;</li>
+<li>minerals;</li>
+<li>nuclear legacy;</li>
+<li>military-industrial autonomy;</li>
+<li>data/cable sabotage;</li>
+<li>climate migration from Central Asia;</li>
+<li>state-backed corporate zones.</li>
+</ul>
+<p>Ukraine should likely still matter as a hardened reconstruction, agriculture, drone, cyber, and food-security state, unless later canon says otherwise.</p>
+<p>Central Asia becomes important through water, uranium, minerals, logistics, and Chinese/Russian/Turkish/Gulf competition.</p>
+<h3 id="middle-east--north-africa">Middle East / North Africa<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#middle-east--north-africa" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Do not flatten into desert collapse. This region is central to manufactured habitability.</p>
+<h4 id="gulf-states">Gulf States<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#gulf-states" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Saudi Arabia, UAE, Qatar, Kuwait, Oman, Bahrain probably still exist, but with transformed legitimacy.</p>
+<p>Likely features:</p>
+<ul>
+<li>desalination sovereignty;</li>
+<li>sealed/cooling urbanism;</li>
+<li>sovereign wealth converted into climate services;</li>
+<li>migrant labor dependence;</li>
+<li>solar resentment under White Sky;</li>
+<li>AI/compute/cooling projects;</li>
+<li>atmospheric-engineering finance;</li>
+<li>religious and political debates over manufactured sky.</li>
+</ul>
+<p>The Gulf can be both White Sky beneficiary and critic: cooling helps survival, but sky-brightening harms solar and makes them dependent on external climate tuning.</p>
+<h4 id="iran-and-turkey">Iran and Turkey<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#iran-and-turkey" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Both likely persist as major regional powers.</p>
+<p>Turkey:</p>
+<ul>
+<li>water, migration, Black Sea, drones, logistics, NATO/Eurasian bargaining.</li>
+</ul>
+<p>Iran:</p>
+<ul>
+<li>heat, water, mountains, energy, sanctions adaptation, biotech/black-market science, regional networks.</li>
+</ul>
+<h4 id="egypt">Egypt<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#egypt" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Still exists, but the Nile Delta and Nile water politics make it highly pressured.</p>
+<p>Likely features:</p>
+<ul>
+<li>Nile Basin climate attribution disputes;</li>
+<li>Delta protection and relocation;</li>
+<li>Cairo heat/cooling politics;</li>
+<li>canal/security/logistics importance;</li>
+<li>food import vulnerability.</li>
+</ul>
+<h3 id="sub-saharan-africa">Sub-Saharan Africa<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sub-saharan-africa" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Do not turn Africa into one bloc. Existing states mostly remain, but many contain intense overlays.</p>
+<h4 id="nigeria">Nigeria<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#nigeria" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Must remain important.</p>
+<p>Likely features:</p>
+<ul>
+<li>Lagos/Gulf of Guinea coastal protection fights;</li>
+<li>Niger Delta energy transition concessions;</li>
+<li>northern rainfall/security politics;</li>
+<li>youth movements;</li>
+<li>platform economies;</li>
+<li>megacity culture;</li>
+<li>religious and climate-justice movements;</li>
+<li>corporate and state competition.</li>
+</ul>
+<p>Nigeria is a good center for White Sky opposition, but not uniformly anti-White-Sky.</p>
+<h4 id="ghana-cote-divoire-senegal">Ghana, Cote d’Ivoire, Senegal<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ghana-cote-divoire-senegal" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Useful as West African political, port, climate-law, and cultural actors.</p>
+<p>Possible roles:</p>
+<ul>
+<li>climate courts;</li>
+<li>coastal adaptation;</li>
+<li>port corridors;</li>
+<li>youth media and protest;</li>
+<li>rainfall compensation coalitions;</li>
+<li>Free-Net publishing hubs.</li>
+</ul>
+<h4 id="mali-niger-burkina-faso-chad-cameroon">Mali, Niger, Burkina Faso, Chad, Cameroon<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mali-niger-burkina-faso-chad-cameroon" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Use carefully and specifically.</p>
+<p>Likely features:</p>
+<ul>
+<li>rainfall timing;</li>
+<li>pastoralist/farmer route disputes;</li>
+<li>mineral corridors;</li>
+<li>security contractors;</li>
+<li>Lake Chad pulse politics;</li>
+<li>climate compensation claims;</li>
+<li>religious and local governance networks.</li>
+</ul>
+<h4 id="democratic-republic-of-the-congo">Democratic Republic of the Congo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#democratic-republic-of-the-congo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Extremely important.</p>
+<p>Likely features:</p>
+<ul>
+<li>cobalt/copper/mineral corridors;</li>
+<li>Congo Basin carbon custody;</li>
+<li>peat protection;</li>
+<li>Kinshasa as legal/data/concession center;</li>
+<li>conservation militarization;</li>
+<li>bio-prospecting;</li>
+<li>corporate/state/local conflict.</li>
+</ul>
+<p>The contradiction: the world wants the Congo to be both a mine and a forest.</p>
+<h4 id="ethiopia-kenya-tanzania-rwanda-uganda">Ethiopia, Kenya, Tanzania, Rwanda, Uganda<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ethiopia-kenya-tanzania-rwanda-uganda" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>East Africa should be varied.</p>
+<p>Likely features:</p>
+<ul>
+<li>highland climate refuge zones;</li>
+<li>Nile/Horn water politics;</li>
+<li>logistics corridors;</li>
+<li>Indian Ocean ports;</li>
+<li>geothermal energy;</li>
+<li>data/identity governance;</li>
+<li>food and migration politics.</li>
+</ul>
+<h4 id="south-africa">South Africa<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#south-africa" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Still a major state, but strained.</p>
+<p>Likely features:</p>
+<ul>
+<li>grid politics;</li>
+<li>mineral and industrial base;</li>
+<li>inequality and private security;</li>
+<li>water stress;</li>
+<li>corporate enclaves;</li>
+<li>southern African migration;</li>
+<li>biotech/clinic economy.</li>
+</ul>
+<h3 id="south-asia">South Asia<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#south-asia" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="india">India<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#india" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Still exists and should be one of the world-shaping powers.</p>
+<p>Likely features:</p>
+<ul>
+<li>heat law;</li>
+<li>monsoon politics;</li>
+<li>coastal risk;</li>
+<li>platform identity;</li>
+<li>massive internal variation;</li>
+<li>pharma/biotech;</li>
+<li>compute and chip ambitions;</li>
+<li>water disputes;</li>
+<li>democratic, corporate, and technocratic tensions.</li>
+</ul>
+<p>India can be both White Sky beneficiary and critic depending on region and season.</p>
+<h4 id="pakistan">Pakistan<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pakistan" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Still exists, under water/heat/debt/security pressure.</p>
+<p>Likely features:</p>
+<ul>
+<li>Indus Basin politics;</li>
+<li>heat emergencies;</li>
+<li>military/civilian tension;</li>
+<li>Chinese/Gulf/Western infrastructure finance;</li>
+<li>migration;</li>
+<li>agriculture and food shocks.</li>
+</ul>
+<h4 id="bangladesh">Bangladesh<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bangladesh" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Very important because of delta adaptation, migration, textiles/manufacturing, and climate law.</p>
+<p>Do not erase it. Better: Bangladesh becomes a world expert in adaptation, relocation bureaucracy, and flood urbanism while also being exploited by climate finance.</p>
+<h4 id="sri-lanka--nepal--bhutan--maldives">Sri Lanka / Nepal / Bhutan / Maldives<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sri-lanka--nepal--bhutan--maldives" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Useful smaller actors.</p>
+<ul>
+<li>Sri Lanka: ports, debt, Indian Ocean logistics.</li>
+<li>Nepal/Bhutan: water, hydropower, Himalayan climate, India/China pressure.</li>
+<li>Maldives: displaced/virtualized sovereignty, maritime rights, luxury-climate hypocrisy.</li>
+</ul>
+<h3 id="east-asia">East Asia<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#east-asia" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="china">China<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#china" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Still exists. Likely one of the main White Sky, compute, manufacturing, and infrastructure powers.</p>
+<p>Likely features:</p>
+<ul>
+<li>coastal megacity protection;</li>
+<li>interior water transfer;</li>
+<li>state-corporate fused infrastructure;</li>
+<li>controlled platform identity;</li>
+<li>mineral security abroad;</li>
+<li>climate-engineering legitimacy claims;</li>
+<li>export of maintained-territory systems.</li>
+</ul>
+<p>Good tension:</p>
+<p>China argues that corporate extraterritoriality is Western hypocrisy while running its own state-corporate concession systems abroad.</p>
+<h4 id="japan">Japan<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#japan" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Still exists, older, richer, technologically deep, disaster-adapted.</p>
+<p>Likely features:</p>
+<ul>
+<li>robotics;</li>
+<li>coastal defense;</li>
+<li>eldercare bodies;</li>
+<li>feed provenance;</li>
+<li>sea/food security;</li>
+<li>corporate-state continuity.</li>
+</ul>
+<h4 id="korea">Korea<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#korea" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>South Korea likely remains a high-tech state. The Korean peninsula could be:</p>
+<ol>
+<li>still divided;</li>
+<li>confederated under extreme security/compute arrangements;</li>
+<li>partially collapsed/reconstructed in the North;</li>
+<li>reunified but financially traumatized.</li>
+</ol>
+<p>Recommendation: keep division or ambiguous confederation unless a strong story needs reunification.</p>
+<h4 id="taiwan">Taiwan<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#taiwan" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Very important due to chips, sea security, and geopolitical ambiguity.</p>
+<p>Options:</p>
+<ol>
+<li>Taiwan remains de facto autonomous under hardened deterrence and distributed fabs.</li>
+<li>Taiwan crisis led to partial internationalization of chip sovereignty.</li>
+<li>A treaty created special semiconductor neutrality zones.</li>
+</ol>
+<p>Do not casually resolve Taiwan unless it is central.</p>
+<h3 id="southeast-asia">Southeast Asia<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#southeast-asia" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Existing states mostly remain: Indonesia, Vietnam, Thailand, Philippines, Malaysia, Singapore, Myanmar, Cambodia, Laos.</p>
+<p>Likely features:</p>
+<ul>
+<li>Mekong politics;</li>
+<li>coastal and delta risk;</li>
+<li>ports/cables;</li>
+<li>manufacturing;</li>
+<li>maritime security;</li>
+<li>heat and storm adaptation;</li>
+<li>corporate work towns;</li>
+<li>Singapore as arbitration / compute / port / climate-finance hub.</li>
+</ul>
+<p>Indonesia is especially important: huge population, islands, nickel, relocation from Jakarta, maritime chokepoints, Islamic politics, and climate adaptation.</p>
+<p>Vietnam: Mekong Delta and manufacturing power.</p>
+<p>Philippines: storms, labor export, maritime conflict, clinics, remittances, Free-Net culture.</p>
+<p>Myanmar: likely patchwork unless later canon stabilizes it.</p>
+<h3 id="latin-america">Latin America<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#latin-america" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="brazil">Brazil<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#brazil" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Still exists and should be pivotal.</p>
+<p>Likely features:</p>
+<ul>
+<li>Amazon sovereignty;</li>
+<li>carbon finance;</li>
+<li>agribusiness;</li>
+<li>drought/flood cycles;</li>
+<li>hydropower;</li>
+<li>mineral and food exports;</li>
+<li>coastal megacities;</li>
+<li>corporate conservation conflict.</li>
+</ul>
+<p>Brazil’s contradiction:</p>
+<p>The world demands the Amazon be preserved, monetized, surveilled, farmed around, mined around, and used as climate collateral.</p>
+<h4 id="argentina-chile-uruguay-paraguay">Argentina, Chile, Uruguay, Paraguay<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#argentina-chile-uruguay-paraguay" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Southern Cone remains important.</p>
+<p>Likely features:</p>
+<ul>
+<li>food;</li>
+<li>lithium;</li>
+<li>water;</li>
+<li>Antarctic/subantarctic logistics;</li>
+<li>climate migration;</li>
+<li>relatively attractive temperate zones;</li>
+<li>corporate agriculture and seed IP.</li>
+</ul>
+<p>Chile: lithium, copper, ports, water politics.</p>
+<p>Argentina: food, lithium, debt politics, Patagonian climate refuge speculation.</p>
+<h4 id="peru-bolivia-ecuador-colombia-venezuela">Peru, Bolivia, Ecuador, Colombia, Venezuela<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#peru-bolivia-ecuador-colombia-venezuela" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Likely features:</p>
+<ul>
+<li>Andes water/glacier loss;</li>
+<li>lithium/minerals;</li>
+<li>Amazon edge politics;</li>
+<li>oil transition;</li>
+<li>migration;</li>
+<li>ports;</li>
+<li>drug networks converting into security/logistics/data networks.</li>
+</ul>
+<p>Venezuela can be a petrostate afterlife: oil infrastructure, migration, minerals, political fragmentation, climate debt.</p>
+<p>Colombia can be a biodiversity/security/logistics state with strong city cultures.</p>
+<h3 id="oceania-and-pacific">Oceania and Pacific<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#oceania-and-pacific" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="australia">Australia<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#australia" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Still exists, strategically important.</p>
+<p>Likely features:</p>
+<ul>
+<li>heat/fire adaptation;</li>
+<li>minerals;</li>
+<li>Indian/Pacific security;</li>
+<li>controlled migration;</li>
+<li>solar resentment under White Sky;</li>
+<li>indigenous sovereignty;</li>
+<li>coastal city protection;</li>
+<li>remote datacenter/mining corridors.</li>
+</ul>
+<h4 id="new-zealand">New Zealand<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#new-zealand" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Still exists, wealthy/defensive, possibly a refuge myth and biosecurity state.</p>
+<h4 id="pacific-island-states">Pacific Island States<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pacific-island-states" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Do not erase them. They become legally and morally important.</p>
+<p>Likely forms:</p>
+<ul>
+<li>partially displaced states;</li>
+<li>maritime-rights litigants;</li>
+<li>climate compensation leaders;</li>
+<li>cloud civil registries;</li>
+<li>leased land arrangements;</li>
+<li>ocean monitoring and cable politics;</li>
+<li>moral opposition to atmospheric intervention without consent.</li>
+</ul>
+<h2 id="alliances-and-blocs">Alliances and Blocs<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#alliances-and-blocs" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Use real-world institutions as ancestors, not necessarily final forms.</p>
+<h3 id="white-sky-maintenance-coalition">White Sky Maintenance Coalition<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#white-sky-maintenance-coalition" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Not necessarily a formal country bloc; more a treaty and infrastructure regime.</p>
+<p>Likely members/supporters:</p>
+<ul>
+<li>North Atlantic states;</li>
+<li>parts of the EU;</li>
+<li>China or Chinese-led infrastructure entities, depending on canon choice;</li>
+<li>Japan/Korea/Taiwan-linked industrial actors;</li>
+<li>Gulf climate-service financiers;</li>
+<li>major insurers;</li>
+<li>climate-engineering corporations;</li>
+<li>cities saved by albedo cooling.</li>
+</ul>
+<h3 id="atmospheric-sovereignty--compensation-coalition">Atmospheric Sovereignty / Compensation Coalition<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#atmospheric-sovereignty--compensation-coalition" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>States and movements demanding liability, transparency, compensation, or regional vetoes over albedo tuning.</p>
+<p>Likely participants:</p>
+<ul>
+<li>West African states and civil coalitions;</li>
+<li>Sahel basin actors;</li>
+<li>Pacific island states;</li>
+<li>solar-export states;</li>
+<li>some Latin American rainforest states;</li>
+<li>parts of South Asia;</li>
+<li>climate justice NGOs;</li>
+<li>Free-Net archivists.</li>
+</ul>
+<h3 id="compute-and-trusted-hardware-blocs">Compute and Trusted Hardware Blocs<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compute-and-trusted-hardware-blocs" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Could include:</p>
+<ul>
+<li>US/EU/Japan/Korea/Taiwan networks;</li>
+<li>China-centered networks;</li>
+<li>Indian sovereign compute push;</li>
+<li>Gulf-funded cloud enclaves;</li>
+<li>neutral compute freeports;</li>
+<li>black-market Free-Net compute.</li>
+</ul>
+<h3 id="food--nutrient-blocs">Food / Nutrient Blocs<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#food--nutrient-blocs" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Food should matter as much as chips.</p>
+<p>Likely actors:</p>
+<ul>
+<li>United States;</li>
+<li>Canada;</li>
+<li>Brazil;</li>
+<li>Argentina;</li>
+<li>Ukraine;</li>
+<li>Russia;</li>
+<li>India;</li>
+<li>Australia;</li>
+<li>fertilizer states;</li>
+<li>seed IP corporations;</li>
+<li>synthetic protein companies;</li>
+<li>urban nutrient recovery authorities.</li>
+</ul>
+<h3 id="corporate-archipelago">Corporate Archipelago<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#corporate-archipelago" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Not a single alliance. A discontinuous web of concessions, ports, clinics, datacenters, model havens, security corridors, and work towns inside many countries.</p>
+<p>This is how corporations become globally powerful without needing to replace the map.</p>
+<h2 id="countries-that-could-be-officially-corporate-run">Countries That Could Be Officially Corporate-Run<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#countries-that-could-be-officially-corporate-run" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Use very sparingly. It is more plausible that cities, ports, corridors, and ministries are corporatized than whole large countries.</p>
+<p>Best candidates for official or near-official corporate rule:</p>
+<ul>
+<li>small island states trading jurisdiction for survival finance;</li>
+<li>microstates becoming arbitration/data/model havens;</li>
+<li>climate-bankrupt city-states;</li>
+<li>port states under long-term concession;</li>
+<li>special administrative zones;</li>
+<li>mineral corridor authorities;</li>
+<li>privately financed relocation capitals.</li>
+</ul>
+<p>Better phrase than “bought out”:</p>
+<ul>
+<li>under climate receivership;</li>
+<li>under continuity administration;</li>
+<li>under concessionary stabilization;</li>
+<li>under emergency infrastructure compact;</li>
+<li>under sovereign services agreement;</li>
+<li>under corporate trusteeship, if intentionally sinister.</li>
+</ul>
+<h2 id="what-should-not-exist-anymore">What Should Not Exist Anymore?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#what-should-not-exist-anymore" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Avoid too many disappearances. But some categories may change.</p>
+<h3 id="fully-sovereign-policy-autonomy">Fully Sovereign Policy Autonomy<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fully-sovereign-policy-autonomy" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Many states still exist but cannot act freely because bond markets, insurers, climate treaties, water compacts, compute access, and platform identity systems constrain them.</p>
+<h3 id="cheap-universal-insurance">Cheap Universal Insurance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cheap-universal-insurance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Insurance becomes territorial power. Insurer withdrawal can be as politically important as invasion.</p>
+<h3 id="clear-civilian--corporate--military-separation">Clear Civilian / Corporate / Military Separation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#clear-civilian--corporate--military-separation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Many places blur public police, private security, emergency managers, corporate infrastructure guards, and military logistics.</p>
+<h3 id="universal-internet-assumption">Universal Internet Assumption<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#universal-internet-assumption" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Access to trusted reality becomes regional. Some countries have certified feeds, some have polluted feeds, some have Free-Net alternatives, and some have luxury provenance.</p>
+<h3 id="unquestioned-coastal-permanence">Unquestioned Coastal Permanence<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#unquestioned-coastal-permanence" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Coasts still exist, but maintenance status matters more than shoreline shape.</p>
+<h3 id="nation-as-the-only-identity-layer">Nation as the Only Identity Layer<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#nation-as-the-only-identity-layer" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Citizenship remains important, but people also belong to employer-clinics, model jurisdictions, migration permit classes, body-subscription tiers, Free-Net archives, faith movements, and Champion followings.</p>
+<h2 id="design-recommendation">Design Recommendation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#design-recommendation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Keep the familiar map.</p>
+<p>Then corrupt it with overlays.</p>
+<p>Player-facing world map could show:</p>
+<ol>
+<li>Normal political map: countries and capitals.</li>
+<li>Maintenance map: maintained / sacrificed / contested.</li>
+<li>Corporate map: concessions, receiverships, bonded cloud zones, clinics, security corridors.</li>
+<li>Climate map: flood, heat, rainfall, salinity, fire, monsoon, Arctic route risk.</li>
+<li>Resource map: chips, compute, cooling, water, food, minerals, bodies.</li>
+<li>Reality map: certified feeds, polluted feeds, Free-Net, Digital-Net anomalies.</li>
+<li>Faction map: who actually holds power.</li>
+</ol>
+<p>This directly addresses the concern: the world should contain France, Nigeria, India, Brazil, China, Mexico, Egypt, Bangladesh, etc. The strange labels describe the new layers of power inside and across them.</p>
+<h2 id="open-questions">Open Questions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#open-questions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Which current countries must remain especially recognizable for player orientation?</li>
+<li>Should the EU survive as the EU, become a harsher climate union, or partially fragment?</li>
+<li>Should the United States remain federal but strained, or visibly lose control over some climate/corporate zones?</li>
+<li>Should China be a White Sky co-architect, rival maintenance pole, or opponent of Western corporate sky control?</li>
+<li>What is Russia’s 2052 state: continuity great power, patchwork petro-security state, or partial federation breakdown?</li>
+<li>How central should India be to White Sky politics?</li>
+<li>Should Nigeria be the main concrete West African anchor for White Sky opposition?</li>
+<li>Should any country be fully corporate-administered, or should corporate rule mostly happen through cities/zones/corridors?</li>
+<li>Which island or delta states become legally fascinating because their territory, population, and sovereignty no longer align?</li>
+<li>How many formal border changes are desirable before the map feels too unrecognizable?</li>
+</ul>
+<h2 id="recommended-next-promotion">Recommended Next Promotion<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#recommended-next-promotion" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>If this direction is accepted, create a canon-facing page:</p>
+<ul>
+<li><code>canon/world-rules/state-continuity-and-layered-sovereignty.md</code></li>
+</ul>
+<p>That page should state clearly:</p>
+<ul>
+<li>most nation-states still exist;</li>
+<li>strange region labels are overlays;</li>
+<li>sovereignty is layered, not erased;</li>
+<li>the official map remains familiar;</li>
+<li>the lived map is radically changed.</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-52" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#nation-states-and-real-world-continuity--2052" data-for="nation-states-and-real-world-continuity--2052">Nation-States and Real-World Continuity — 2052</a></li><li class="depth-1"><a href="#purpose" data-for="purpose">Purpose</a></li><li class="depth-1"><a href="#core-correction" data-for="core-correction">Core Correction</a></li><li class="depth-1"><a href="#how-to-use-region-labels" data-for="how-to-use-region-labels">How to Use Region Labels</a></li><li class="depth-1"><a href="#state-continuity-categories" data-for="state-continuity-categories">State Continuity Categories</a></li><li class="depth-2"><a href="#1-strong-continuity-states" data-for="1-strong-continuity-states">1. Strong Continuity States</a></li><li class="depth-2"><a href="#2-federal--fragmented-continuity-states" data-for="2-federal--fragmented-continuity-states">2. Federal / Fragmented Continuity States</a></li><li class="depth-2"><a href="#3-receiver--concession-states" data-for="3-receiver--concession-states">3. Receiver / Concession States</a></li><li class="depth-2"><a href="#4-patchwork--partial-failure-states" data-for="4-patchwork--partial-failure-states">4. Patchwork / Partial Failure States</a></li><li class="depth-2"><a href="#5-microstate--city-state-survivors" data-for="5-microstate--city-state-survivors">5. Microstate / City-State Survivors</a></li><li class="depth-2"><a href="#6-displaced--virtualized-states" data-for="6-displaced--virtualized-states">6. Displaced / Virtualized States</a></li><li class="depth-1"><a href="#countries-that-probably-still-exist" data-for="countries-that-probably-still-exist">Countries That Probably Still Exist</a></li><li class="depth-1"><a href="#countries--borders-that-might-change" data-for="countries--borders-that-might-change">Countries / Borders That Might Change</a></li><li class="depth-2"><a href="#sea-level-and-delta-changes" data-for="sea-level-and-delta-changes">Sea-Level and Delta Changes</a></li><li class="depth-2"><a href="#water-basin-politics" data-for="water-basin-politics">Water-Basin Politics</a></li><li class="depth-2"><a href="#arctic--subarctic-shift" data-for="arctic--subarctic-shift">Arctic / Subarctic Shift</a></li><li class="depth-2"><a href="#corporate-state-purchases--receiverships" data-for="corporate-state-purchases--receiverships">Corporate-State Purchases / Receiverships</a></li><li class="depth-2"><a href="#secession--autonomy-movements" data-for="secession--autonomy-movements">Secession / Autonomy Movements</a></li><li class="depth-1"><a href="#recommended-global-state-shape" data-for="recommended-global-state-shape">Recommended Global State Shape</a></li><li class="depth-2"><a href="#north-america" data-for="north-america">North America</a></li><li class="depth-2"><a href="#europe" data-for="europe">Europe</a></li><li class="depth-2"><a href="#russia-and-post-soviet-space" data-for="russia-and-post-soviet-space">Russia and Post-Soviet Space</a></li><li class="depth-2"><a href="#middle-east--north-africa" data-for="middle-east--north-africa">Middle East / North Africa</a></li><li class="depth-2"><a href="#sub-saharan-africa" data-for="sub-saharan-africa">Sub-Saharan Africa</a></li><li class="depth-2"><a href="#south-asia" data-for="south-asia">South Asia</a></li><li class="depth-2"><a href="#east-asia" data-for="east-asia">East Asia</a></li><li class="depth-2"><a href="#southeast-asia" data-for="southeast-asia">Southeast Asia</a></li><li class="depth-2"><a href="#latin-america" data-for="latin-america">Latin America</a></li><li class="depth-2"><a href="#oceania-and-pacific" data-for="oceania-and-pacific">Oceania and Pacific</a></li><li class="depth-1"><a href="#alliances-and-blocs" data-for="alliances-and-blocs">Alliances and Blocs</a></li><li class="depth-2"><a href="#white-sky-maintenance-coalition" data-for="white-sky-maintenance-coalition">White Sky Maintenance Coalition</a></li><li class="depth-2"><a href="#atmospheric-sovereignty--compensation-coalition" data-for="atmospheric-sovereignty--compensation-coalition">Atmospheric Sovereignty / Compensation Coalition</a></li><li class="depth-2"><a href="#compute-and-trusted-hardware-blocs" data-for="compute-and-trusted-hardware-blocs">Compute and Trusted Hardware Blocs</a></li><li class="depth-2"><a href="#food--nutrient-blocs" data-for="food--nutrient-blocs">Food / Nutrient Blocs</a></li><li class="depth-2"><a href="#corporate-archipelago" data-for="corporate-archipelago">Corporate Archipelago</a></li><li class="depth-1"><a href="#countries-that-could-be-officially-corporate-run" data-for="countries-that-could-be-officially-corporate-run">Countries That Could Be Officially Corporate-Run</a></li><li class="depth-1"><a href="#what-should-not-exist-anymore" data-for="what-should-not-exist-anymore">What Should Not Exist Anymore?</a></li><li class="depth-2"><a href="#fully-sovereign-policy-autonomy" data-for="fully-sovereign-policy-autonomy">Fully Sovereign Policy Autonomy</a></li><li class="depth-2"><a href="#cheap-universal-insurance" data-for="cheap-universal-insurance">Cheap Universal Insurance</a></li><li class="depth-2"><a href="#clear-civilian--corporate--military-separation" data-for="clear-civilian--corporate--military-separation">Clear Civilian / Corporate / Military Separation</a></li><li class="depth-2"><a href="#universal-internet-assumption" data-for="universal-internet-assumption">Universal Internet Assumption</a></li><li class="depth-2"><a href="#unquestioned-coastal-permanence" data-for="unquestioned-coastal-permanence">Unquestioned Coastal Permanence</a></li><li class="depth-2"><a href="#nation-as-the-only-identity-layer" data-for="nation-as-the-only-identity-layer">Nation as the Only Identity Layer</a></li><li class="depth-1"><a href="#design-recommendation" data-for="design-recommendation">Design Recommendation</a></li><li class="depth-1"><a href="#open-questions" data-for="open-questions">Open Questions</a></li><li class="depth-1"><a href="#recommended-next-promotion" data-for="recommended-next-promotion">Recommended Next Promotion</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../../00-start-here/open-questions" class="internal">Open Questions</a></li><li><a href="../../" class="internal">index</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript.js" type="module" data-persist="true"></script></html>

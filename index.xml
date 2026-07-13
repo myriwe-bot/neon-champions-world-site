@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Neon Champions World</title>
+      <link>https://myriwe-bot.github.io/neon-champions-world-site</link>
+      <description>Last 10 notes on Neon Champions World</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>SCHEMA</title>
+    <link>https://myriwe-bot.github.io/neon-champions-world-site/SCHEMA</link>
+    <guid>https://myriwe-bot.github.io/neon-champions-world-site/SCHEMA</guid>
+    <description><![CDATA[ Neon Champions Worldbuilding Wiki Schema Domain This Obsidian vault describes the lore, setting, world rules, factions, technologies, histories, myths, conflicts, mysteries, and player-facing worldbuilding of Neon Champions. ]]></description>
+    <pubDate>Mon, 13 Jul 2026 11:49:09 GMT</pubDate>
+  </item><item>
+    <title>index</title>
+    <link>https://myriwe-bot.github.io/neon-champions-world-site/</link>
+    <guid>https://myriwe-bot.github.io/neon-champions-world-site/</guid>
+    <description><![CDATA[ Neon Champions Worldbuilding Index Canon, lore, trope studies, mysteries, and game bridges. ]]></description>
+    <pubDate>Mon, 13 Jul 2026 11:49:09 GMT</pubDate>
+  </item><item>
+    <title>log</title>
+    <link>https://myriwe-bot.github.io/neon-champions-world-site/log</link>
+    <guid>https://myriwe-bot.github.io/neon-champions-world-site/log</guid>
+    <description><![CDATA[ Neon Champions Worldbuilding Log Append-only record of worldbuilding changes. ]]></description>
+    <pubDate>Mon, 13 Jul 2026 11:49:09 GMT</pubDate>
+  </item><item>
+    <title>national-academies-albedo-modification-chapter-2</title>
+    <link>https://myriwe-bot.github.io/neon-champions-world-site/raw/references/national-academies-albedo-modification-chapter-2</link>
+    <guid>https://myriwe-bot.github.io/neon-champions-world-site/raw/references/national-academies-albedo-modification-chapter-2</guid>
+    <description><![CDATA[ National Academies: Climate Intervention by Modifying Earth’s Albedo Source: www.nationalacademies.org/read/18988/chapter/4 Book: National Research Council. ]]></description>
+    <pubDate>Mon, 13 Jul 2026 11:49:09 GMT</pubDate>
+  </item><item>
+    <title>Worldbuilding Resources Initial Survey</title>
+    <link>https://myriwe-bot.github.io/neon-champions-world-site/raw/references/worldbuilding-resources-initial-survey</link>
+    <guid>https://myriwe-bot.github.io/neon-champions-world-site/raw/references/worldbuilding-resources-initial-survey</guid>
+    <description><![CDATA[ Worldbuilding Resources Initial Survey Initial research notes for Neon Champions worldbuilding workflow. ]]></description>
+    <pubDate>Mon, 13 Jul 2026 11:49:09 GMT</pubDate>
+  </item><item>
+    <title>Champions Documentation Audit — 2026-07-13</title>
+    <link>https://myriwe-bot.github.io/neon-champions-world-site/00-start-here/champions-documentation-audit-2026-07-13</link>
+    <guid>https://myriwe-bot.github.io/neon-champions-world-site/00-start-here/champions-documentation-audit-2026-07-13</guid>
+    <description><![CDATA[ Champions Documentation Audit — 2026-07-13 Scope Compared available Hermes session history with the current world vault and game-design repository to determine whether major Champion decisions remain chat-only. ]]></description>
+    <pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Champions</title>
+    <link>https://myriwe-bot.github.io/neon-champions-world-site/canon/world-rules/champions</link>
+    <guid>https://myriwe-bot.github.io/neon-champions-world-site/canon/world-rules/champions</guid>
+    <description><![CDATA[ Champions One-Line Summary Champions are socially and materially exceptional figures who may be altered by genetics, technology, mutation, the Digital-Net, reputation, command presence, or sheer legendary action; they are loved, feared, loathed, exploited, worshipped, and weaponized across different... ]]></description>
+    <pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Home Rule Coalition</title>
+    <link>https://myriwe-bot.github.io/neon-champions-world-site/organizations/home-rule-coalition</link>
+    <guid>https://myriwe-bot.github.io/neon-champions-world-site/organizations/home-rule-coalition</guid>
+    <description><![CDATA[ Home Rule Coalition One-Line Summary A loose protection network that becomes a crisis faction: local institutions, workers, rescue crews, environmental and sovereignty activists, counterculture figures, technical volunteers, defectors, and international solidarity groups drawn together by need and b... ]]></description>
+    <pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>QXZ Meridian</title>
+    <link>https://myriwe-bot.github.io/neon-champions-world-site/organizations/qxz-meridian</link>
+    <guid>https://myriwe-bot.github.io/neon-champions-world-site/organizations/qxz-meridian</guid>
+    <description><![CDATA[ QXZ Meridian One-Line Summary QXZ Meridian is the climate-adaptation, biotech, insurance, and atmospheric-maintenance megacorp most widely accused of making the first White Sky move: the company that turned planetary cooling into proprietary life-support infrastructure. ]]></description>
+    <pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Claude Champion Seeds — 2026-07-06</title>
+    <link>https://myriwe-bot.github.io/neon-champions-world-site/raw/brainstorms/claude-champion-seeds-2026-07-06</link>
+    <guid>https://myriwe-bot.github.io/neon-champions-world-site/raw/brainstorms/claude-champion-seeds-2026-07-06</guid>
+    <description><![CDATA[ Claude Champion Seeds — 2026-07-06 Status Recovered from the Claude-authored Neon Champions — Design Response, Faction Book, UI Concepts &amp; 6-Month Plan pasted into the 2026-07-10 Hermes session. ]]></description>
+    <pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>

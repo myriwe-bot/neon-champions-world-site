@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Greenland Blue Week Campaign Design Bridge · Neon Champions</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Neon Champions World"/><meta property="og:title" content="Greenland Blue Week Campaign Design Bridge · Neon Champions"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Greenland Blue Week Campaign Design Bridge · Neon Champions"/><meta name="twitter:description" content="Greenland Blue Week Campaign Design Bridge Source Lore Links: greenland blue-week white-sky digital-net world-map-and-political-economy champions Player Fantasy Lead a Champion-led faction across an Arctic cyberpunk wilderness where every outpost, convoy, fish plant, sensor tower, mine, data relay, ..."/><meta property="og:description" content="Greenland Blue Week Campaign Design Bridge Source Lore Links: greenland blue-week white-sky digital-net world-map-and-political-economy champions Player Fantasy Lead a Champion-led faction across an Arctic cyberpunk wilderness where every outpost, convoy, fish plant, sensor tower, mine, data relay, ..."/><meta property="og:image:alt" content="Greenland Blue Week Campaign Design Bridge Source Lore Links: greenland blue-week white-sky digital-net world-map-and-political-economy champions Player Fantasy Lead a Champion-led faction across an Arctic cyberpunk wilderness where every outpost, convoy, fish plant, sensor tower, mine, data relay, ..."/><meta property="twitter:domain" content="myriwe-bot.github.io/neon-champions-world-site"/><meta property="og:url" content="https://myriwe-bot.github.io/neon-champions-world-site/design-bridges/greenland-blue-week-campaign"/><meta property="twitter:url" content="https://myriwe-bot.github.io/neon-champions-world-site/design-bridges/greenland-blue-week-campaign"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Greenland Blue Week Campaign Design Bridge Source Lore Links: greenland blue-week white-sky digital-net world-map-and-political-economy champions Player Fantasy Lead a Champion-led faction across an Arctic cyberpunk wilderness where every outpost, convoy, fish plant, sensor tower, mine, data relay, ..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvbmVvbi1jaGFtcGlvbnMtd29ybGQvbmVvbi1jaGFtcGlvbnMtd29ybGQvcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://myriwe-bot.github.io/neon-champions-world-site/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://myriwe-bot.github.io/neon-champions-world-site/design-bridges/greenland-blue-week-campaign-og-image.webp"/><meta property="og:image:url" content="https://myriwe-bot.github.io/neon-champions-world-site/design-bridges/greenland-blue-week-campaign-og-image.webp"/><meta name="twitter:image" content="https://myriwe-bot.github.io/neon-champions-world-site/design-bridges/greenland-blue-week-campaign-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="design-bridges/greenland-blue-week-campaign"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Neon Champions World</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-54"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-54" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../design-bridges/">design bridges</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Greenland Blue Week Campaign Design Bridge</a></div></nav><h1 class="article-title">Greenland Blue Week Campaign Design Bridge</h1><p show-comma="true" class="content-meta"><time datetime="2026-05-22T00:00:00.000Z">May 22, 2026</time><span>8 min read</span></p><ul class="tags"><li><a href="../tags/greenland" class="internal tag-link">greenland</a></li><li><a href="../tags/blue-week" class="internal tag-link">blue-week</a></li><li><a href="../tags/campaign" class="internal tag-link">campaign</a></li><li><a href="../tags/heroes-like" class="internal tag-link">heroes-like</a></li><li><a href="../tags/intel" class="internal tag-link">intel</a></li><li><a href="../tags/digital-net" class="internal tag-link">digital-net</a></li><li><a href="../tags/white-sky" class="internal tag-link">white-sky</a></li></ul></div></div><article class="popover-hint"><h1 id="greenland-blue-week-campaign-design-bridge">Greenland Blue Week Campaign Design Bridge<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#greenland-blue-week-campaign-design-bridge" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="source-lore">Source Lore<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#source-lore" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Links:</p>
+<ul>
+<li><a href="../locations/greenland" class="internal" data-slug="locations/greenland">greenland</a></li>
+<li><a href="../mysteries/blue-week" class="internal" data-slug="mysteries/blue-week">blue-week</a></li>
+<li><a href="../canon/world-rules/white-sky" class="internal" data-slug="canon/world-rules/white-sky">white-sky</a></li>
+<li><a href="../canon/world-rules/digital-net" class="internal" data-slug="canon/world-rules/digital-net">digital-net</a></li>
+<li><a href="../canon/world-rules/world-map-and-political-economy" class="internal" data-slug="canon/world-rules/world-map-and-political-economy">world-map-and-political-economy</a></li>
+<li><a href="../canon/world-rules/champions" class="internal" data-slug="canon/world-rules/champions">champions</a></li>
+</ul>
+<h2 id="player-fantasy">Player Fantasy<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#player-fantasy" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Lead a Champion-led faction across an Arctic cyberpunk wilderness where every outpost, convoy, fish plant, sensor tower, mine, data relay, and climate station can decide who owns the future under the White Sky.</p>
+<p>The fantasy is not “conquer a wasteland.” It is:</p>
+<ul>
+<li>outmaneuver rival factions across hostile terrain;</li>
+<li>seize strategic infrastructure;</li>
+<li>expose or bury truth;</li>
+<li>upgrade assets with stolen Intel;</li>
+<li>make public victories matter;</li>
+<li>survive a PR war where climate, sovereignty, and survival are all monetized.</li>
+</ul>
+<h2 id="campaign-premise">Campaign Premise<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#campaign-premise" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Blue Week is now treated as both summit and sky-break event.</p>
+<p>The “summit” means a public Arctic development week in Greenland: investment expo, climate-adaptation showcase, mineral-rights negotiation, UNP Net-security exercise, local autonomy finance forum, and White Sky maintenance demonstration. It is Davos, COP, arms fair, infrastructure auction, and corporate PR pilgrimage compressed into one week.</p>
+<p>Then the name becomes literal: part of the sky opens.</p>
+<p>Some people see real blue. Some feeds show nothing. Some climate models deny the event. Some corporate layers show curated blue. Some dark-net channels claim the White Sky node was sabotaged. Champions are already there as public faces and deniable operators, so the summit turns into a strategic campaign.</p>
+<h2 id="homm3-translation">HoMM3 Translation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#homm3-translation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>HoMM Function</th><th>Neon Champions Greenland Translation</th></tr></thead><tbody><tr><td>Town / Castle</td><td>Outpost, port, air hub, mine camp, fishery plant, clinic, data station, corporate concession HQ</td></tr><tr><td>Mine</td><td>Rare-earth claim, fishery quota hub, hydro station, compute/cooling node, proof archive, Intel cache</td></tr><tr><td>Creature dwelling</td><td>Drone depot, hunter council, mercenary lodge, animal-control station, black clinic, Free-Net cell</td></tr><tr><td>Artifact</td><td>Asset: bodyware, neural deck, drone swarm, corporate seal, blackmail archive, climate key</td></tr><tr><td>Magic</td><td>Hacks, VI-assisted ops, media/provenance actions, body tech, drone control, climate-system leverage</td></tr><tr><td>Underground layer</td><td>Digital-Net/corporate-grid layer, ice tunnels, legacy bases, hidden server farms</td></tr><tr><td>Hero</td><td>Champion as commander, public symbol, asset platform, doctrine carrier</td></tr><tr><td>Resource pile</td><td>salvage, data packet, fuel cache, local consent, emergency supplies, stolen proofs</td></tr><tr><td>Map editor object</td><td>Scenario site with flags, guards, yields, event scripts, hazards, and faction permissions</td></tr></tbody></table></div>
+<h2 id="core-resources">Core Resources<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#core-resources" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Prototype resource set for this campaign:</p>
+<ul>
+<li>Credits: payments, procurement, bribes, contracts.</li>
+<li>Materials: construction, repairs, fortification.</li>
+<li>Energy: power, heat, cooling, convoy logistics, compute support.</li>
+<li>Compute: VI, Net actions, drones, prediction, hacking.</li>
+<li>Biotech: body adaptation, clinics, wildlife control, elite units.</li>
+<li>Legitimacy / Proof: legal/public permission, local support, Axiom-admissible evidence.</li>
+<li>Intel: special upgrade resource for Champion assets, hacks, asset sets, and hidden map knowledge.</li>
+</ul>
+<h2 id="intel-system-bridge">Intel System Bridge<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#intel-system-bridge" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Intel should be modeled on Olden Era’s Alchemical Dust pattern: a scarce cross-system upgrade resource acquired from the map, conversion structures, dismantling inventory, and hero/skill specializations; spent on town/recruitment upgrades, spell-equivalent upgrades, and artifact/asset empowerment.</p>
+<p>Neon Champions translation:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Alchemical Dust Function</th><th>Intel Translation</th></tr></thead><tbody><tr><td>Wild dust pickups</td><td>data caches, dead drops, leaked dossiers</td></tr><tr><td>Alchemical Lab rare-resource conversion</td><td>Intel Exchange / Analysis Cell converting Compute, Proof, Credits, or rare resources into Intel</td></tr><tr><td>Disenchant inventory items</td><td>reverse-engineer / burn assets for Intel</td></tr><tr><td>Subskill generation</td><td>Analyst, Fixer, Signals, HUMINT, or Net-specialist Champion income</td></tr><tr><td>Upgrade town dwellings</td><td>upgrade recruitment sites and unit lines</td></tr><tr><td>Level up spells</td><td>upgrade hacks, doctrines, legal/provenance actions, media ops, climate-system operations</td></tr><tr><td>Empower artifacts</td><td>upgrade Champion assets, bodyware, drone systems, neural decks, seals, and blackmail archives</td></tr></tbody></table></div>
+<p>Intel is gained through:</p>
+<ul>
+<li>data heists;</li>
+<li>captured proof nodes;</li>
+<li>defeated rival Champions;</li>
+<li>environmental-model leaks;</li>
+<li>dark-net caches;</li>
+<li>local knowledge agreements;</li>
+<li>reverse-engineering assets;</li>
+<li>infiltrating corporate grids;</li>
+<li>public scandal wins;</li>
+<li>recurring Analysis Cell or specialist production.</li>
+</ul>
+<p>It is spent on:</p>
+<ul>
+<li>upgrading assets/artifacts;</li>
+<li>upgrading recruitment sites / unit lines;</li>
+<li>leveling hacks, doctrines, and operations;</li>
+<li>unlocking set bonuses;</li>
+<li>revealing hidden map layers;</li>
+<li>cleaning polluted information;</li>
+<li>legal/provenance strikes.</li>
+</ul>
+<p>Guardrail: Intel should feel like secrets turned into power, not blue mana. Avoid making it a mandatory tax on every basic building.</p>
+<h2 id="strategic-map-layer">Strategic Map Layer<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#strategic-map-layer" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Physical layer:</p>
+<ul>
+<li>settlements;</li>
+<li>ports;</li>
+<li>airstrips;</li>
+<li>fjords;</li>
+<li>mines;</li>
+<li>fish plants;</li>
+<li>ice routes;</li>
+<li>weather stations;</li>
+<li>White Sky node sites;</li>
+<li>hydro plants;</li>
+<li>convoy routes.</li>
+</ul>
+<p>Digital-Net layer:</p>
+<ul>
+<li>Treaty Net blue lanes;</li>
+<li>corporate grids;</li>
+<li>Free-Net relays;</li>
+<li>dark-net caches;</li>
+<li>proof nodes;</li>
+<li>spoofed sensors;</li>
+<li>AGI quarantine chokepoints;</li>
+<li>ghost servers under legacy infrastructure.</li>
+</ul>
+<p>Switching layers should change what the player sees and what actions are possible, not become a separate minigame disconnected from map control.</p>
+<h2 id="town--outpost-types">Town / Outpost Types<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#town--outpost-types" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Capital Hub: politics, media, contracts, diplomacy, elite recruitment.</li>
+<li>Port / Fishery Hub: credits, food/logistics, convoy access, local labor.</li>
+<li>Air / SAR Hub: mobility, rescue, rapid deployment, emergency events.</li>
+<li>Mine Camp: rare resources, pollution risk, protest risk, security pressure.</li>
+<li>Data / Sensor Station: scouting, proof, Net access, White Sky calibration.</li>
+<li>Clinic / Body Shop: Champion healing, biotech units, adaptation mods.</li>
+<li>Free-Net Commons: Intel, leaks, irregular recruits, misinformation risk.</li>
+<li>Wildlife / Patrol Station: terrain mastery, animal-control units, local guides.</li>
+</ul>
+<h2 id="possible-factions-in-the-first-campaign">Possible Factions in the First Campaign<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#possible-factions-in-the-first-campaign" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Recommended campaign faction set:</p>
+<h3 id="1-home-rule-coalition">1. Home Rule Coalition<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-home-rule-coalition" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Local-government, municipal, hunter/fisher, labor, and autonomy coalition. They are not anti-development; they want development that does not turn sovereignty into a subscription.</p>
+<p>Gameplay angle: legitimacy, local routes, SAR, guides, fisheries, consent, defensive terrain, lower-tech but high-map-knowledge units.</p>
+<p>Why include: keeps Greenland from becoming scenery and gives the player an emotionally grounded faction.</p>
+<h3 id="2-qxz-meridian-arctic-mandate">2. QXZ Meridian Arctic Mandate<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-qxz-meridian-arctic-mandate" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>White Sky operator and climate-liability machine. It insists the Greenland node is life-support infrastructure and that sabotage risks mass death.</p>
+<p>Gameplay angle: climate stations, hazard mitigation, elite infrastructure security, weather control-lite effects, high legitimacy with institutions but low trust locally.</p>
+<p>Why include: makes White Sky playable and morally unstable.</p>
+<h3 id="3-barents-research-group--polar-certification-combine">3. Barents Research Group / Polar Certification Combine<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-barents-research-group--polar-certification-combine" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Polar data, route certification, extraction-risk scoring, rescue/security, sensor fleets, and “neutral” scientific authority that quietly decides who can operate in the Arctic.</p>
+<p>Gameplay angle: scouting, route control, sensor truth, drones, ice-risk manipulation, mercantile resource flow.</p>
+<p>Why include: very cyberpunk, less obvious than a generic mining corp, strong fit for Greenland.</p>
+<h3 id="4-digital-peacekeeping-directorate--the-blue--the-blues">4. Digital Peacekeeping Directorate — “the Blue” / “the Blues”<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-digital-peacekeeping-directorate--the-blue--the-blues" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>UNP cyber peacekeepers responsible for Treaty Net blue lanes, emergency civic access, AGI quarantine, and corporate gateway audits.</p>
+<p>Gameplay angle: defensive Net control, proof stabilization, emergency access, anti-hack tools, diplomatic constraints, mandate-based powers.</p>
+<p>Why include: realizes the UNP Net idea and gives a non-corporate institutional faction that is neither pure good nor villain.</p>
+<h3 id="5-open-sky--blue-week-cells">5. Open Sky / Blue Week Cells<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-open-sky--blue-week-cells" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Atmospheric commons activists, direct-action networks, unceiling hackers, climate-justice lawyers, and sabotage cells. Not anti-science; anti-proprietary survival hostage system.</p>
+<p>Gameplay angle: sabotage, Free-Net leaks, morale/public shock, cheap irregulars, risky high-impact climate/provenance actions.</p>
+<p>Why include: makes Blue Week ideologically alive and not just an accident.</p>
+<h3 id="6-janus-kestrel--mining-logistics-consortium">6. Janus-Kestrel / Mining-Logistics Consortium<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-janus-kestrel--mining-logistics-consortium" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Green-transition extraction, ports, finance, cargo identity, private security, and infrastructure investment. It promises jobs and independence capital while binding the island to concession contracts.</p>
+<p>Gameplay angle: money, construction tempo, contracts, private security, logistics, resource extraction, debt pressure.</p>
+<p>Why include: gives the “development dollars” fight a concrete player.</p>
+<h3 id="7-tundra-biosecurity--wildlife-control-program">7. Tundra Biosecurity / Wildlife Control Program<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-tundra-biosecurity--wildlife-control-program" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Could be a subfaction, neutral dwelling chain, or full faction later. It weaponizes climate-stressed wildlife management, telemetry collars, bioacoustic herding, and animal sensor networks.</p>
+<p>Gameplay angle: polar bears, ravens, musk oxen, sled logistics, biosecurity traps, wilderness control.</p>
+<p>Why include: preserves the cool polar-animal fantasy without breaking no-magic rules.</p>
+<p>Recommended first playable pair for MVP: Home Rule Coalition vs QXZ Meridian. Recommended third/fourth for vertical slice: Barents Research Group and the Blues.</p>
+<h2 id="animal-control-hook">Animal-Control Hook<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#animal-control-hook" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>This can be a faction feature if grounded as:</p>
+<ul>
+<li>hacked wildlife telemetry;</li>
+<li>bioacoustic herding;</li>
+<li>neuro-interface collars;</li>
+<li>climate-stress disease monitoring turned military;</li>
+<li>drone/animal hybrid sensor network.</li>
+</ul>
+<p>Example units:</p>
+<ul>
+<li>Polar Bear Bio-Tag Alpha: rare, terrifying, ethically radioactive.</li>
+<li>Musk Ox Stampede Rig: area-control unit.</li>
+<li>Raven Sensor Swarm: scouting and signal spoofing.</li>
+<li>Sled Dog Logistics Team: movement/rescue bonus.</li>
+<li>Seal / Narwhal Buoy Network: coastal detection and convoy routing.</li>
+</ul>
+<h2 id="victory-conditions">Victory Conditions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#victory-conditions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Possible scenario goals:</p>
+<ul>
+<li>secure the Pituffik Meridian Node without causing termination-risk panic;</li>
+<li>win enough local consent/proof to legitimize a development package;</li>
+<li>expose the falsified Blue Week model before a rival controls the narrative;</li>
+<li>evacuate settlements during a White Sky / weather failure while holding key sites;</li>
+<li>capture or destroy rival Intel vaults;</li>
+<li>keep the Treaty Net blue lanes open through the crisis;</li>
+<li>trigger or prevent a larger Blue Break.</li>
+</ul>
+<h2 id="mvp-slice">MVP Slice<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mvp-slice" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Smallest playable test:</p>
+<ul>
+<li>one Greenland region map;</li>
+<li>three hubs;</li>
+<li>two Champions/factions;</li>
+<li>four resources: Credits, Energy, Proof, Intel;</li>
+<li>one physical map layer and one simple Digital-Net overlay;</li>
+<li>asset upgrade using Intel;</li>
+<li>one Blue Week crisis clock;</li>
+<li>8-12 map sites;</li>
+<li>one full tactical battle prototype for guarded sites.</li>
+</ul>
+<h2 id="risks">Risks<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#risks" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Risk</th><th>Mitigation</th></tr></thead><tbody><tr><td>Greenland becomes exotic scenery</td><td>Make local consent, sovereignty, and municipal survival mechanically meaningful.</td></tr><tr><td>“Green land” becomes implausible</td><td>Keep agriculture limited, high-tech, symbolic, and contested.</td></tr><tr><td>UNP Net authority cleans up cyberpunk</td><td>Make it partial, treaty-bound, underfunded, and politically compromised.</td></tr><tr><td>Intel becomes generic mana</td><td>Tie acquisition and spending to secrets, proof, and research.</td></tr><tr><td>Animal control becomes silly</td><td>Ground it in telemetry, biosecurity, climate adaptation, and coercive wildlife management.</td></tr><tr><td>Too many resources</td><td>Prototype with four, expand only after fun is proven.</td></tr><tr><td>HoMM inspiration becomes reskin</td><td>Preserve strategic clarity, movement constraints, guarded sites, hubs, recruitment, and map-object readability.</td></tr></tbody></table></div>
+<h2 id="decision-needed">Decision Needed<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#decision-needed" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Name and legal framing of the campaign region.</li>
+<li>Official name of the UNP Net-security authority.</li>
+<li>First playable factions.</li>
+<li>Whether Blue Week is initially caused by eco-anarchists, corporate false flag, maintenance failure, or deliberately ambiguous multi-cause crisis.</li>
+<li>Exact MVP resource list.</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-19" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#greenland-blue-week-campaign-design-bridge" data-for="greenland-blue-week-campaign-design-bridge">Greenland Blue Week Campaign Design Bridge</a></li><li class="depth-1"><a href="#source-lore" data-for="source-lore">Source Lore</a></li><li class="depth-1"><a href="#player-fantasy" data-for="player-fantasy">Player Fantasy</a></li><li class="depth-1"><a href="#campaign-premise" data-for="campaign-premise">Campaign Premise</a></li><li class="depth-1"><a href="#homm3-translation" data-for="homm3-translation">HoMM3 Translation</a></li><li class="depth-1"><a href="#core-resources" data-for="core-resources">Core Resources</a></li><li class="depth-1"><a href="#intel-system-bridge" data-for="intel-system-bridge">Intel System Bridge</a></li><li class="depth-1"><a href="#strategic-map-layer" data-for="strategic-map-layer">Strategic Map Layer</a></li><li class="depth-1"><a href="#town--outpost-types" data-for="town--outpost-types">Town / Outpost Types</a></li><li class="depth-1"><a href="#possible-factions-in-the-first-campaign" data-for="possible-factions-in-the-first-campaign">Possible Factions in the First Campaign</a></li><li class="depth-2"><a href="#1-home-rule-coalition" data-for="1-home-rule-coalition">1. Home Rule Coalition</a></li><li class="depth-2"><a href="#2-qxz-meridian-arctic-mandate" data-for="2-qxz-meridian-arctic-mandate">2. QXZ Meridian Arctic Mandate</a></li><li class="depth-2"><a href="#3-barents-research-group--polar-certification-combine" data-for="3-barents-research-group--polar-certification-combine">3. Barents Research Group / Polar Certification Combine</a></li><li class="depth-2"><a href="#4-digital-peacekeeping-directorate--the-blue--the-blues" data-for="4-digital-peacekeeping-directorate--the-blue--the-blues">4. Digital Peacekeeping Directorate — “the Blue” / “the Blues”</a></li><li class="depth-2"><a href="#5-open-sky--blue-week-cells" data-for="5-open-sky--blue-week-cells">5. Open Sky / Blue Week Cells</a></li><li class="depth-2"><a href="#6-janus-kestrel--mining-logistics-consortium" data-for="6-janus-kestrel--mining-logistics-consortium">6. Janus-Kestrel / Mining-Logistics Consortium</a></li><li class="depth-2"><a href="#7-tundra-biosecurity--wildlife-control-program" data-for="7-tundra-biosecurity--wildlife-control-program">7. Tundra Biosecurity / Wildlife Control Program</a></li><li class="depth-1"><a href="#animal-control-hook" data-for="animal-control-hook">Animal-Control Hook</a></li><li class="depth-1"><a href="#victory-conditions" data-for="victory-conditions">Victory Conditions</a></li><li class="depth-1"><a href="#mvp-slice" data-for="mvp-slice">MVP Slice</a></li><li class="depth-1"><a href="#risks" data-for="risks">Risks</a></li><li class="depth-1"><a href="#decision-needed" data-for="decision-needed">Decision Needed</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../canon/world-rules/digital-net" class="internal">Digital-Net</a></li><li><a href="../design-bridges/arctic-first-campaign-region" class="internal">Arctic First Campaign Region</a></li><li><a href="../" class="internal">index</a></li><li><a href="../locations/greenland" class="internal">Greenland</a></li><li><a href="../mysteries/blue-week" class="internal">Blue Week</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript.js" type="module" data-persist="true"></script></html>

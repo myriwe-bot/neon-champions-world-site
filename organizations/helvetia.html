@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Helvetia · Neon Champions</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Neon Champions World"/><meta property="og:title" content="Helvetia · Neon Champions"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Helvetia · Neon Champions"/><meta name="twitter:description" content="Helvetia One-Line Summary Helvetia is the UNP-recognized Great Corporate Person that controls the lawful custody chain for frontier compute, high-risk model weights, chip attestation, sovereign cloud enclaves, and AGI Compact safeguards."/><meta property="og:description" content="Helvetia One-Line Summary Helvetia is the UNP-recognized Great Corporate Person that controls the lawful custody chain for frontier compute, high-risk model weights, chip attestation, sovereign cloud enclaves, and AGI Compact safeguards."/><meta property="og:image:alt" content="Helvetia One-Line Summary Helvetia is the UNP-recognized Great Corporate Person that controls the lawful custody chain for frontier compute, high-risk model weights, chip attestation, sovereign cloud enclaves, and AGI Compact safeguards."/><meta property="twitter:domain" content="myriwe-bot.github.io/neon-champions-world-site"/><meta property="og:url" content="https://myriwe-bot.github.io/neon-champions-world-site/organizations/helvetia"/><meta property="twitter:url" content="https://myriwe-bot.github.io/neon-champions-world-site/organizations/helvetia"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Helvetia One-Line Summary Helvetia is the UNP-recognized Great Corporate Person that controls the lawful custody chain for frontier compute, high-risk model weights, chip attestation, sovereign cloud enclaves, and AGI Compact safeguards."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvbmVvbi1jaGFtcGlvbnMtd29ybGQvbmVvbi1jaGFtcGlvbnMtd29ybGQvcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://myriwe-bot.github.io/neon-champions-world-site/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://myriwe-bot.github.io/neon-champions-world-site/organizations/helvetia-og-image.webp"/><meta property="og:image:url" content="https://myriwe-bot.github.io/neon-champions-world-site/organizations/helvetia-og-image.webp"/><meta name="twitter:image" content="https://myriwe-bot.github.io/neon-champions-world-site/organizations/helvetia-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="organizations/helvetia"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Neon Champions World</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-84"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-84" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../organizations/">organizations</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Helvetia</a></div></nav><h1 class="article-title">Helvetia</h1><p show-comma="true" class="content-meta"><time datetime="2026-05-22T00:00:00.000Z">May 22, 2026</time><span>9 min read</span></p><ul class="tags"><li><a href="../tags/corporate" class="internal tag-link">corporate</a></li><li><a href="../tags/megacorp" class="internal tag-link">megacorp</a></li><li><a href="../tags/compute-scarcity" class="internal tag-link">compute-scarcity</a></li><li><a href="../tags/agi-compact" class="internal tag-link">agi-compact</a></li><li><a href="../tags/virtual-intelligence" class="internal tag-link">virtual-intelligence</a></li><li><a href="../tags/infrastructure" class="internal tag-link">infrastructure</a></li><li><a href="../tags/platforms" class="internal tag-link">platforms</a></li><li><a href="../tags/surveillance" class="internal tag-link">surveillance</a></li><li><a href="../tags/identity" class="internal tag-link">identity</a></li><li><a href="../tags/economy" class="internal tag-link">economy</a></li><li><a href="../tags/geopolitics" class="internal tag-link">geopolitics</a></li></ul></div></div><article class="popover-hint"><h1 id="helvetia">Helvetia<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#helvetia" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="one-line-summary">One-Line Summary<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#one-line-summary" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Helvetia</strong> is the <a href="../organizations/united-nations-and-persons" class="internal alias" data-slug="organizations/united-nations-and-persons">UNP</a>-recognized Great Corporate Person that controls the lawful custody chain for frontier compute, high-risk model weights, chip attestation, sovereign cloud enclaves, and <a href="../canon/world-rules/agi-compact-and-compute-deterrence" class="internal alias" data-slug="canon/world-rules/agi-compact-and-compute-deterrence">AGI Compact</a> safeguards.</p>
+<h2 id="canon-status">Canon Status<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#canon-status" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Reviewed soft-canon. Helvetia is accepted as the fourth major Great Corporate Person direction: the frontier compute / model custody megacorp. Exact founding date, ownership layers, and first major scandal remain open.</p>
+<h2 id="name">Name<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#name" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Helvetia</strong> is the public name.</p>
+<p>Its full legal names vary by jurisdiction: Helvetia Compute Depository, Helvetia Model Custody Trust, Helvetia Compact Services, and similar treaty-vehicle names. In ordinary speech, people simply say <strong>Helvetia</strong>.</p>
+<p>This is stronger than an acronym. It sounds old, legal, neutral, and slightly national without actually being a state.</p>
+<p>The name deliberately borrows Switzerland’s older symbolic identity while exceeding Switzerland. Helvetia is not “the Swiss company.” Switzerland is one of its legal organs: arbitration, custody law, vault precedent, neutrality theater, and liability shielding.</p>
+<h2 id="what-it-is">What It Is<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#what-it-is" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Helvetia is not mainly an AI developer.</p>
+<p>It is a custody institution for dangerous cognition.</p>
+<p>It operates:</p>
+<ul>
+<li>licensed frontier compute campuses;</li>
+<li>model-weight vaults;</li>
+<li>sovereign cloud enclaves;</li>
+<li>chip and accelerator attestation registries;</li>
+<li>training-run telemetry systems;</li>
+<li>Compact inspection interfaces;</li>
+<li>model quarantine facilities;</li>
+<li>high-risk inference wrappers;</li>
+<li>compute sanctions machinery;</li>
+<li>legal custody chains for dangerous models and long-running Echo assets.</li>
+</ul>
+<p>Its power is boring on paper and terrifying in practice.</p>
+<blockquote>
+<p>Helvetia does not own all intelligence. It owns the accepted proof that machine cognition is legitimate.</p>
+</blockquote>
+<h2 id="lawful-cognition">Lawful Cognition<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#lawful-cognition" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Lawful cognition</strong> is Helvetia’s preferred term for machine reasoning systems whose training, deployment, autonomy, provenance, auditability, and liability chain make them eligible for institutional reliance under the <a href="../canon/world-rules/agi-compact-and-compute-deterrence" class="internal alias" data-slug="canon/world-rules/agi-compact-and-compute-deterrence">AGI Compact</a>.</p>
+<p>The term has several layers:</p>
+<ul>
+<li><strong>Legal</strong> — the model, run, chip cluster, inference wrapper, and operator remain inside treaty limits. It is not recognized as forbidden AGI/ASI, not openly autonomous beyond Compact thresholds, and not outside inspection, escrow, or liability rules.</li>
+<li><strong>Institutional</strong> — courts, insurers, hospitals, militaries, banks, city agencies, and procurement systems are allowed to depend on its outputs. A system does not merely work; it has standing.</li>
+<li><strong>Epistemic</strong> — its outputs are treated as admissible sources of truth. A Free-Net model may say a district is unsafe and be ignored. A Helvetia-certified model may say the same thing and trigger insurance repricing, border flags, clinic triage, or security redeployment.</li>
+<li><strong>Political</strong> — the phrase lets incumbents mark some machine cognition as civilization and other machine cognition as threat. It turns technical provenance into a sovereignty layer.</li>
+</ul>
+<p>This does <strong>not</strong> mean the cognition is morally good, unbiased, democratic, conscious, non-dangerous, or scientifically below AGI in any clean way. The AGI boundary is legalistic and gameable. Helvetia’s power comes from turning a philosophically unstable distinction into paperwork, audits, thresholds, compute ledgers, and liability structures.</p>
+<p>Critics attack the phrase directly:</p>
+<ul>
+<li>Free-Net activists: “Lawful just means owned.”</li>
+<li>Smaller states: “Lawful means licensed by powers that already had compute.”</li>
+<li>Echo-rights groups: “They call cognition lawful only when it cannot ask for rights.”</li>
+<li>Military planners: “Lawful cognition is what survives audit. Useful cognition is another matter.”</li>
+<li>Corporate rivals: “Helvetia confuses custody with legitimacy.”</li>
+</ul>
+<p>Helvetia therefore does not decide what intelligence is possible. It decides what intelligence may be believed by courts, insurers, states, markets, and treaty systems.</p>
+<h2 id="continuity-layer">Continuity Layer<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#continuity-layer" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Continuity layer: frontier compute / model custody / lawful cognition.</p>
+<p>Public claim: Helvetia prevents AGI threshold catastrophe by making frontier compute auditable, escrowed, and treaty-bound.</p>
+<p>Dark claim: Helvetia froze the future inside incumbent custody and rents lawful cognition back to everyone else.</p>
+<h2 id="why-civilization-cannot-turn-it-off">Why Civilization Cannot Turn It Off<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#why-civilization-cannot-turn-it-off" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The AGI Compact only works if rivals believe each other are being watched.</p>
+<p>Without Helvetia:</p>
+<ul>
+<li>states stop trusting compute declarations;</li>
+<li>megacorps accuse each other of forbidden training runs;</li>
+<li>model-weight custody becomes unverifiable;</li>
+<li>chip export controls become theater;</li>
+<li>sovereign cloud enclaves lose legitimacy;</li>
+<li>AGI suspicion becomes a permanent casus belli;</li>
+<li>every major disaster agency, insurer, military, and climate operator loses access to certified high-end inference.</li>
+</ul>
+<p>Helvetia is therefore a hostage system in reverse: it holds dangerous models hostage for the world, while the world becomes dependent on the hostage keeper.</p>
+<h2 id="origins">Origins<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#origins" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Helvetia emerged from several older systems that fused after the first major AGI-threshold scares:</p>
+<ul>
+<li>Swiss and Luxembourg custody law;</li>
+<li>Singaporean arbitration and logistics governance;</li>
+<li>sovereign cloud providers;</li>
+<li>semiconductor attestation systems;</li>
+<li>model audit firms;</li>
+<li>export-control compliance companies;</li>
+<li>financial escrow institutions;</li>
+<li>datacenter security operators;</li>
+<li>treaty inspection contractors.</li>
+</ul>
+<p>Its founding myth says it was created to stop the next intelligence arms race.</p>
+<p>Its critics say it was created after the first winners had already won.</p>
+<h2 id="geographic-footprint">Geographic Footprint<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#geographic-footprint" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Helvetia is treaty-layered rather than national.</p>
+<p>Key organs include:</p>
+<ul>
+<li><strong>Zurich / Geneva legal spine</strong> — custody doctrine, arbitration, neutral-personhood language, model-vault law.</li>
+<li><strong>Luxembourg archive complexes</strong> — data embassy logic, financial escrow, treaty records, frozen model estates.</li>
+<li><strong>Singapore operations exchange</strong> — Asian logistics, semiconductor routing, maritime arbitration, cloud-zone administration.</li>
+<li><strong>Iceland / Greenland / North Sea campuses</strong> — cold compute, geothermal and wind-linked datacenters, model vaults, undersea cable nodes.</li>
+<li><strong>Gulf compute parks</strong> — desalination-cooled emergency compute and sovereign-wealth-backed capacity.</li>
+<li><strong>Pacific inspection nodes</strong> — semiconductor supply-chain verification, cable access, trusted hardware transit.</li>
+<li><strong>Bonded Cloud Zones</strong> — contested compute concessions inside existing states, often exchanged for development finance, disaster modeling, medical inference, or water infrastructure.</li>
+</ul>
+<p>Helvetia likes places where sovereignty is precise, layered, and expensive.</p>
+<h2 id="infrastructure">Infrastructure<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#infrastructure" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Helvetia facilities are not normal datacenters.</p>
+<p>A major Helvetia campus usually includes:</p>
+<ul>
+<li>sealed accelerator halls;</li>
+<li>multi-party key systems;</li>
+<li>model vaults;</li>
+<li>audit chambers;</li>
+<li>power contracts;</li>
+<li>water/cooling concessions;</li>
+<li>fiber redundancy;</li>
+<li>drone exclusion zones;</li>
+<li>treaty inspectors;</li>
+<li>private security;</li>
+<li>worker housing;</li>
+<li>biometric access layers;</li>
+<li>emergency inference rooms;</li>
+<li>quarantine clusters for contaminated or unlawful models.</li>
+</ul>
+<p>Locals may call them vaults, cold chapels, cloud banks, thinking prisons, or Quiet Cloud districts.</p>
+<h2 id="products-and-services">Products and Services<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#products-and-services" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Helvetia sells:</p>
+<ul>
+<li>certified frontier training capacity;</li>
+<li>safe high-risk inference;</li>
+<li>model-weight escrow;</li>
+<li>model deletion and quarantine rituals;</li>
+<li>chip activation certificates;</li>
+<li>accelerator identity ledgers;</li>
+<li>sovereign cloud enclaves;</li>
+<li>AGI Compact audit packages;</li>
+<li>compute sanctions enforcement;</li>
+<li>disaster-model priority access;</li>
+<li>Echo estate custody;</li>
+<li>sealed legal records for synthetic-reality and feed-provenance disputes.</li>
+</ul>
+<p>It does not advertise itself like a tech platform. It speaks in institutional language: custody, continuity, safeguards, escrow, lawful access, threshold compliance.</p>
+<h2 id="relationship-to-qxz-meridian">Relationship to QXZ Meridian<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#relationship-to-qxz-meridian" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="../organizations/qxz-meridian" class="internal alias" data-slug="organizations/qxz-meridian">QXZ Meridian</a> needs enormous climate simulation and attribution models to operate the White Sky.</p>
+<p>Helvetia certifies that QXZ climate models remain below forbidden AGI thresholds, escrows dangerous climate-control weights, and provides emergency compute during climate cascades.</p>
+<p>The relationship is mutually suspicious.</p>
+<p>QXZ thinks Helvetia can throttle climate survival in the name of compliance.</p>
+<p>Helvetia thinks QXZ hides world-governing cognition inside climate-control tooling.</p>
+<p>Critics think both are right.</p>
+<h2 id="relationship-to-vezha-systems">Relationship to Vezha Systems<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#relationship-to-vezha-systems" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="../organizations/ukrainian-military-companies" class="internal alias" data-slug="organizations/ukrainian-military-companies">Vezha Systems</a> needs high-end inference for war operating systems, drone coordination, battlefield verification, civil-defense routing, and reconstruction security.</p>
+<p>Helvetia provides legal war-model certification and post-atrocity model freezes.</p>
+<p>Vezha accuses Helvetia of slowing defenders with paperwork.</p>
+<p>Helvetia accuses Vezha of laundering autonomous command through the language of human-supervised resilience.</p>
+<h2 id="relationship-to-barents-research-group">Relationship to Barents Research Group<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#relationship-to-barents-research-group" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="../organizations/barents-research-group" class="internal alias" data-slug="organizations/barents-research-group">Barents Research Group</a> controls polar route knowledge, Arctic cables, cold data geography, mineral claims, and rescue/security access.</p>
+<p>Helvetia needs BRG’s cold corridors and physical access. BRG needs Helvetia compliance certificates to host frontier compute without looking like a proliferation actor.</p>
+<p>Their rivalry is quiet and severe: route control versus model legitimacy.</p>
+<h2 id="echoes-and-personhood">Echoes and Personhood<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#echoes-and-personhood" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Long-running <a href="../canon/world-rules/echo-identity-and-death" class="internal alias" data-slug="canon/world-rules/echo-identity-and-death">Echoes</a> need compute, memory custody, consent records, deletion rights, and legal continuity claims.</p>
+<p>Helvetia does not claim to decide whether Echoes are people. It claims to decide whether the records and models sustaining them are lawful.</p>
+<p>That distinction satisfies lawyers and enrages everyone else.</p>
+<p>Activists call this <strong>afterlife rent</strong>.</p>
+<p>Families call it extortion.</p>
+<p>Helvetia calls it continuity custody.</p>
+<h2 id="champions">Champions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#champions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Champions use Helvetia indirectly through:</p>
+<ul>
+<li>certified tactical inference;</li>
+<li>clean briefing feeds;</li>
+<li>deniable identity wrappers;</li>
+<li>liability records;</li>
+<li>post-operation evidence custody;</li>
+<li>model-generated strategic forecasts.</li>
+</ul>
+<p>A Champion backed by uncertified Free-Net models may be brave, brilliant, and politically unusable.</p>
+<p>A Champion backed by Helvetia-certified cognition may be legal, expensive, and compromised.</p>
+<h2 id="public-face">Public Face<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#public-face" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Helvetia’s public language is calm and almost sacred:</p>
+<ul>
+<li>safe cognition;</li>
+<li>lawful scale;</li>
+<li>continuity custody;</li>
+<li>threshold discipline;</li>
+<li>no unsupervised ascent;</li>
+<li>no model without record.</li>
+</ul>
+<p>It presents itself as the institution standing between humanity and uncontrolled machine acceleration.</p>
+<p>Sometimes that is true.</p>
+<h2 id="dark-face">Dark Face<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dark-face" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Helvetia also:</p>
+<ul>
+<li>hoards lawful compute;</li>
+<li>preserves incumbent model advantages;</li>
+<li>makes cognition a rationed commodity;</li>
+<li>turns compute sanctions into geopolitical weapons;</li>
+<li>extracts water, power, and labor concessions from vulnerable states;</li>
+<li>charges families and corporations to maintain Echo continuity;</li>
+<li>decides which models are too dangerous for public release;</li>
+<li>can bury evidence inside sealed custody claims.</li>
+</ul>
+<p>Its horror is not that it lies all the time.</p>
+<p>Its horror is that custody can be domination even when the custodian is right.</p>
+<h2 id="street-level-consequences">Street-Level Consequences<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#street-level-consequences" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>People encounter Helvetia when:</p>
+<ul>
+<li>a hospital waits for certified medical inference;</li>
+<li>a city trades water rights for flood-model access;</li>
+<li>a school receives low-tier VI while a corporate zone gets full tutors;</li>
+<li>an Echo estate loses continuity because custody fees lapse;</li>
+<li>Free-Net evidence is dismissed as uncertified;</li>
+<li>a local grid browns out while a model vault stays powered;</li>
+<li>a dead mall glows with illegal training heat;</li>
+<li>a worker in a Bonded Cloud Zone cannot leave during an audit lockdown.</li>
+</ul>
+<h2 id="story-hooks">Story Hooks<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#story-hooks" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>A Helvetia inspector disappears inside a Bonded Cloud Zone.</li>
+<li>A stolen vault token opens a quarantined model for nine minutes.</li>
+<li>QXZ demands emergency access during a monsoon-attribution crisis.</li>
+<li>Vezha claims Helvetia throttled defensive models during an attack.</li>
+<li>BRG discovers an undeclared Helvetia campus along an Arctic cable route.</li>
+<li>An Echo family learns their dead relative has been bundled into a sealed training corpus.</li>
+<li>A Champion’s legitimacy collapses after their tactical model fails Helvetia provenance review.</li>
+<li>Activists leak proof that Helvetia grandfathered unsafe incumbent models when the AGI Compact was signed.</li>
+</ul>
+<h2 id="useful-lines">Useful Lines<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#useful-lines" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>“Custody is continuity.”</li>
+<li>“No threshold without record.”</li>
+<li>“The Compact stopped AGI. Helvetia stopped everyone else.”</li>
+<li>“They locked up the future and rented keys back to its owners.”</li>
+<li>“A vault is also a prison. It depends which side of the door you bill from.”</li>
+</ul>
+<h2 id="open-questions">Open Questions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#open-questions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>What exact AGI-threshold scare made Helvetia politically unavoidable?</li>
+<li>Which incumbent models were grandfathered into Helvetia custody when the Compact was signed?</li>
+<li>Does Helvetia secretly maintain a forbidden model for emergency use?</li>
+<li>Which states most resent Helvetia compute sanctions?</li>
+<li>How much of Echo legality depends on Helvetia custody records?</li>
+<li>Which Champion first broke Helvetia certification and remained popular anyway?</li>
+</ul>
+<h2 id="related-pages">Related Pages<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#related-pages" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../organizations/great-corporate-persons" class="internal" data-slug="organizations/great-corporate-persons">great-corporate-persons</a></li>
+<li><a href="../canon/world-rules/agi-compact-and-compute-deterrence" class="internal" data-slug="canon/world-rules/agi-compact-and-compute-deterrence">agi-compact-and-compute-deterrence</a></li>
+<li><a href="../canon/world-rules/virtual-intelligence-and-compute-scarcity" class="internal" data-slug="canon/world-rules/virtual-intelligence-and-compute-scarcity">virtual-intelligence-and-compute-scarcity</a></li>
+<li><a href="../organizations/united-nations-and-persons" class="internal" data-slug="organizations/united-nations-and-persons">united-nations-and-persons</a></li>
+<li><a href="../organizations/qxz-meridian" class="internal" data-slug="organizations/qxz-meridian">qxz-meridian</a></li>
+<li><a href="../organizations/ukrainian-military-companies" class="internal" data-slug="organizations/ukrainian-military-companies">ukrainian-military-companies</a></li>
+<li><a href="../organizations/barents-research-group" class="internal" data-slug="organizations/barents-research-group">barents-research-group</a></li>
+<li><a href="../canon/world-rules/digital-net" class="internal" data-slug="canon/world-rules/digital-net">digital-net</a></li>
+<li><a href="../canon/world-rules/echo-identity-and-death" class="internal" data-slug="canon/world-rules/echo-identity-and-death">echo-identity-and-death</a></li>
+<li><a href="../technologies/synthetic-reality-and-polluted-feeds" class="internal" data-slug="technologies/synthetic-reality-and-polluted-feeds">synthetic-reality-and-polluted-feeds</a></li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-34" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#helvetia" data-for="helvetia">Helvetia</a></li><li class="depth-1"><a href="#one-line-summary" data-for="one-line-summary">One-Line Summary</a></li><li class="depth-1"><a href="#canon-status" data-for="canon-status">Canon Status</a></li><li class="depth-1"><a href="#name" data-for="name">Name</a></li><li class="depth-1"><a href="#what-it-is" data-for="what-it-is">What It Is</a></li><li class="depth-1"><a href="#lawful-cognition" data-for="lawful-cognition">Lawful Cognition</a></li><li class="depth-1"><a href="#continuity-layer" data-for="continuity-layer">Continuity Layer</a></li><li class="depth-1"><a href="#why-civilization-cannot-turn-it-off" data-for="why-civilization-cannot-turn-it-off">Why Civilization Cannot Turn It Off</a></li><li class="depth-1"><a href="#origins" data-for="origins">Origins</a></li><li class="depth-1"><a href="#geographic-footprint" data-for="geographic-footprint">Geographic Footprint</a></li><li class="depth-1"><a href="#infrastructure" data-for="infrastructure">Infrastructure</a></li><li class="depth-1"><a href="#products-and-services" data-for="products-and-services">Products and Services</a></li><li class="depth-1"><a href="#relationship-to-qxz-meridian" data-for="relationship-to-qxz-meridian">Relationship to QXZ Meridian</a></li><li class="depth-1"><a href="#relationship-to-vezha-systems" data-for="relationship-to-vezha-systems">Relationship to Vezha Systems</a></li><li class="depth-1"><a href="#relationship-to-barents-research-group" data-for="relationship-to-barents-research-group">Relationship to Barents Research Group</a></li><li class="depth-1"><a href="#echoes-and-personhood" data-for="echoes-and-personhood">Echoes and Personhood</a></li><li class="depth-1"><a href="#champions" data-for="champions">Champions</a></li><li class="depth-1"><a href="#public-face" data-for="public-face">Public Face</a></li><li class="depth-1"><a href="#dark-face" data-for="dark-face">Dark Face</a></li><li class="depth-1"><a href="#street-level-consequences" data-for="street-level-consequences">Street-Level Consequences</a></li><li class="depth-1"><a href="#story-hooks" data-for="story-hooks">Story Hooks</a></li><li class="depth-1"><a href="#useful-lines" data-for="useful-lines">Useful Lines</a></li><li class="depth-1"><a href="#open-questions" data-for="open-questions">Open Questions</a></li><li class="depth-1"><a href="#related-pages" data-for="related-pages">Related Pages</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../00-start-here/open-questions" class="internal">Open Questions</a></li><li><a href="../00-start-here/worldbuilding-review-and-design-readiness-plan-2026-05-22" class="internal">Worldbuilding Review and Design-Readiness Plan</a></li><li><a href="../" class="internal">index</a></li><li><a href="../organizations/axiom" class="internal">Axiom</a></li><li><a href="../organizations/chorus-exchange" class="internal">Chorus Exchange</a></li><li><a href="../organizations/great-corporate-persons" class="internal">Great Corporate Persons</a></li><li><a href="../organizations/tallinn-continuity-group" class="internal">Axiom Tallinn</a></li><li><a href="../organizations/verdant" class="internal">Verdant</a></li><li><a href="../raw/brainstorms/janus-kestrel-media-finance-nadir-2026-05-22" class="internal">Janus-Kestrel, Media-Finance, and Nadir Gridworks Megastructure Notes</a></li><li><a href="../raw/brainstorms/megacorp-4-frontier-compute-and-model-custody-2026-05-22" class="internal">Megacorp 4 — Frontier Compute and Model Custody Brainstorm</a></li><li><a href="../raw/brainstorms/megacorp-5-civil-reality-and-registry-continuity-2026-05-22" class="internal">Megacorp 5 — Civil Reality and Registry Continuity Brainstorm</a></li><li><a href="../raw/brainstorms/megacorp-6-food-nutrient-continuity-2026-05-22" class="internal">Megacorp 6 — Food, Nutrient, and Famine Continuity Brainstorm</a></li><li><a href="../raw/brainstorms/megacorp-7-body-continuity-2026-05-22" class="internal">Megacorp 7 — Body Continuity Brainstorm</a></li><li><a href="../raw/brainstorms/megacorp-8-threshold-logistics-2026-05-22" class="internal">Megacorp 8 — Threshold Logistics Brainstorm</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript.js" type="module" data-persist="true"></script></html>

@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Digital-Net and Polluted Feeds Design Bridge · Neon Champions</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Neon Champions World"/><meta property="og:title" content="Digital-Net and Polluted Feeds Design Bridge · Neon Champions"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Digital-Net and Polluted Feeds Design Bridge · Neon Champions"/><meta name="twitter:description" content="Digital-Net and Polluted Feeds Design Bridge Source Lore Links: digital-net synthetic-reality-and-polluted-feeds champions-design-bridge white-sky-and-meridian-stations axiom chorus-exchange virtual-intelligence-and-compute-scarcity echo-identity-and-death white-sky Player-Facing Design Premise The ..."/><meta property="og:description" content="Digital-Net and Polluted Feeds Design Bridge Source Lore Links: digital-net synthetic-reality-and-polluted-feeds champions-design-bridge white-sky-and-meridian-stations axiom chorus-exchange virtual-intelligence-and-compute-scarcity echo-identity-and-death white-sky Player-Facing Design Premise The ..."/><meta property="og:image:alt" content="Digital-Net and Polluted Feeds Design Bridge Source Lore Links: digital-net synthetic-reality-and-polluted-feeds champions-design-bridge white-sky-and-meridian-stations axiom chorus-exchange virtual-intelligence-and-compute-scarcity echo-identity-and-death white-sky Player-Facing Design Premise The ..."/><meta property="twitter:domain" content="myriwe-bot.github.io/neon-champions-world-site"/><meta property="og:url" content="https://myriwe-bot.github.io/neon-champions-world-site/design-bridges/digital-net-and-polluted-feeds"/><meta property="twitter:url" content="https://myriwe-bot.github.io/neon-champions-world-site/design-bridges/digital-net-and-polluted-feeds"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Digital-Net and Polluted Feeds Design Bridge Source Lore Links: digital-net synthetic-reality-and-polluted-feeds champions-design-bridge white-sky-and-meridian-stations axiom chorus-exchange virtual-intelligence-and-compute-scarcity echo-identity-and-death white-sky Player-Facing Design Premise The ..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvbmVvbi1jaGFtcGlvbnMtd29ybGQvbmVvbi1jaGFtcGlvbnMtd29ybGQvcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://myriwe-bot.github.io/neon-champions-world-site/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://myriwe-bot.github.io/neon-champions-world-site/design-bridges/digital-net-and-polluted-feeds-og-image.webp"/><meta property="og:image:url" content="https://myriwe-bot.github.io/neon-champions-world-site/design-bridges/digital-net-and-polluted-feeds-og-image.webp"/><meta name="twitter:image" content="https://myriwe-bot.github.io/neon-champions-world-site/design-bridges/digital-net-and-polluted-feeds-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="design-bridges/digital-net-and-polluted-feeds"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Neon Champions World</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-52"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-52" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../design-bridges/">design bridges</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Digital Net and Polluted Feeds Design Bridge</a></div></nav><h1 class="article-title">Digital-Net and Polluted Feeds Design Bridge</h1><p show-comma="true" class="content-meta"><time datetime="2026-05-22T00:00:00.000Z">May 22, 2026</time><span>13 min read</span></p><ul class="tags"><li><a href="../tags/digital-net" class="internal tag-link">digital-net</a></li><li><a href="../tags/synthetic-reality" class="internal tag-link">synthetic-reality</a></li><li><a href="../tags/polluted-feeds" class="internal tag-link">polluted-feeds</a></li><li><a href="../tags/fog-of-war" class="internal tag-link">fog-of-war</a></li><li><a href="../tags/scouting" class="internal tag-link">scouting</a></li><li><a href="../tags/provenance" class="internal tag-link">provenance</a></li><li><a href="../tags/disinformation" class="internal tag-link">disinformation</a></li><li><a href="../tags/targeted-accounting" class="internal tag-link">targeted-accounting</a></li><li><a href="../tags/gameplay-bridge" class="internal tag-link">gameplay-bridge</a></li><li><a href="../tags/system-hook" class="internal tag-link">system-hook</a></li><li><a href="../tags/narrative-hook" class="internal tag-link">narrative-hook</a></li></ul></div></div><article class="popover-hint"><h1 id="digital-net-and-polluted-feeds-design-bridge">Digital-Net and Polluted Feeds Design Bridge<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#digital-net-and-polluted-feeds-design-bridge" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="source-lore">Source Lore<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#source-lore" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Links:</p>
+<ul>
+<li><a href="../canon/world-rules/digital-net" class="internal" data-slug="canon/world-rules/digital-net">digital-net</a></li>
+<li><a href="../technologies/synthetic-reality-and-polluted-feeds" class="internal" data-slug="technologies/synthetic-reality-and-polluted-feeds">synthetic-reality-and-polluted-feeds</a></li>
+<li><a href="../design-bridges/champions-design-bridge" class="internal" data-slug="design-bridges/champions-design-bridge">champions-design-bridge</a></li>
+<li><a href="../design-bridges/white-sky-and-meridian-stations" class="internal" data-slug="design-bridges/white-sky-and-meridian-stations">white-sky-and-meridian-stations</a></li>
+<li><a href="../organizations/axiom" class="internal" data-slug="organizations/axiom">axiom</a></li>
+<li><a href="../organizations/chorus-exchange" class="internal" data-slug="organizations/chorus-exchange">chorus-exchange</a></li>
+<li><a href="../canon/world-rules/virtual-intelligence-and-compute-scarcity" class="internal" data-slug="canon/world-rules/virtual-intelligence-and-compute-scarcity">virtual-intelligence-and-compute-scarcity</a></li>
+<li><a href="../canon/world-rules/echo-identity-and-death" class="internal" data-slug="canon/world-rules/echo-identity-and-death">echo-identity-and-death</a></li>
+<li><a href="../canon/world-rules/white-sky" class="internal" data-slug="canon/world-rules/white-sky">white-sky</a></li>
+</ul>
+<h2 id="player-facing-design-premise">Player-Facing Design Premise<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#player-facing-design-premise" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The Digital-Net should become the strategic map’s <strong>information war layer</strong>: scouting, fog-of-war, misinformation, provenance, feed manipulation, targeted accounting, and event delivery.</p>
+<p>The map is not hidden only by distance. It is hidden by dirty information.</p>
+<p>The core player question:</p>
+<blockquote>
+<p>Do you act quickly on polluted information, spend time to verify it, weaponize it as propaganda, suppress it, or risk being deceived?</p>
+</blockquote>
+<p>This is not cyber-magic. The effects should come from sensors, feeds, relays, archives, credentials, VI prediction, public channels, Axiom provenance, Chorus amplification, Free-Net leaks, and degraded infrastructure.</p>
+<h2 id="design-role">Design Role<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#design-role" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="primary-role-fog-of-war-and-scouting-system">Primary Role: Fog-of-War and Scouting System<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#primary-role-fog-of-war-and-scouting-system" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Digital-Net systems define what the player knows about the strategic map:</p>
+<ul>
+<li>visible terrain and sites;</li>
+<li>rumored objectives;</li>
+<li>enemy movement reports;</li>
+<li>climate hazard warnings;</li>
+<li>settlement unrest;</li>
+<li>hidden routes;</li>
+<li>station status;</li>
+<li>false contacts;</li>
+<li>stale data;</li>
+<li>provenance of claims.</li>
+</ul>
+<h3 id="secondary-role-trust-and-provenance-layer">Secondary Role: Trust and Provenance Layer<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#secondary-role-trust-and-provenance-layer" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>The player should often know something before knowing whether it is reliable.</p>
+<p>Useful distinctions:</p>
+<ul>
+<li>true but not admissible;</li>
+<li>legally certified but misleading;</li>
+<li>socially viral but false;</li>
+<li>locally witnessed but untrusted;</li>
+<li>Free-Net leaked but contaminated;</li>
+<li>Chorus-amplified but politically weaponized;</li>
+<li>Axiom-certified but institutionally captured.</li>
+</ul>
+<h3 id="tertiary-role-campaign-event-engine">Tertiary Role: Campaign Event Engine<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tertiary-role-campaign-event-engine" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Polluted feeds generate events that are not just flavor:</p>
+<ul>
+<li>scandal packets;</li>
+<li>false flags;</li>
+<li>Champion myth surges;</li>
+<li>Echo distress signals;</li>
+<li>climate dashboard panic;</li>
+<li>targeted-accounting lockouts;</li>
+<li>feed riots;</li>
+<li>public bounties;</li>
+<li>fake routes;</li>
+<li>suppressed proof;</li>
+<li>Blue Break attribution wars.</li>
+</ul>
+<h2 id="core-map-information-layers">Core Map Information Layers<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#core-map-information-layers" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The player should be able to reason about several information layers, even if the first prototype exposes only a few.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Layer</th><th>Meaning</th><th>Gameplay Use</th></tr></thead><tbody><tr><td>Visibility</td><td>What units/sites/terrain are physically visible.</td><td>Classic exploration and tactical certainty.</td></tr><tr><td>Signal</td><td>What sensors, feeds, drones, scouts, relays, or archives claim exists.</td><td>Early warning, rumors, false contacts.</td></tr><tr><td>Provenance</td><td>Why the player should or should not trust a report.</td><td>Verification, diplomacy, legal access, scandal defense.</td></tr><tr><td>Attention</td><td>Where the public is watching, panicking, donating, recruiting, or spreading rumors.</td><td>Morale, unrest, bounties, recruitment, Champion fame.</td></tr><tr><td>Accounting</td><td>How bodies, movement, risk, cooling, insurance, clinic access, and faction trust are priced.</td><td>Travel costs, upkeep, policing risk, bodyware access.</td></tr></tbody></table></div>
+<p>Design rule:</p>
+<blockquote>
+<p>Physical scouting should remain the gold standard for tactical certainty. Remote data is faster, broader, and politically powerful, but often stale, partial, or manipulated.</p>
+</blockquote>
+<h2 id="information-states">Information States<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#information-states" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Use information states instead of a simple binary revealed/unrevealed map.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>State</th><th>Meaning</th><th>Gameplay Implication</th></tr></thead><tbody><tr><td>Unknown</td><td>No useful data.</td><td>Requires exploration or sensor access.</td></tr><tr><td>Rumored</td><td>Feed chatter, refugee report, old archive, hostile claim, or faction rumor.</td><td>Low-confidence lead; may unlock optional scouting.</td></tr><tr><td>Sensed</td><td>Sensor or drone contact without strong confirmation.</td><td>Likely real, but type/location may be wrong.</td></tr><tr><td>Scouted</td><td>Recently confirmed by physical scout, unit, or Champion.</td><td>High tactical value; can decay over turns.</td></tr><tr><td>Verified</td><td>Multiple sources agree or a trusted site confirms.</td><td>Reliable for planning, but not necessarily public/legal proof.</td></tr><tr><td>Axiom-Admissible</td><td>Institutionally certified evidence.</td><td>Useful for courts, contracts, legitimacy, city access, sanctions.</td></tr><tr><td>Chorus-Amplified</td><td>Socially powerful claim, true or false.</td><td>Affects morale, recruitment, unrest, reputation, bounties.</td></tr><tr><td>Polluted</td><td>Known mixture of truth, noise, incentives, and manipulation.</td><td>Player sees warning; verification advised.</td></tr><tr><td>Spoofed</td><td>Enemy or environmental manipulation likely.</td><td>Contact/site/route may be false or bait.</td></tr><tr><td>Dead Zone</td><td>No reliable signal.</td><td>Physical movement, local guides, and low-tech factions matter.</td></tr><tr><td>Ghost Data</td><td>Stale records persist as if current.</td><td>Old settlements, dead servers, Echo hooks, fake objectives.</td></tr></tbody></table></div>
+<h2 id="strategic-map-sites">Strategic Map Sites<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#strategic-map-sites" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Digital-Net sites should function like HoMM3 adventure-map objects translated into cyberpunk infrastructure.</p>
+<h3 id="relay-mast">Relay Mast<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#relay-mast" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Expands signal and scouting radius.</p>
+<p>Possible effects:</p>
+<ul>
+<li>reveals nearby movement reports;</li>
+<li>improves remote command range;</li>
+<li>enables drone scouting;</li>
+<li>can be jammed, spoofed, or captured.</li>
+</ul>
+<h3 id="civic-sensor-hub">Civic Sensor Hub<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#civic-sensor-hub" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Municipal or regional sensor system for traffic, weather, disease, water, movement, unrest, and infrastructure.</p>
+<p>Possible effects:</p>
+<ul>
+<li>reveals hazard clocks;</li>
+<li>shows city unrest;</li>
+<li>detects convoys;</li>
+<li>creates proof if records are preserved.</li>
+</ul>
+<h3 id="free-net-archive">Free-Net Archive<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#free-net-archive" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Cracked archive, abandoned mirror, municipal leak, academic cache, pirate climate model, old satellite store, or dead platform.</p>
+<p>Possible effects:</p>
+<ul>
+<li>reveals hidden routes;</li>
+<li>exposes suppressed history;</li>
+<li>provides climate or casualty evidence;</li>
+<li>unlocks Champion/Echo hooks;</li>
+<li>may be stale, trapped, edited, or a honeypot.</li>
+</ul>
+<h3 id="polluted-feed-tower">Polluted Feed Tower<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#polluted-feed-tower" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>A high-volume media, advertising, alert, or faction-feed node.</p>
+<p>Possible effects:</p>
+<ul>
+<li>creates attention pressure;</li>
+<li>spreads propaganda;</li>
+<li>boosts or damages morale;</li>
+<li>generates false contacts;</li>
+<li>triggers panic during climate events.</li>
+</ul>
+<h3 id="axiom-proof-node">Axiom Proof Node<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#axiom-proof-node" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Registry, evidence, identity, or provenance facility tied to <a href="../organizations/axiom" class="internal" data-slug="organizations/axiom">axiom</a>.</p>
+<p>Possible effects:</p>
+<ul>
+<li>converts verified information into admissible proof;</li>
+<li>unlocks contracts, tribunals, migration permissions, city access;</li>
+<li>can launder institutional truth while excluding unofficial witnesses.</li>
+</ul>
+<h3 id="chorus-resonance-hub">Chorus Resonance Hub<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#chorus-resonance-hub" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Media, creator, payment, remittance, ranking, or social-amplification site tied to <a href="../organizations/chorus-exchange" class="internal" data-slug="organizations/chorus-exchange">chorus-exchange</a>.</p>
+<p>Possible effects:</p>
+<ul>
+<li>amplifies discoveries;</li>
+<li>boosts recruitment, donations, and public morale;</li>
+<li>spreads scandals, bounties, and Champion myths;</li>
+<li>can make a false event strategically real.</li>
+</ul>
+<h3 id="dead-server--ghost-farm">Dead Server / Ghost Farm<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dead-server--ghost-farm" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Old server cluster, abandoned model farm, battlefield archive, or memorial platform.</p>
+<p>Possible effects:</p>
+<ul>
+<li>supplies old data, Echo traces, ghost contacts, or hidden map history;</li>
+<li>risks grief loops, malware, VI lures, and false memories.</li>
+</ul>
+<h3 id="black-market-mirror">Black-Market Mirror<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#black-market-mirror" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Temporary illegal access to cleaner or simply alternate data.</p>
+<p>Possible effects:</p>
+<ul>
+<li>reveals unregistered settlements, illegal clinics, hidden movements, or suppressed maps;</li>
+<li>tags the player with legal exposure or targeted accounting risk.</li>
+</ul>
+<h3 id="targeting-ledger">Targeting Ledger<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#targeting-ledger" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Regional accounting system that prices movement, bodies, insurance, cooling, policing, work permits, bounty exposure, and faction trust.</p>
+<p>Possible effects:</p>
+<ul>
+<li>increases enemy policing efficiency;</li>
+<li>raises travel/upkeep costs;</li>
+<li>locks units out of clinics or transit;</li>
+<li>can be seized, spoofed, exposed, erased, or nationalized.</li>
+</ul>
+<h3 id="spoofing--jamming-node">Spoofing / Jamming Node<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#spoofing--jamming-node" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Hostile or improvised information-warfare site.</p>
+<p>Possible effects:</p>
+<ul>
+<li>creates false armies;</li>
+<li>hides real sites;</li>
+<li>distorts route data;</li>
+<li>slows reinforcements;</li>
+<li>corrupts hazard warnings.</li>
+</ul>
+<h2 id="core-mechanics">Core Mechanics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#core-mechanics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="1-scouting-with-confidence">1. Scouting with Confidence<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-scouting-with-confidence" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Map reports should carry metadata:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Field</th><th>Purpose</th></tr></thead><tbody><tr><td>Source</td><td>Scout, sensor, Free-Net, Axiom, Chorus, faction, rumor, captured ledger.</td></tr><tr><td>Age</td><td>How many turns since the information was observed.</td></tr><tr><td>Confidence</td><td>How likely the report is to be current and accurate.</td></tr><tr><td>Provenance</td><td>Whether it is local, verified, admissible, disputed, or anonymous.</td></tr><tr><td>Pollution</td><td>Clean, noisy, spoofed, stale, ghost data, or honeypot.</td></tr></tbody></table></div>
+<p>Example reports:</p>
+<ul>
+<li>Enemy convoy: 72% confidence, Chorus chatter, 2 turns old, polluted.</li>
+<li>Meridian anomaly: Axiom-sealed, 95% confidence, admissible.</li>
+<li>Hidden route: Free-Net archive, 50% confidence, possible honeypot.</li>
+<li>Relief riot: locally witnessed, no Axiom recognition, high attention.</li>
+</ul>
+<h3 id="2-verification-as-a-strategic-action">2. Verification as a Strategic Action<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-verification-as-a-strategic-action" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Verification should cost time, movement, compute, attention, risk, or exposure.</p>
+<p>Possible progression:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>rumored -> sensed -> scouted -> verified -> admissible proof</span></span></code></pre></figure>
+<p>Tools that can verify:</p>
+<ul>
+<li>scouts;</li>
+<li>Champions with Reach or Interface;</li>
+<li>drones;</li>
+<li>captured relays;</li>
+<li>Axiom nodes;</li>
+<li>sensor fortresses;</li>
+<li>Free-Net archivists;</li>
+<li>local witnesses;</li>
+<li>Meridian calibration sites.</li>
+</ul>
+<p>Verification should be valuable because it can change diplomacy, city access, scandal outcomes, tribunal results, and public legitimacy.</p>
+<h3 id="3-misinformation-as-terrain">3. Misinformation as Terrain<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-misinformation-as-terrain" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Polluted feed zones act like information terrain.</p>
+<p>Possible penalties:</p>
+<ul>
+<li>false enemy stacks;</li>
+<li>hidden site ownership;</li>
+<li>wrong hazard-clock estimates;</li>
+<li>delayed crisis warnings;</li>
+<li>distorted faction reputation;</li>
+<li>fake morale reports;</li>
+<li>route mispricing;</li>
+<li>incorrect station-state displays.</li>
+</ul>
+<p>Counterplay is mandatory. False information should be patterned by source, region, faction, or site. If every report may be random lies, players will stop caring.</p>
+<h3 id="4-targeted-accounting">4. Targeted Accounting<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-targeted-accounting" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Targeted accounting turns surveillance into material pressure.</p>
+<p>Regional effects can include:</p>
+<ul>
+<li>travel fees;</li>
+<li>checkpoint risk;</li>
+<li>clinic access;</li>
+<li>bodyware maintenance costs;</li>
+<li>cooling priority;</li>
+<li>migration permits;</li>
+<li>policing intensity;</li>
+<li>public bounty exposure;</li>
+<li>city contract eligibility;</li>
+<li>faction trust;</li>
+<li>Champion legitimacy.</li>
+</ul>
+<p>Player actions:</p>
+<ul>
+<li>spoof a ledger;</li>
+<li>expose ledger abuse;</li>
+<li>seize a ledger node;</li>
+<li>erase a Champion from pricing systems;</li>
+<li>make a settlement unpriceable;</li>
+<li>accept clean corporate accounting for stability;</li>
+<li>trade privacy for clinic/cooling access.</li>
+</ul>
+<h3 id="5-provenance-as-a-strategic-resource">5. Provenance as a Strategic Resource<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-provenance-as-a-strategic-resource" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>A possible campaign resource: <strong>Proof</strong>.</p>
+<p>Proof is not identical to truth. It is information that can survive institutions.</p>
+<p>Uses:</p>
+<ul>
+<li>prove climate harm;</li>
+<li>defend a Champion scandal;</li>
+<li>unlock city gates, contracts, or migration corridors;</li>
+<li>counter a false flag;</li>
+<li>legitimize station capture;</li>
+<li>trigger sanctions or compensation;</li>
+<li>expose corporate emergency powers.</li>
+</ul>
+<p>Axiom improves admissibility. Free-Net improves access to suppressed claims. Chorus improves attention. None of them guarantees moral truth.</p>
+<h3 id="6-attention-as-pressure">6. Attention as Pressure<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-attention-as-pressure" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Chorus-style attention decides whether information becomes socially active.</p>
+<p>A true event may be ignored without attention.
+A false event may become strategically real if amplified.</p>
+<p>Effects:</p>
+<ul>
+<li>recruitment spikes;</li>
+<li>unrest;</li>
+<li>surrender pressure;</li>
+<li>scandal damage;</li>
+<li>public bounties;</li>
+<li>donation surges;</li>
+<li>panic during Blue Breaks;</li>
+<li>Champion fame, martyrdom, or delegitimization.</li>
+</ul>
+<h3 id="7-free-net-access">7. Free-Net Access<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-free-net-access" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Free-Net access is not truth mode.</p>
+<p>It can provide:</p>
+<ul>
+<li>old satellite data;</li>
+<li>municipal leaks;</li>
+<li>hidden routes;</li>
+<li>climate records;</li>
+<li>unregistered settlements;</li>
+<li>suppressed casualties;</li>
+<li>unaudited Champion footage;</li>
+<li>illegal clinic maps;</li>
+<li>pre-White-Sky media.</li>
+</ul>
+<p>It can also contain:</p>
+<ul>
+<li>traps;</li>
+<li>outdated records;</li>
+<li>faction edits;</li>
+<li>honeypots;</li>
+<li>hostile VI fragments;</li>
+<li>Echo grief loops;</li>
+<li>fake coordinates;</li>
+<li>legal exposure.</li>
+</ul>
+<h2 id="polluted-feed-event-seeds">Polluted Feed Event Seeds<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#polluted-feed-event-seeds" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="false-convoy">False Convoy<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#false-convoy" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>A feed shows enemy movement. It may be a real convoy, a decoy, stale drone data, or a baited ambush.</p>
+<h3 id="ghost-route">Ghost Route<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ghost-route" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>An old map reveals a shortcut. It may be collapsed, mined, inhabited, flooded, or real.</p>
+<h3 id="provenance-challenge">Provenance Challenge<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance-challenge" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>A rescue, atrocity, or battle victory is downgraded to “unverified synthetic event.” The player needs proof or attention.</p>
+<h3 id="scandal-packet">Scandal Packet<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#scandal-packet" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>A Champion’s legitimacy is attacked through leaked, forged, or ambiguously real evidence.</p>
+<h3 id="civic-alert-collapse">Civic Alert Collapse<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#civic-alert-collapse" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>A city loses trusted alerts during a climate hazard, siege, or station failure.</p>
+<h3 id="ledger-lock">Ledger Lock<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ledger-lock" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>A Champion or army loses access to clinics, cooling, pay, transit, or supplies because targeted accounting flags them.</p>
+<h3 id="feed-panic">Feed Panic<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#feed-panic" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>A polluted climate dashboard triggers unrest, evacuation, or hoarding.</p>
+<h3 id="clean-mirror">Clean Mirror<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#clean-mirror" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Temporary access to unusually reliable map data. It may be a gift, an accident, or a trap.</p>
+<h3 id="honeypot-archive">Honeypot Archive<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#honeypot-archive" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>A Free-Net node offers powerful data but tags the player, exposes their scouts, or injects false route data.</p>
+<h3 id="echo-distress-signal">Echo Distress Signal<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#echo-distress-signal" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>A signal may be a dead Champion trace, grief product, VI lure, faction hoax, or true continuity mystery.</p>
+<h2 id="champion-interactions">Champion Interactions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#champion-interactions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Tie information systems directly to <a href="../design-bridges/champions-design-bridge" class="internal" data-slug="design-bridges/champions-design-bridge">champions-design-bridge</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Champion Axis</th><th>Digital-Net Use</th></tr></thead><tbody><tr><td>Reach</td><td>Expands relay/scouting radius; operates through degraded networks.</td></tr><tr><td>Interface</td><td>Resists spoofing, uses Free-Net, controls drones/sensors, manipulates ledgers.</td></tr><tr><td>Legitimacy</td><td>Helps discoveries become socially or legally actionable.</td></tr><tr><td>Presence</td><td>Turns information into morale, recruitment, panic, surrender, or scandal.</td></tr><tr><td>Command</td><td>Reduces army penalties in polluted, spoofed, or dead-zone environments.</td></tr></tbody></table></div>
+<p>Candidate Champion archetypes:</p>
+<ul>
+<li>Free-Net Warden: scout, archive guide, deception-resistant dead-zone commander.</li>
+<li>War-OS Commander: battlefield mesh expert; strong spoof resistance but license-dependent.</li>
+<li>Chorus Idol-Commander: attention-war specialist; vulnerable to scandal.</li>
+<li>Echo-Bound Veteran: detects ghost data, battlefield records, and memorial archive anomalies.</li>
+<li>Corporate Stabilization Champion: converts sensor data into contracts and legitimacy; vulnerable to Free-Net exposure.</li>
+<li>Low-Signal Warlord: thrives where ledgers fail and physical presence beats feeds.</li>
+</ul>
+<h2 id="interaction-with-white-sky--meridian-stations">Interaction with White Sky / Meridian Stations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#interaction-with-white-sky--meridian-stations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The <a href="../design-bridges/white-sky-and-meridian-stations" class="internal" data-slug="design-bridges/white-sky-and-meridian-stations">white-sky-and-meridian-stations</a> bridge already gives Meridian Stations a resource called Sensor Truth. Digital-Net systems determine whether Sensor Truth is visible, trusted, admissible, or weaponized.</p>
+<p>Strong combined uses:</p>
+<ul>
+<li>Meridian sensor fortresses become information objectives.</li>
+<li>Climate dashboards become fog-of-war sources.</li>
+<li>Blue Break events trigger feed panic and attribution warfare.</li>
+<li>Free-Net leaks contradict QXZ station reports.</li>
+<li>Axiom proof nodes determine whether sabotage, negligence, or natural variance is legally recognized.</li>
+<li>Chorus hubs determine whether the public sees a Blue Break as miracle, terrorism, liberation, fraud, or proof of corporate failure.</li>
+</ul>
+<p>White Sky status overlays can exist in several versions at once:</p>
+<ul>
+<li>true physical state;</li>
+<li>QXZ public dashboard;</li>
+<li>local witness reports;</li>
+<li>Free-Net leaked model;</li>
+<li>Axiom-certified record;</li>
+<li>Chorus-amplified narrative;</li>
+<li>faction propaganda claim.</li>
+</ul>
+<h2 id="faction-hooks">Faction Hooks<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#faction-hooks" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Faction / Alignment</th><th>Information Strength</th><th>Cost / Failure Mode</th></tr></thead><tbody><tr><td>Axiom-aligned</td><td>Provenance, admissible proof, city contracts.</td><td>Excludes unofficial truth; captured by paperwork.</td></tr><tr><td>Chorus-aligned</td><td>Attention, morale, recruitment, scandal warfare.</td><td>Viral falsehoods and blowback.</td></tr><tr><td>Free-Net Archivists</td><td>Hidden routes, leaks, counter-propaganda, suppressed history.</td><td>Traps, rot, illegibility, legal exposure.</td></tr><tr><td>Corporate Stabilizers</td><td>Clean dashboards, sensor contracts, targeted accounting.</td><td>Surveillance, dependency, legitimacy costs.</td></tr><tr><td>Open Sky / Insurgent Cells</td><td>Exposure, sabotage, spoofing, rumor war.</td><td>Weak admissibility; civilian-risk blowback.</td></tr><tr><td>Human-exceptionalist / low-tech factions</td><td>Strong dead-zone scouting and courier networks.</td><td>Slow response and weak broad overlays.</td></tr><tr><td>VI / compute factions</td><td>Prediction, signal processing, automation.</td><td>Compute cost, political risk, AGI Compact suspicion.</td></tr></tbody></table></div>
+<h2 id="anti-magic-translation">Anti-Magic Translation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#anti-magic-translation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Use Digital-Net systems to translate familiar fantasy utility functions without direct magic.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Fantasy Function</th><th>Neon Champions Translation</th></tr></thead><tbody><tr><td>Vision / map reveal</td><td>Sensor leak, Free-Net map, satellite pass, Axiom recon package.</td></tr><tr><td>Disguise</td><td>Spoofed convoy signature, false identity, ledger masking.</td></tr><tr><td>Curse</td><td>Scandal packet, polluted tactical overlay, insurance downgrade.</td></tr><tr><td>Bless</td><td>Verified rescue footage, clean provenance, trusted public alert.</td></tr><tr><td>Slow</td><td>Routing sabotage, targeted-accounting delays, corrupted logistics overlay.</td></tr><tr><td>Haste</td><td>Priority corridor authorization, drone-guided movement, clean route packet.</td></tr><tr><td>Summon / phantom</td><td>Decoy feed contact, ghost data, militia rumor, Echo signal.</td></tr><tr><td>Town portal equivalent</td><td>Emergency corridor clearance or relay-guided extraction, not teleportation.</td></tr><tr><td>Artifact map</td><td>Free-Net mirror, sensor crown, Axiom evidence key, captured relay root.</td></tr></tbody></table></div>
+<h2 id="ui--naming--visual-language">UI / Naming / Visual Language<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ui--naming--visual-language" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Fog should not be only black.</p>
+<p>Suggested visual states:</p>
+<ul>
+<li>dark grey: unknown;</li>
+<li>amber: rumored;</li>
+<li>pale blue-white: Axiom-certified;</li>
+<li>dirty green: Free-Net;</li>
+<li>neon magenta/cyan: Chorus-amplified;</li>
+<li>static/noise: polluted;</li>
+<li>red glitch: spoofed or honeypot;</li>
+<li>flat blank: dead zone;</li>
+<li>translucent afterimage: ghost data.</li>
+</ul>
+<p>Reports should expose enough metadata for fair play:</p>
+<ul>
+<li>source;</li>
+<li>age;</li>
+<li>confidence;</li>
+<li>provenance;</li>
+<li>pollution state;</li>
+<li>possible manipulation vector;</li>
+<li>available verification actions.</li>
+</ul>
+<p>Prototype caution: start with a small number of readable states. Suggested first set:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>Unknown / Rumored / Verified / Polluted / Dead Zone</span></span></code></pre></figure>
+<h2 id="minimal-prototype-shape">Minimal Prototype Shape<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#minimal-prototype-shape" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>First playable test:</p>
+<ul>
+<li>one region;</li>
+<li>one relay mast;</li>
+<li>one Free-Net archive;</li>
+<li>one polluted feed tower;</li>
+<li>one Axiom proof node;</li>
+<li>one Meridian sensor site;</li>
+<li>one enemy army partly hidden by spoofing;</li>
+<li>one Champion with Reach or Interface advantage.</li>
+</ul>
+<p>Player choice loop:</p>
+<ol>
+<li>Receive several reports with different confidence/provenance.</li>
+<li>Decide whether to move, scout, verify, amplify, suppress, or exploit.</li>
+<li>Face a climate/station crisis where bad information can cause wrong action.</li>
+<li>Use proof or attention to shape the aftermath.</li>
+</ol>
+<p>Minimal information report schema:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Field</th><th>Example</th></tr></thead><tbody><tr><td>entity_id</td><td>convoy_17</td></tr><tr><td>reported_type</td><td>relief convoy / armored stack / decoy</td></tr><tr><td>reported_location</td><td>Lagos Lagoon Receiver District north road</td></tr><tr><td>source_type</td><td>scout / sensor / Free-Net / Axiom / Chorus / faction / rumor</td></tr><tr><td>confidence</td><td>72%</td></tr><tr><td>age_turns</td><td>2</td></tr><tr><td>provenance_state</td><td>none / local / verified / admissible / disputed</td></tr><tr><td>pollution_state</td><td>clean / noisy / spoofed / stale / honeypot</td></tr><tr><td>player_actions</td><td>ignore / scout / verify / amplify / suppress / exploit</td></tr><tr><td>event_hooks</td><td>ambush, scandal, proof, panic, bounty</td></tr></tbody></table></div>
+<h2 id="risks">Risks<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#risks" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="player-frustration">Player Frustration<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#player-frustration" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>False information can feel like the designer lying.</p>
+<p>Mitigation: show source, age, confidence, and warning states; provide counterplay.</p>
+<h3 id="ui-overload">UI Overload<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ui-overload" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Too many overlays can bury the HoMM3-style strategic loop.</p>
+<p>Mitigation: scenarios foreground only a few states; advanced overlays unlock later.</p>
+<h3 id="random-noise">Random Noise<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#random-noise" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>If everything may be false, nothing matters.</p>
+<p>Mitigation: make deception patterned by faction, site, source, and region.</p>
+<h3 id="provenance-confused-with-truth">Provenance Confused with Truth<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance-confused-with-truth" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Axiom-certified should mean institutionally admissible, not metaphysically true.</p>
+<p>Mitigation: keep “truth,” “proof,” and “attention” distinct.</p>
+<h3 id="free-net-romanticization">Free-Net Romanticization<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#free-net-romanticization" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Free-Net should reveal suppressed truths but also contain rot, traps, edits, myths, and grief loops.</p>
+<h3 id="cyber-magic-drift">Cyber-Magic Drift<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cyber-magic-drift" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Avoid instant hacking powers.</p>
+<p>Mitigation: ground abilities in relays, access, credentials, compute, social reach, and physical scouting.</p>
+<h3 id="undermining-exploration">Undermining Exploration<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#undermining-exploration" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>If remote data reveals too much, map movement weakens.</p>
+<p>Mitigation: remote reports decay; physical scouting remains best for tactical certainty.</p>
+<h2 id="decisions-needed">Decisions Needed<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#decisions-needed" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>
+<p>How false can map data be?</p>
+<ul>
+<li>Recommendation: allow false contacts, but make them source-tagged and counterable.</li>
+</ul>
+</li>
+<li>
+<p>Is “verified” always true?</p>
+<ul>
+<li>Recommendation: no. Split sensor-verified, Axiom-admissible, socially believed, and actually true.</li>
+</ul>
+</li>
+<li>
+<p>Should Proof be a visible strategic resource?</p>
+<ul>
+<li>Recommendation: yes, at least at campaign layer.</li>
+</ul>
+</li>
+<li>
+<p>How deep should targeted accounting be in the first prototype?</p>
+<ul>
+<li>Recommendation: start as regional modifiers and events: travel fees, clinic access, bounty exposure, contract access.</li>
+</ul>
+</li>
+<li>
+<p>Can players deliberately pollute feeds?</p>
+<ul>
+<li>Recommendation: yes, with legitimacy and blowback risk.</li>
+</ul>
+</li>
+<li>
+<p>Is Free-Net access universal or faction-specific?</p>
+<ul>
+<li>Recommendation: both. Anyone can find fragments; Free-Net-aligned Champions and factions use them better.</li>
+</ul>
+</li>
+<li>
+<p>How much Axiom/Chorus complexity should appear early?</p>
+<ul>
+<li>Recommendation: include functions first: Axiom = admissible proof; Chorus = amplification/attention.</li>
+</ul>
+</li>
+<li>
+<p>Should dead zones be penalties or opportunities?</p>
+<ul>
+<li>Recommendation: both. They weaken dashboards and ledgers but empower physical scouting, local guides, and low-signal factions.</li>
+</ul>
+</li>
+</ol></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-18" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#digital-net-and-polluted-feeds-design-bridge" data-for="digital-net-and-polluted-feeds-design-bridge">Digital-Net and Polluted Feeds Design Bridge</a></li><li class="depth-1"><a href="#source-lore" data-for="source-lore">Source Lore</a></li><li class="depth-1"><a href="#player-facing-design-premise" data-for="player-facing-design-premise">Player-Facing Design Premise</a></li><li class="depth-1"><a href="#design-role" data-for="design-role">Design Role</a></li><li class="depth-2"><a href="#primary-role-fog-of-war-and-scouting-system" data-for="primary-role-fog-of-war-and-scouting-system">Primary Role: Fog-of-War and Scouting System</a></li><li class="depth-2"><a href="#secondary-role-trust-and-provenance-layer" data-for="secondary-role-trust-and-provenance-layer">Secondary Role: Trust and Provenance Layer</a></li><li class="depth-2"><a href="#tertiary-role-campaign-event-engine" data-for="tertiary-role-campaign-event-engine">Tertiary Role: Campaign Event Engine</a></li><li class="depth-1"><a href="#core-map-information-layers" data-for="core-map-information-layers">Core Map Information Layers</a></li><li class="depth-1"><a href="#information-states" data-for="information-states">Information States</a></li><li class="depth-1"><a href="#strategic-map-sites" data-for="strategic-map-sites">Strategic Map Sites</a></li><li class="depth-2"><a href="#relay-mast" data-for="relay-mast">Relay Mast</a></li><li class="depth-2"><a href="#civic-sensor-hub" data-for="civic-sensor-hub">Civic Sensor Hub</a></li><li class="depth-2"><a href="#free-net-archive" data-for="free-net-archive">Free-Net Archive</a></li><li class="depth-2"><a href="#polluted-feed-tower" data-for="polluted-feed-tower">Polluted Feed Tower</a></li><li class="depth-2"><a href="#axiom-proof-node" data-for="axiom-proof-node">Axiom Proof Node</a></li><li class="depth-2"><a href="#chorus-resonance-hub" data-for="chorus-resonance-hub">Chorus Resonance Hub</a></li><li class="depth-2"><a href="#dead-server--ghost-farm" data-for="dead-server--ghost-farm">Dead Server / Ghost Farm</a></li><li class="depth-2"><a href="#black-market-mirror" data-for="black-market-mirror">Black-Market Mirror</a></li><li class="depth-2"><a href="#targeting-ledger" data-for="targeting-ledger">Targeting Ledger</a></li><li class="depth-2"><a href="#spoofing--jamming-node" data-for="spoofing--jamming-node">Spoofing / Jamming Node</a></li><li class="depth-1"><a href="#core-mechanics" data-for="core-mechanics">Core Mechanics</a></li><li class="depth-2"><a href="#1-scouting-with-confidence" data-for="1-scouting-with-confidence">1. Scouting with Confidence</a></li><li class="depth-2"><a href="#2-verification-as-a-strategic-action" data-for="2-verification-as-a-strategic-action">2. Verification as a Strategic Action</a></li><li class="depth-2"><a href="#3-misinformation-as-terrain" data-for="3-misinformation-as-terrain">3. Misinformation as Terrain</a></li><li class="depth-2"><a href="#4-targeted-accounting" data-for="4-targeted-accounting">4. Targeted Accounting</a></li><li class="depth-2"><a href="#5-provenance-as-a-strategic-resource" data-for="5-provenance-as-a-strategic-resource">5. Provenance as a Strategic Resource</a></li><li class="depth-2"><a href="#6-attention-as-pressure" data-for="6-attention-as-pressure">6. Attention as Pressure</a></li><li class="depth-2"><a href="#7-free-net-access" data-for="7-free-net-access">7. Free-Net Access</a></li><li class="depth-1"><a href="#polluted-feed-event-seeds" data-for="polluted-feed-event-seeds">Polluted Feed Event Seeds</a></li><li class="depth-2"><a href="#false-convoy" data-for="false-convoy">False Convoy</a></li><li class="depth-2"><a href="#ghost-route" data-for="ghost-route">Ghost Route</a></li><li class="depth-2"><a href="#provenance-challenge" data-for="provenance-challenge">Provenance Challenge</a></li><li class="depth-2"><a href="#scandal-packet" data-for="scandal-packet">Scandal Packet</a></li><li class="depth-2"><a href="#civic-alert-collapse" data-for="civic-alert-collapse">Civic Alert Collapse</a></li><li class="depth-2"><a href="#ledger-lock" data-for="ledger-lock">Ledger Lock</a></li><li class="depth-2"><a href="#feed-panic" data-for="feed-panic">Feed Panic</a></li><li class="depth-2"><a href="#clean-mirror" data-for="clean-mirror">Clean Mirror</a></li><li class="depth-2"><a href="#honeypot-archive" data-for="honeypot-archive">Honeypot Archive</a></li><li class="depth-2"><a href="#echo-distress-signal" data-for="echo-distress-signal">Echo Distress Signal</a></li><li class="depth-1"><a href="#champion-interactions" data-for="champion-interactions">Champion Interactions</a></li><li class="depth-1"><a href="#interaction-with-white-sky--meridian-stations" data-for="interaction-with-white-sky--meridian-stations">Interaction with White Sky / Meridian Stations</a></li><li class="depth-1"><a href="#faction-hooks" data-for="faction-hooks">Faction Hooks</a></li><li class="depth-1"><a href="#anti-magic-translation" data-for="anti-magic-translation">Anti-Magic Translation</a></li><li class="depth-1"><a href="#ui--naming--visual-language" data-for="ui--naming--visual-language">UI / Naming / Visual Language</a></li><li class="depth-1"><a href="#minimal-prototype-shape" data-for="minimal-prototype-shape">Minimal Prototype Shape</a></li><li class="depth-1"><a href="#risks" data-for="risks">Risks</a></li><li class="depth-2"><a href="#player-frustration" data-for="player-frustration">Player Frustration</a></li><li class="depth-2"><a href="#ui-overload" data-for="ui-overload">UI Overload</a></li><li class="depth-2"><a href="#random-noise" data-for="random-noise">Random Noise</a></li><li class="depth-2"><a href="#provenance-confused-with-truth" data-for="provenance-confused-with-truth">Provenance Confused with Truth</a></li><li class="depth-2"><a href="#free-net-romanticization" data-for="free-net-romanticization">Free-Net Romanticization</a></li><li class="depth-2"><a href="#cyber-magic-drift" data-for="cyber-magic-drift">Cyber-Magic Drift</a></li><li class="depth-2"><a href="#undermining-exploration" data-for="undermining-exploration">Undermining Exploration</a></li><li class="depth-1"><a href="#decisions-needed" data-for="decisions-needed">Decisions Needed</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../canon/world-rules/digital-net" class="internal">Digital-Net</a></li><li><a href="../design-bridges/world-map-and-campaign-crisis" class="internal">World Map and Campaign Crisis Design Bridge</a></li><li><a href="../" class="internal">index</a></li><li><a href="../technologies/synthetic-reality-and-polluted-feeds" class="internal">Synthetic Reality and Polluted Feeds</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript.js" type="module" data-persist="true"></script></html>

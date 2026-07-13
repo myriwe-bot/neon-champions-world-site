@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Verdant · Neon Champions</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Neon Champions World"/><meta property="og:title" content="Verdant · Neon Champions"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Verdant · Neon Champions"/><meta name="twitter:description" content="Verdant One-Line Summary Verdant is the recommended sixth Great Corporate Person candidate: a food, seed, fertilizer, crop-risk, grain-routing, emergency-ration, fermentation-protein, and nutrient-recovery megacorp whose continuity layer is feedability."/><meta property="og:description" content="Verdant One-Line Summary Verdant is the recommended sixth Great Corporate Person candidate: a food, seed, fertilizer, crop-risk, grain-routing, emergency-ration, fermentation-protein, and nutrient-recovery megacorp whose continuity layer is feedability."/><meta property="og:image:alt" content="Verdant One-Line Summary Verdant is the recommended sixth Great Corporate Person candidate: a food, seed, fertilizer, crop-risk, grain-routing, emergency-ration, fermentation-protein, and nutrient-recovery megacorp whose continuity layer is feedability."/><meta property="twitter:domain" content="myriwe-bot.github.io/neon-champions-world-site"/><meta property="og:url" content="https://myriwe-bot.github.io/neon-champions-world-site/organizations/verdant"/><meta property="twitter:url" content="https://myriwe-bot.github.io/neon-champions-world-site/organizations/verdant"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Verdant One-Line Summary Verdant is the recommended sixth Great Corporate Person candidate: a food, seed, fertilizer, crop-risk, grain-routing, emergency-ration, fermentation-protein, and nutrient-recovery megacorp whose continuity layer is feedability."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvbmVvbi1jaGFtcGlvbnMtd29ybGQvbmVvbi1jaGFtcGlvbnMtd29ybGQvcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://myriwe-bot.github.io/neon-champions-world-site/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://myriwe-bot.github.io/neon-champions-world-site/organizations/verdant-og-image.webp"/><meta property="og:image:url" content="https://myriwe-bot.github.io/neon-champions-world-site/organizations/verdant-og-image.webp"/><meta name="twitter:image" content="https://myriwe-bot.github.io/neon-champions-world-site/organizations/verdant-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="organizations/verdant"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Neon Champions World</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-96"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-96" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../organizations/">organizations</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Verdant</a></div></nav><h1 class="article-title">Verdant</h1><p show-comma="true" class="content-meta"><time datetime="2026-05-22T00:00:00.000Z">May 22, 2026</time><span>13 min read</span></p><ul class="tags"><li><a href="../tags/corporate" class="internal tag-link">corporate</a></li><li><a href="../tags/megacorp" class="internal tag-link">megacorp</a></li><li><a href="../tags/food" class="internal tag-link">food</a></li><li><a href="../tags/resources" class="internal tag-link">resources</a></li><li><a href="../tags/logistics" class="internal tag-link">logistics</a></li><li><a href="../tags/climate" class="internal tag-link">climate</a></li><li><a href="../tags/climate-inequality" class="internal tag-link">climate-inequality</a></li><li><a href="../tags/infrastructure" class="internal tag-link">infrastructure</a></li><li><a href="../tags/economy" class="internal tag-link">economy</a></li><li><a href="../tags/geopolitics" class="internal tag-link">geopolitics</a></li><li><a href="../tags/surveillance" class="internal tag-link">surveillance</a></li></ul></div></div><article class="popover-hint"><h1 id="verdant">Verdant<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#verdant" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="one-line-summary">One-Line Summary<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#one-line-summary" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Verdant</strong> is the recommended sixth <a href="../organizations/great-corporate-persons" class="internal alias" data-slug="organizations/great-corporate-persons">Great Corporate Person</a> candidate: a food, seed, fertilizer, crop-risk, grain-routing, emergency-ration, fermentation-protein, and nutrient-recovery megacorp whose continuity layer is <strong>feedability</strong>.</p>
+<h2 id="canon-status">Canon Status<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#canon-status" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Reviewed soft-canon candidate. The direction is accepted for now: the food / nutrient / seed / famine logistics slot should be represented by <strong>Verdant</strong>.</p>
+<p>Full formal or treaty style:</p>
+<blockquote>
+<p><strong>Verdant Covenant Group</strong></p>
+</blockquote>
+<p>Ordinary usage:</p>
+<blockquote>
+<p><strong>Verdant</strong></p>
+</blockquote>
+<p>The <strong>Covenant</strong> part works best as the formal charter language: treaty schedules, famine-continuity contracts, sovereign food-security clauses, agricultural recovery compacts, and activist rhetoric. Most people shorten it because the name is too pious for daily life.</p>
+<p>Useful line:</p>
+<blockquote>
+<p>Verdant does not own the harvest. It owns the failed-harvest protocol.</p>
+</blockquote>
+<p>Another:</p>
+<blockquote>
+<p>Famine used to be a failure. Verdant made it a managed state.</p>
+</blockquote>
+<h2 id="what-it-is">What It Is<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#what-it-is" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Verdant is not just an agribusiness, seed company, fertilizer cartel, grain trader, vertical-farm chain, or humanitarian contractor.</p>
+<p>It is the treaty-embedded food-continuity stack underneath:</p>
+<ul>
+<li>climate-adapted seed traits;</li>
+<li>germplasm vaults and seed licensing;</li>
+<li>fertilizer procurement and nutrient allocation;</li>
+<li>potash, phosphate, ammonia, and recovered nutrient routes;</li>
+<li>crop insurance and famine bonds;</li>
+<li>farm telemetry and agronomic recommendations;</li>
+<li>grain silos, ports, rail, barge, and shipping priority;</li>
+<li>emergency stockpiles and ration thresholds;</li>
+<li>refugee-camp and disaster-food procurement;</li>
+<li>fermentation protein and fortified staple production;</li>
+<li>wastewater, manure, food-waste, and city nutrient recovery;</li>
+<li>famine early-warning metrics and nutritional-minimum definitions.</li>
+</ul>
+<p>It does not own most farms. That would be inefficient and politically impossible.</p>
+<p>Instead, Verdant owns or certifies the conditions that make agriculture bankable, insurable, movable, and eligible for emergency assistance. A farmer may still own land. A state may still own public grain. A city may still run its own school meal program. But when the climate fails, ports close, fertilizer is sanctioned, credit dries up, or famine thresholds trigger, Verdant’s contracts decide what happens next.</p>
+<h2 id="continuity-layer">Continuity Layer<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#continuity-layer" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Continuity layer: <strong>food / nutrient / seed / famine logistics</strong>.</p>
+<p>Simpler in-world phrase: <strong>feedability</strong>.</p>
+<p>Verdant’s power is not “food ownership.” Its power is the ability to answer, for any region:</p>
+<blockquote>
+<p>Can this population be fed, by whom, under what contract, using what seed, what nutrients, what routes, what ration class, and what proof of hunger?</p>
+</blockquote>
+<p>That makes it load-bearing enough for UNP recognition.</p>
+<h2 id="why-it-became-unavoidable">Why It Became Unavoidable<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#why-it-became-unavoidable" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="2020s-roots">2020s Roots<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2020s-roots" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Verdant’s origins are boring and plausible:</p>
+<ul>
+<li>fertilizer price shocks;</li>
+<li>Black Sea grain disruption;</li>
+<li>export bans;</li>
+<li>climate droughts and floods;</li>
+<li>crop insurance volatility;</li>
+<li>seed IP consolidation;</li>
+<li>farm telemetry platforms;</li>
+<li>precision-ag equipment lock-in;</li>
+<li>pandemic logistics;</li>
+<li>avian flu and livestock disease;</li>
+<li>vertical-farm failures;</li>
+<li>fermentation protein hype cycles;</li>
+<li>humanitarian procurement strain.</li>
+</ul>
+<p>No single event creates Verdant. It emerges from repeated proof that food security is not just farming. It is seed, nutrients, storage, shipping, finance, insurance, data, and emergency law.</p>
+<h3 id="2030s-food-cascades">2030s Food Cascades<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2030s-food-cascades" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>The first true consolidation phase follows a run of simultaneous breadbasket failures, fertilizer sanctions, aquifer collapse, pest migrations, heat-stress labor shortages, flood-damaged silos, and regional crop-insurance withdrawal.</p>
+<p>States discover that national food policy cannot solve transnational input failure. A country may have fields and farmers but no fertilizer, credit, grain-storage capacity, port access, or insurable planting window.</p>
+<p>Emergency food-continuity compacts begin as temporary public-private mechanisms.</p>
+<p>They do not remain temporary.</p>
+<h3 id="2040s-covenant-consolidation">2040s Covenant Consolidation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2040s-covenant-consolidation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Verdant forms by federating, absorbing, or chartering older entities:</p>
+<ul>
+<li>seed and trait portfolios;</li>
+<li>public/private germplasm banks;</li>
+<li>fertilizer traders and nutrient-swap desks;</li>
+<li>grain traders, silo networks, and port operators;</li>
+<li>crop insurers and reinsurers;</li>
+<li>precision-ag platforms;</li>
+<li>humanitarian ration manufacturers;</li>
+<li>school-feeding contractors;</li>
+<li>refugee provisioning systems;</li>
+<li>fermentation-protein firms;</li>
+<li>nutrient-recovery utilities;</li>
+<li>sovereign food-security bond issuers.</li>
+</ul>
+<p>The <strong>Covenant</strong> language enters during this period. It is not branding first; it is legal theology. States do not want to say they outsourced food sovereignty. They say they entered a food-continuity covenant.</p>
+<h3 id="2052-great-person-candidate">2052 Great Person Candidate<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2052-great-person-candidate" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>By 2052, shutting Verdant down threatens:</p>
+<ul>
+<li>seed availability;</li>
+<li>farmer credit;</li>
+<li>fertilizer allocation;</li>
+<li>crop insurance;</li>
+<li>famine early-warning;</li>
+<li>emergency rations;</li>
+<li>grain corridor routing;</li>
+<li>school and hospital food supply;</li>
+<li>refugee camp provisioning;</li>
+<li>fermentation protein inputs;</li>
+<li>nutrient recovery;</li>
+<li>disaster-food response.</li>
+</ul>
+<p>That makes Verdant a plausible <a href="../organizations/great-corporate-persons" class="internal alias" data-slug="organizations/great-corporate-persons">Great Corporate Person</a>.</p>
+<h2 id="public-face">Public Face<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#public-face" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Verdant says it provides:</p>
+<ul>
+<li>famine prevention;</li>
+<li>seed resilience;</li>
+<li>farmer protection;</li>
+<li>nutrient circularity;</li>
+<li>staple-price stabilization;</li>
+<li>climate-adapted agriculture;</li>
+<li>humanitarian transparency;</li>
+<li>emergency food corridors;</li>
+<li>circular city-to-farm nutrient systems;</li>
+<li>rules-based rationing instead of patronage, theft, or warlord control.</li>
+</ul>
+<p>This is not all false. Verdant really does prevent famines, stabilize harvests, move food through damaged corridors, and keep some cities alive.</p>
+<p>That is what makes it hard to fight.</p>
+<h2 id="dark-face">Dark Face<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dark-face" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Verdant’s horror is not cartoon starvation for profit. Its horror is that it makes hunger governable.</p>
+<p>It can:</p>
+<ul>
+<li>make seed access conditional on farm telemetry;</li>
+<li>make insurance conditional on approved seed and input packages;</li>
+<li>throttle output by delaying fertilizer;</li>
+<li>dispute famine classifications;</li>
+<li>decide which port gets grain priority;</li>
+<li>trap farmers in seed/fertilizer/insurance debt;</li>
+<li>turn public seed banks into proprietary resilience portfolios;</li>
+<li>control city waste streams through nutrient contracts;</li>
+<li>transform refugee camps into permanent ration-data colonies;</li>
+<li>replace local food cultures with fortified emergency products;</li>
+<li>allow hostile districts to suffer “allocation discipline” while denying embargo;</li>
+<li>profit from famine bonds whose triggers it helps define.</li>
+</ul>
+<p>Verdant usually does not need to starve anyone deliberately. It can simply declare that a district has not yet met the threshold for relief, lacks admissible hunger data, failed compliance, is not route-prioritized, or is outside the current continuity class.</p>
+<h2 id="name-logic">Name Logic<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#name-logic" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="verdant-1">Verdant<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#verdant-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Verdant</strong> is the public name.</p>
+<p>It is short, green, global, plausible, and soft enough to appear on seed packets, ration cards, relief trucks, school meal apps, fertilizer tanks, and treaty reports.</p>
+<p>It sounds less cartoonishly evil than a dystopian food company should. That is useful.</p>
+<h3 id="verdant-covenant-group">Verdant Covenant Group<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#verdant-covenant-group" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Verdant Covenant Group</strong> is the formal name used in:</p>
+<ul>
+<li>UNP schedules;</li>
+<li>sovereign food-continuity charters;</li>
+<li>famine-bond covenants;</li>
+<li>emergency procurement law;</li>
+<li>agricultural recovery compacts;</li>
+<li>investor disclosures;</li>
+<li>activist manifestos.</li>
+</ul>
+<p>The term <strong>Covenant</strong> implies duty, trust, moral obligation, and contract. That is why it works, even if ordinary people mostly say Verdant.</p>
+<h3 id="feed-the-world-initiative">Feed the World Initiative<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#feed-the-world-initiative" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>The <strong>Feed the World Initiative</strong> replaces the earlier <strong>Common Table Systems</strong> idea.</p>
+<p>It is not the parent company. It is Verdant’s most visible public-good interface: relief campaigns, school feeding, emergency protein, celebrity famine appeals, donor dashboards, ration-card onboarding, refugee camp food systems, and humanitarian procurement.</p>
+<p>It sounds almost too sincere. That is the point.</p>
+<p>The Initiative is sinister because it turns moral urgency into permanent infrastructure capture. A government, city, or camp that joins during crisis may discover later that its stockpiles, ration identities, procurement rules, school meals, nutritional data, grain contracts, and food-aid eligibility now run through Verdant systems.</p>
+<p>Public slogan:</p>
+<blockquote>
+<p>No one left unfed.</p>
+</blockquote>
+<p>Street/activist counter-slogan:</p>
+<blockquote>
+<p>No one left uncounted.</p>
+</blockquote>
+<p>Another:</p>
+<blockquote>
+<p>They feed the world one leash at a time.</p>
+</blockquote>
+<p>The Feed the World Initiative is often the first Verdant brand civilians encounter. It may save a child’s life with a ration brick. It may also place that child, family, district, or refugee camp inside Verdant’s data and dependency net for decades.</p>
+<h2 id="corporate-hierarchy">Corporate Hierarchy<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#corporate-hierarchy" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="covenant-seedworks">Covenant Seedworks<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#covenant-seedworks" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Seed traits, germplasm vaults, climate-adapted varieties, hybrid seed licensing, microbial coatings, seed-bank interfaces, and landrace appropriation disputes.</p>
+<p>Public face: climate-resilient harvests.</p>
+<p>Dark face: subscription agriculture and trait dependency.</p>
+<h3 id="npk-vector">NPK Vector<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#npk-vector" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Fertilizer, potash, phosphate, ammonia, green hydrogen fertilizer, recovered nutrients, input routing, nutrient swaps, sanctions-compliant and gray-zone nutrient movement.</p>
+<p>Public face: soil fertility continuity.</p>
+<p>Dark face: output throttling through input access.</p>
+<h3 id="arable-risk-exchange">Arable Risk Exchange<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#arable-risk-exchange" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Crop insurance, reinsurance, parametric drought contracts, famine bonds, sovereign food-security swaps, yield forecasts, harvest default instruments, and planting-window credit.</p>
+<p>Public face: shared risk.</p>
+<p>Dark face: hunger as derivative market.</p>
+<h3 id="greenline-grain">Greenline Grain<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#greenline-grain" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Silos, river barges, rail, port scheduling, grade blending, commodity routing, emergency stock release, and staple-price stabilization.</p>
+<p>Public face: stable grain flows.</p>
+<p>Dark face: market opacity and politically selective delivery.</p>
+<h3 id="staplenet">StapleNet<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#staplenet" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>The digital food-security operating layer linking farm telemetry, crop forecasts, ration cards, humanitarian stockpiles, port capacity, seed licenses, fertilizer contracts, famine thresholds, and Feed the World enrollment.</p>
+<p>Public face: integrated food resilience.</p>
+<p>Dark face: if StapleNet says a district is not in famine, relief may not move.</p>
+<h3 id="feed-the-world-initiative-1">Feed the World Initiative<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#feed-the-world-initiative-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Verdant’s clean humanitarian arm. It handles donor-facing relief, emergency feeding, school meals, refugee-camp rationing, celebrity campaigns, NGO dashboards, donor proofs, and local-government onboarding.</p>
+<p>Public face: no child hungry, no city abandoned.</p>
+<p>Dark face: crisis benevolence as infrastructure capture.</p>
+<h3 id="calyx-humanitarian-foods">Calyx Humanitarian Foods<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#calyx-humanitarian-foods" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Fortified rations, therapeutic foods, school-feeding packs, refugee-camp staples, emergency protein bricks, micronutrient powders, shelf-stable oils, and culturally localized ration variants.</p>
+<p>Public face: feeding the vulnerable.</p>
+<p>Dark face: permanent ration dependency and replacement of local food.</p>
+<h3 id="loopnutrient">LoopNutrient<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#loopnutrient" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Wastewater phosphorus, urine nitrogen, food waste, manure, landfill organics, black-soldier-fly loops, anaerobic digesters, compost rights, and city-to-farm nutrient credits.</p>
+<p>Public face: circular agriculture.</p>
+<p>Dark face: municipal waste sovereignty loss. Protest slogan: “Our shit is not your soil bank.”</p>
+<h3 id="fermastaple">FermaStaple<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fermastaple" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Mycoprotein, microbial oils, algae concentrates, amino-acid powders, emergency protein, industrial fermentation substrates, and sealed-district nutrition.</p>
+<p>Public face: protein without pasture.</p>
+<p>Dark face: nutritionally adequate pacification paste.</p>
+<h3 id="glasshouse-compact">Glasshouse Compact<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#glasshouse-compact" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Controlled-environment agriculture for seed starts, elite greens, medical crops, remote facilities, polar/desert stations, military bases, and disaster nurseries.</p>
+<p>Public face: local food security.</p>
+<p>Dark face: expensive symbolic greenery while staple survival remains corporate-routed.</p>
+<h2 id="geographic-footprint">Geographic Footprint<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#geographic-footprint" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="parent-corridor">Parent Corridor<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#parent-corridor" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Verdant’s parent structure is usually described as the <strong>Rotterdam — The Hague — Brussels corridor</strong>.</p>
+<p>This is more plausible than making the parent purely American, Chinese, Swiss, or Gulf-based:</p>
+<ul>
+<li><strong>Rotterdam</strong> gives port, grain, fertilizer, and commodity-logistics credibility.</li>
+<li><strong>The Hague</strong> gives arbitration, international law, treaty language, and humanitarian legitimacy.</li>
+<li><strong>Brussels</strong> gives EU food regulation, climate law, subsidy politics, and lobbying density.</li>
+</ul>
+<p>Secondary legal and finance nodes:</p>
+<ul>
+<li><strong>Geneva</strong> — humanitarian diplomacy, relief law, famine arbitration.</li>
+<li><strong>Rome</strong> — FAO/WFP-style food governance interface.</li>
+<li><strong>Zurich / Luxembourg</strong> — reinsurance, famine bonds, commodity finance.</li>
+</ul>
+<h3 id="major-operational-hubs">Major Operational Hubs<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#major-operational-hubs" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Chicago / Minneapolis / Omaha / Saskatoon</strong> — grain futures, crop insurance, precision agriculture, prairie cereals, potash access, North American farm telemetry.</p>
+<p><strong>Rotterdam / Antwerp / Hamburg / Gdansk</strong> — European grain and fertilizer ports, river corridors, import/export law, food-safety regulation.</p>
+<p><strong>Casablanca / Rabat / Laayoune / Dakar</strong> — phosphate politics, North/West African fertilizer corridors, Sahel provisioning, Atlantic logistics.</p>
+<p><strong>Kyiv / Odesa / Constanta / Istanbul</strong> — Black Sea grain, wartime rerouting, Danube corridors, sunflower oil, occupation and reconstruction agriculture.</p>
+<p><strong>São Paulo / Santos / Rosario / Buenos Aires / Montevideo</strong> — soy, maize, beef-feed systems, deforestation compliance, protein exports, commodity finance.</p>
+<p><strong>Delhi / Mumbai / Hyderabad / Dhaka</strong> — rice/wheat stability, monsoon insurance, smallholder telemetry, ration systems, groundwater-linked nutrient rules.</p>
+<p><strong>Bangkok / Ho Chi Minh City / Phnom Penh / Jakarta</strong> — rice, aquaculture feed, salinity intrusion, flood adaptation, tropical food logistics.</p>
+<p><strong>Singapore / Dubai / Jebel Ali</strong> — commodity routing, desert food-security finance, free-zone storage, import-dependent sovereign clients.</p>
+<p><strong>Nairobi / Addis Ababa / Mombasa / Lagos</strong> — famine response, East/West African logistics, mobile rations, school feeding, humanitarian interfaces.</p>
+<p><strong>Sydney / Perth / Auckland</strong> — dryland wheat, drought genetics, island food-security contracts, protein exports.</p>
+<p><strong>Reykjavik / Tromsø / Winnipeg / Umeå</strong> — high-latitude agronomy, new crop trials, cold storage, and coordination with <a href="../organizations/barents-research-group" class="internal alias" data-slug="organizations/barents-research-group">Barents Research Group</a>.</p>
+<h2 id="relationship-to-other-great-corporate-persons">Relationship to Other Great Corporate Persons<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#relationship-to-other-great-corporate-persons" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="qxz-meridian">QXZ Meridian<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#qxz-meridian" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../organizations/qxz-meridian" class="internal alias" data-slug="organizations/qxz-meridian">QXZ Meridian</a> governs climate risk, adaptation, insurance, and White Sky maintenance.</p>
+<p>Verdant governs calories, seed, fertilizer, grain, rations, and nutrient loops.</p>
+<p>QXZ asks:</p>
+<blockquote>
+<p>Who adapts to climate risk, and who pays?</p>
+</blockquote>
+<p>Verdant asks:</p>
+<blockquote>
+<p>What must be planted, fertilized, moved, milled, fortified, or rationed so people do not starve?</p>
+</blockquote>
+<p>They cooperate on adaptation bonds, crop-risk models, and emergency seed packages. They clash when QXZ wants managed retreat and Verdant wants to keep a population nutritionally viable through long-term ration dependency.</p>
+<h3 id="axiom">Axiom<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#axiom" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../organizations/axiom" class="internal alias" data-slug="organizations/axiom">Axiom</a> proves identity and admissible reality. Verdant needs Axiom for ration eligibility, seed provenance, grain chain-of-custody, fertilizer sanctions compliance, famine data admissibility, land and farmer identity, and refugee household records.</p>
+<p>The conflict is obvious: a true famine may be administratively invisible if the right people lack recognized records.</p>
+<h3 id="helvetia">Helvetia<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#helvetia" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../organizations/helvetia" class="internal alias" data-slug="organizations/helvetia">Helvetia</a> certifies lawful cognition. Verdant needs certified models for yield prediction, famine-index triggers, ration algorithms, crop insurance, pest forecasting, seed trait selection, and logistics optimization.</p>
+<p>Helvetia can certify a model as lawful even when the outcome is morally monstrous. Verdant can then call starvation “rules-based allocation.”</p>
+<h3 id="vezha-systems">Vezha Systems<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#vezha-systems" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../organizations/ukrainian-military-companies" class="internal alias" data-slug="organizations/ukrainian-military-companies">Vezha Systems</a> and Verdant intersect around siege logistics, occupied farmland, drone-protected harvests, veteran farm settlements, and food corridors.</p>
+<p>Vezha wants secure supply for defenders. Verdant wants contract-legible delivery and payment. Both can turn humanitarian corridors into strategic corridors.</p>
+<h3 id="barents-research-group">Barents Research Group<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#barents-research-group" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../organizations/barents-research-group" class="internal alias" data-slug="organizations/barents-research-group">Barents Research Group</a> opens or certifies northern routes, polar data, extraction, and high-latitude infrastructure.</p>
+<p>Verdant cares because Arctic routes can move grain, fertilizer, seed stock, and emergency proteins, and because warming northern lands become contested agronomy frontiers.</p>
+<p>Indigenous and local communities may see both firms as land conversion by paperwork.</p>
+<h2 id="street-level-consequences">Street-Level Consequences<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#street-level-consequences" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Ordinary people encounter Verdant when:</p>
+<ul>
+<li>their ration card moves from market supplement to continuity dependence;</li>
+<li>their district’s famine status is denied by a model;</li>
+<li>a farmer cannot get credit unless they plant Covenant Seedworks crops;</li>
+<li>a city discovers its sewage belongs to LoopNutrient under a resilience bond;</li>
+<li>school meals arrive through Feed the World and quietly replace local procurement;</li>
+<li>refugee children grow up on Calyx ration bricks and do not recognize their grandparents’ food;</li>
+<li>a black-market seed priest sells illegal landraces in a Free-Net commune;</li>
+<li>a Champion escorts a grain convoy that is both humanitarian relief and corporate occupation;</li>
+<li>a district is spared starvation but loses its local food economy forever.</li>
+</ul>
+<h2 id="game--story-uses">Game / Story Uses<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#game--story-uses" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>A food-corridor map objective that is both rescue and annexation.</li>
+<li>A famine index that says no crisis exists while players can see hunger in the streets.</li>
+<li>A Feed the World school-meal program that doubles as child biometric onboarding.</li>
+<li>A LoopNutrient plant whose contract gives Verdant rights over a city’s waste stream.</li>
+<li>A seed-library rebellion against Covenant Seedworks.</li>
+<li>A Greenline Grain convoy that supplies civilians and a corporate bioreactor.</li>
+<li>An Arable Risk Exchange famine bond that pays out only if relief is delayed.</li>
+<li>A QXZ/Verdant dispute after a Meridian Station fault changes rainfall.</li>
+<li>An Axiom/Verdant dispute over ration identities in a displaced community.</li>
+<li>A Helvetia-certified allocation model that is lawful but cruel.</li>
+</ul>
+<h2 id="open-questions">Open Questions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#open-questions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Is <strong>Verdant Covenant Group</strong> the exact formal name, or should the legal style be even drier while “Covenant” remains the treaty nickname?</li>
+<li>How public is Verdant’s Great Person status? Is it one of the famous Eight, or widely hated but bureaucratically invisible?</li>
+<li>Does Verdant operate its own armed security, or does it rely on Vezha, state forces, and port operators?</li>
+<li>Does Verdant ever deliberately create shortage, or is its villainy mostly threshold manipulation and dependency capture?</li>
+<li>Which faction most directly opposes Verdant: eco-anarchists, rural syndicates, indigenous seed networks, religious food commons, Free-Net communes, or state food-sovereignty blocs?</li>
+</ul>
+<h2 id="related-pages">Related Pages<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#related-pages" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../organizations/great-corporate-persons" class="internal" data-slug="organizations/great-corporate-persons">great-corporate-persons</a></li>
+<li><a href="../organizations/qxz-meridian" class="internal" data-slug="organizations/qxz-meridian">qxz-meridian</a></li>
+<li><a href="../organizations/axiom" class="internal" data-slug="organizations/axiom">axiom</a></li>
+<li><a href="../organizations/helvetia" class="internal" data-slug="organizations/helvetia">helvetia</a></li>
+<li><a href="../organizations/ukrainian-military-companies" class="internal" data-slug="organizations/ukrainian-military-companies">ukrainian-military-companies</a></li>
+<li><a href="../organizations/barents-research-group" class="internal" data-slug="organizations/barents-research-group">barents-research-group</a></li>
+<li><a href="../canon/world-rules/world-map-and-political-economy" class="internal" data-slug="canon/world-rules/world-map-and-political-economy">world-map-and-political-economy</a></li>
+<li><a href="../canon/world-rules/white-sky" class="internal" data-slug="canon/world-rules/white-sky">white-sky</a></li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-40" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#verdant" data-for="verdant">Verdant</a></li><li class="depth-1"><a href="#one-line-summary" data-for="one-line-summary">One-Line Summary</a></li><li class="depth-1"><a href="#canon-status" data-for="canon-status">Canon Status</a></li><li class="depth-1"><a href="#what-it-is" data-for="what-it-is">What It Is</a></li><li class="depth-1"><a href="#continuity-layer" data-for="continuity-layer">Continuity Layer</a></li><li class="depth-1"><a href="#why-it-became-unavoidable" data-for="why-it-became-unavoidable">Why It Became Unavoidable</a></li><li class="depth-2"><a href="#2020s-roots" data-for="2020s-roots">2020s Roots</a></li><li class="depth-2"><a href="#2030s-food-cascades" data-for="2030s-food-cascades">2030s Food Cascades</a></li><li class="depth-2"><a href="#2040s-covenant-consolidation" data-for="2040s-covenant-consolidation">2040s Covenant Consolidation</a></li><li class="depth-2"><a href="#2052-great-person-candidate" data-for="2052-great-person-candidate">2052 Great Person Candidate</a></li><li class="depth-1"><a href="#public-face" data-for="public-face">Public Face</a></li><li class="depth-1"><a href="#dark-face" data-for="dark-face">Dark Face</a></li><li class="depth-1"><a href="#name-logic" data-for="name-logic">Name Logic</a></li><li class="depth-2"><a href="#verdant-1" data-for="verdant-1">Verdant</a></li><li class="depth-2"><a href="#verdant-covenant-group" data-for="verdant-covenant-group">Verdant Covenant Group</a></li><li class="depth-2"><a href="#feed-the-world-initiative" data-for="feed-the-world-initiative">Feed the World Initiative</a></li><li class="depth-1"><a href="#corporate-hierarchy" data-for="corporate-hierarchy">Corporate Hierarchy</a></li><li class="depth-2"><a href="#covenant-seedworks" data-for="covenant-seedworks">Covenant Seedworks</a></li><li class="depth-2"><a href="#npk-vector" data-for="npk-vector">NPK Vector</a></li><li class="depth-2"><a href="#arable-risk-exchange" data-for="arable-risk-exchange">Arable Risk Exchange</a></li><li class="depth-2"><a href="#greenline-grain" data-for="greenline-grain">Greenline Grain</a></li><li class="depth-2"><a href="#staplenet" data-for="staplenet">StapleNet</a></li><li class="depth-2"><a href="#feed-the-world-initiative-1" data-for="feed-the-world-initiative-1">Feed the World Initiative</a></li><li class="depth-2"><a href="#calyx-humanitarian-foods" data-for="calyx-humanitarian-foods">Calyx Humanitarian Foods</a></li><li class="depth-2"><a href="#loopnutrient" data-for="loopnutrient">LoopNutrient</a></li><li class="depth-2"><a href="#fermastaple" data-for="fermastaple">FermaStaple</a></li><li class="depth-2"><a href="#glasshouse-compact" data-for="glasshouse-compact">Glasshouse Compact</a></li><li class="depth-1"><a href="#geographic-footprint" data-for="geographic-footprint">Geographic Footprint</a></li><li class="depth-2"><a href="#parent-corridor" data-for="parent-corridor">Parent Corridor</a></li><li class="depth-2"><a href="#major-operational-hubs" data-for="major-operational-hubs">Major Operational Hubs</a></li><li class="depth-1"><a href="#relationship-to-other-great-corporate-persons" data-for="relationship-to-other-great-corporate-persons">Relationship to Other Great Corporate Persons</a></li><li class="depth-2"><a href="#qxz-meridian" data-for="qxz-meridian">QXZ Meridian</a></li><li class="depth-2"><a href="#axiom" data-for="axiom">Axiom</a></li><li class="depth-2"><a href="#helvetia" data-for="helvetia">Helvetia</a></li><li class="depth-2"><a href="#vezha-systems" data-for="vezha-systems">Vezha Systems</a></li><li class="depth-2"><a href="#barents-research-group" data-for="barents-research-group">Barents Research Group</a></li><li class="depth-1"><a href="#street-level-consequences" data-for="street-level-consequences">Street-Level Consequences</a></li><li class="depth-1"><a href="#game--story-uses" data-for="game--story-uses">Game / Story Uses</a></li><li class="depth-1"><a href="#open-questions" data-for="open-questions">Open Questions</a></li><li class="depth-1"><a href="#related-pages" data-for="related-pages">Related Pages</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../00-start-here/worldbuilding-review-and-design-readiness-plan-2026-05-22" class="internal">Worldbuilding Review and Design-Readiness Plan</a></li><li><a href="../" class="internal">index</a></li><li><a href="../organizations/chorus-exchange" class="internal">Chorus Exchange</a></li><li><a href="../organizations/great-corporate-persons" class="internal">Great Corporate Persons</a></li><li><a href="../raw/brainstorms/janus-kestrel-media-finance-nadir-2026-05-22" class="internal">Janus-Kestrel, Media-Finance, and Nadir Gridworks Megastructure Notes</a></li><li><a href="../raw/brainstorms/megacorp-7-body-continuity-2026-05-22" class="internal">Megacorp 7 — Body Continuity Brainstorm</a></li><li><a href="../raw/brainstorms/megacorp-8-threshold-logistics-2026-05-22" class="internal">Megacorp 8 — Threshold Logistics Brainstorm</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript.js" type="module" data-persist="true"></script></html>

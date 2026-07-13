@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Axiom · Neon Champions</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Neon Champions World"/><meta property="og:title" content="Axiom · Neon Champions"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Axiom · Neon Champions"/><meta name="twitter:description" content="Axiom One-Line Summary Axiom is the recommended fifth Great Corporate Person candidate: a post-merger identity, provenance, civil registry, evidence, platform-authenticity, and Echo-recognition megacorp whose continuity layer is admissible reality."/><meta property="og:description" content="Axiom One-Line Summary Axiom is the recommended fifth Great Corporate Person candidate: a post-merger identity, provenance, civil registry, evidence, platform-authenticity, and Echo-recognition megacorp whose continuity layer is admissible reality."/><meta property="og:image:alt" content="Axiom One-Line Summary Axiom is the recommended fifth Great Corporate Person candidate: a post-merger identity, provenance, civil registry, evidence, platform-authenticity, and Echo-recognition megacorp whose continuity layer is admissible reality."/><meta property="twitter:domain" content="myriwe-bot.github.io/neon-champions-world-site"/><meta property="og:url" content="https://myriwe-bot.github.io/neon-champions-world-site/organizations/axiom"/><meta property="twitter:url" content="https://myriwe-bot.github.io/neon-champions-world-site/organizations/axiom"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Axiom One-Line Summary Axiom is the recommended fifth Great Corporate Person candidate: a post-merger identity, provenance, civil registry, evidence, platform-authenticity, and Echo-recognition megacorp whose continuity layer is admissible reality."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvbmVvbi1jaGFtcGlvbnMtd29ybGQvbmVvbi1jaGFtcGlvbnMtd29ybGQvcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://myriwe-bot.github.io/neon-champions-world-site/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://myriwe-bot.github.io/neon-champions-world-site/organizations/axiom-og-image.webp"/><meta property="og:image:url" content="https://myriwe-bot.github.io/neon-champions-world-site/organizations/axiom-og-image.webp"/><meta name="twitter:image" content="https://myriwe-bot.github.io/neon-champions-world-site/organizations/axiom-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="organizations/axiom"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Neon Champions World</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-76"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-76" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../organizations/">organizations</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Axiom</a></div></nav><h1 class="article-title">Axiom</h1><p show-comma="true" class="content-meta"><time datetime="2026-05-22T00:00:00.000Z">May 22, 2026</time><span>16 min read</span></p><ul class="tags"><li><a href="../tags/corporate" class="internal tag-link">corporate</a></li><li><a href="../tags/megacorp" class="internal tag-link">megacorp</a></li><li><a href="../tags/identity" class="internal tag-link">identity</a></li><li><a href="../tags/registry" class="internal tag-link">registry</a></li><li><a href="../tags/provenance" class="internal tag-link">provenance</a></li><li><a href="../tags/evidence" class="internal tag-link">evidence</a></li><li><a href="../tags/surveillance" class="internal tag-link">surveillance</a></li><li><a href="../tags/platforms" class="internal tag-link">platforms</a></li><li><a href="../tags/synthetic-reality" class="internal tag-link">synthetic-reality</a></li><li><a href="../tags/echoes" class="internal tag-link">echoes</a></li><li><a href="../tags/personhood-law" class="internal tag-link">personhood-law</a></li><li><a href="../tags/infrastructure" class="internal tag-link">infrastructure</a></li><li><a href="../tags/geopolitics" class="internal tag-link">geopolitics</a></li><li><a href="../tags/economy" class="internal tag-link">economy</a></li></ul></div></div><article class="popover-hint"><h1 id="axiom">Axiom<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#axiom" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="one-line-summary">One-Line Summary<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#one-line-summary" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Axiom</strong> is the recommended fifth <a href="../organizations/great-corporate-persons" class="internal alias" data-slug="organizations/great-corporate-persons">Great Corporate Person</a> candidate: a post-merger identity, provenance, civil registry, evidence, platform-authenticity, and Echo-recognition megacorp whose continuity layer is <strong>admissible reality</strong>.</p>
+<h2 id="canon-status">Canon Status<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#canon-status" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Reviewed soft-canon candidate. The continuity-layer direction is accepted as strong: the fifth megacorp should control identity, record provenance, evidence, registry continuity, and what institutions treat as real. The name <strong>Axiom</strong> is the current leading candidate after rejecting <strong>Tallinn Continuity Group</strong> as too local for the global parent brand.</p>
+<h2 id="name-and-merger-logic">Name and Merger Logic<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#name-and-merger-logic" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The public parent company is <strong>Axiom</strong>.</p>
+<p>Its full post-merger legal style is usually hidden in filings, treaty schedules, and UNP documents:</p>
+<blockquote>
+<p><strong>Axiom-SOVRAN Trust Systems</strong></p>
+</blockquote>
+<p>Ordinary people, states, courts, feeds, and markets say <strong>Axiom</strong>.</p>
+<p>This works because:</p>
+<ul>
+<li><strong>Axiom</strong> means a proposition accepted as true without needing proof. That is exactly the company’s power: it does not discover reality; it defines the baseline that institutions may act upon.</li>
+<li><strong>SOVRAN</strong> adds the aggressive state-tech lineage: sovereignty cloud, national identity stacks, border systems, and government continuity platforms.</li>
+<li>The merger creates a believable megacorp: Axiom brought platform-scale provenance, PKI, signatures, identity graphs, evidence systems, and civil-record infrastructure; SOVRAN brought state contracts, sovereign identity platforms, border systems, smart-city access, and security-state relationships.</li>
+<li>The public shortening to Axiom is plausible. Large merged corporations often retain the stronger brand and bury the legal compound.</li>
+</ul>
+<p>Street names include <strong>the Register</strong>, <strong>the Root</strong>, <strong>the Axiom Stack</strong>, <strong>Proof Court</strong>, <strong>the Green Mark</strong>, and <strong>civil death machine</strong>.</p>
+<p>Useful line:</p>
+<blockquote>
+<p>Axiom does not own reality. It owns the accepted proof that reality is admissible.</p>
+</blockquote>
+<h2 id="what-it-is">What It Is<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#what-it-is" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Axiom is not a social network, not a normal ID-card company, and not a world government registry.</p>
+<p>It is the private-public trust stack underneath:</p>
+<ul>
+<li>digital identity wallets;</li>
+<li>biometric liveness and uniqueness systems;</li>
+<li>civil registry interoperability;</li>
+<li>birth, death, marriage, citizenship, residency, and guardianship records;</li>
+<li>qualified signatures and institutional seals;</li>
+<li>root certificates and timestamping;</li>
+<li>court evidence chains;</li>
+<li>body-camera, drone, sensor, and satellite evidence custody;</li>
+<li>election eligibility and campaign-media provenance;</li>
+<li>land and property-title ledgers;</li>
+<li>refugee and climate-displacement identity recovery;</li>
+<li>platform account authenticity and feed provenance;</li>
+<li>KYC, sanctions, fraud, and beneficial-ownership graphs;</li>
+<li><a href="../canon/world-rules/echo-identity-and-death" class="internal alias" data-slug="canon/world-rules/echo-identity-and-death">Echo</a> consent, estate, continuity, and synthetic-person recognition records.</li>
+</ul>
+<p>Its business is not truth in the philosophical sense. Its business is <strong>institutional admissibility</strong>.</p>
+<p>A thing may happen without Axiom. It may even be widely believed. But if Axiom does not recognize it, courts, insurers, procurement systems, border agencies, banks, hospitals, platforms, and UNP processes may be unable or unwilling to act on it.</p>
+<h2 id="continuity-layer">Continuity Layer<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#continuity-layer" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Continuity layer: civil reality / identity / provenance / admissibility.</p>
+<p>Public claim: Axiom protects identity, records, evidence, elections, property, humanitarian aid, and media authenticity from synthetic collapse, cyberwar, mass displacement, and corrupted registries.</p>
+<p>Dark claim: Axiom makes truth and personhood administratively revocable.</p>
+<p>Axiom is to reality what <a href="../organizations/helvetia" class="internal alias" data-slug="organizations/helvetia">Helvetia</a> is to machine cognition.</p>
+<ul>
+<li>Helvetia certifies lawful cognition.</li>
+<li>Axiom certifies admissible reality.</li>
+</ul>
+<p>Together they make a quiet sovereignty layer: lawful mind plus lawful record.</p>
+<h2 id="why-civilization-cannot-turn-it-off">Why Civilization Cannot Turn It Off<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#why-civilization-cannot-turn-it-off" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Without Axiom or something like it:</p>
+<ul>
+<li>courts drown in synthetic evidence disputes;</li>
+<li>banks cannot complete KYC, sanctions screening, or beneficial-ownership checks;</li>
+<li>aid agencies cannot distinguish displaced persons, bots, duplicate claims, dead records, and forged households;</li>
+<li>refugees lose recoverable identity;</li>
+<li>land titles become contestable after floods, wars, cyberattacks, and registry corruption;</li>
+<li>election legitimacy collapses into permanent media-authenticity fights;</li>
+<li>platforms cannot distinguish verified reporting from deepfake floods;</li>
+<li>insurers cannot price claims because event records and identity records diverge;</li>
+<li>border systems cannot reconcile passports, biometrics, modified bodies, and broken states;</li>
+<li>Echo estates cannot prove consent, continuity, provenance, or legal relation to the dead.</li>
+</ul>
+<p>Axiom becomes load-bearing because complex society needs shared records more than it likes the company that maintains them.</p>
+<h2 id="origins">Origins<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#origins" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Axiom did not begin as one clean company. It is a consolidation stack.</p>
+<h3 id="pre-merger-axiom">Pre-Merger Axiom<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pre-merger-axiom" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Pre-merger Axiom likely began as a root-trust and provenance platform built from:</p>
+<ul>
+<li>certificate authorities;</li>
+<li>hardware security-module vendors;</li>
+<li>e-signature companies;</li>
+<li>content-authenticity standards;</li>
+<li>device attestation;</li>
+<li>identity graph resolution;</li>
+<li>legal evidence custody;</li>
+<li>enterprise fraud/KYC systems;</li>
+<li>platform trust-and-safety infrastructure.</li>
+</ul>
+<p>It sold “proof rails” to platforms, banks, insurers, courts, and states: signatures, timestamps, media origins, account authenticity, chain-of-custody logs, and identity confidence.</p>
+<h3 id="pre-merger-sovran">Pre-Merger SOVRAN<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pre-merger-sovran" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>SOVRAN was more aggressive and state-facing.</p>
+<p>It likely grew from sovereign-cloud, digital-public-infrastructure, border-tech, and smart-city contracts:</p>
+<ul>
+<li>national ID stacks;</li>
+<li>biometric enrolment;</li>
+<li>border and migration credentials;</li>
+<li>welfare authentication;</li>
+<li>emergency access control;</li>
+<li>smart-city identity layers;</li>
+<li>sanctions and public-security watchlists;</li>
+<li>government continuity systems.</li>
+</ul>
+<p>SOVRAN sold sovereignty back to governments as software, hardware, consultants, and managed infrastructure.</p>
+<h3 id="the-merger">The Merger<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-merger" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>The Axiom-SOVRAN merger becomes politically unavoidable after a chain of crises rather than a single acquisition:</p>
+<ol>
+<li>deepfake election disputes make platform-native authenticity unacceptable;</li>
+<li>Baltic War and other cyberattacks corrupt civil registries and veteran/death records;</li>
+<li>climate disasters destroy local property archives and displace millions;</li>
+<li>AI-generated fraud overwhelms welfare, banks, courts, and insurers;</li>
+<li>Echo inheritance and posthumous-contract scandals expose the lack of accepted continuity records;</li>
+<li>states discover they need both Axiom’s provenance roots and SOVRAN’s sovereign identity deployments.</li>
+</ol>
+<p>Regulators publicly frame the merger as dangerous but necessary. The UNP later recognizes Axiom because no state bloc wants a rival to own civil reality outright, and no state can rebuild the full stack alone.</p>
+<h2 id="corporate-hierarchy">Corporate Hierarchy<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#corporate-hierarchy" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Axiom is a holding company, standards engine, infrastructure operator, and treaty-person all at once.</p>
+<h3 id="axiom-root">Axiom Root<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#axiom-root" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Formerly closer to Rootline-style PKI infrastructure.</p>
+<p>Controls:</p>
+<ul>
+<li>root certificates;</li>
+<li>timestamping;</li>
+<li>institutional seals;</li>
+<li>hardware identity;</li>
+<li>device attestation;</li>
+<li>qualified signatures;</li>
+<li>emergency key-rotation protocols.</li>
+</ul>
+<p>Public face: trust infrastructure.</p>
+<p>Dark face: if Axiom Root fails or revokes a trust chain, documents, feeds, devices, courts, and payments can become invalid overnight.</p>
+<h3 id="axiom-id">Axiom ID<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#axiom-id" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Formerly built from Signa / SOVRAN identity assets.</p>
+<p>Controls:</p>
+<ul>
+<li>digital identity wallets;</li>
+<li>proof-of-personhood;</li>
+<li>biometric liveness;</li>
+<li>body-modification identity reconciliation;</li>
+<li>age, citizenship, labor, clinic, and school credentials;</li>
+<li>public/private identity aliasing.</li>
+</ul>
+<p>Public face: one recoverable civic presence.</p>
+<p>Dark face: civil death by mismatch.</p>
+<h3 id="axiom-proof">Axiom Proof<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#axiom-proof" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Formerly Provena-like media and evidence provenance.</p>
+<p>Controls:</p>
+<ul>
+<li>signed cameras;</li>
+<li>sensor provenance;</li>
+<li>media authenticity marks;</li>
+<li>journalist seals;</li>
+<li>campaign-media verification;</li>
+<li>public-event timestamping;</li>
+<li>anti-deepfake feeds.</li>
+</ul>
+<p>Public face: protection against synthetic lies.</p>
+<p>Dark face: true but uncertified footage becomes politically useless.</p>
+<h3 id="axiom-evidence">Axiom Evidence<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#axiom-evidence" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Court, police, military, and atrocity-record infrastructure.</p>
+<p>Controls:</p>
+<ul>
+<li>chain of custody;</li>
+<li>drone and bodycam archives;</li>
+<li>battlefield evidence packages;</li>
+<li>war-crimes dossiers;</li>
+<li>legal admissibility APIs;</li>
+<li>sealed witness identities;</li>
+<li>tribunal evidence rooms.</li>
+</ul>
+<p>Public face: justice in an age of synthetic evidence.</p>
+<p>Dark face: evidence monopoly; inconvenient proof can be held in procedural limbo.</p>
+<h3 id="axiom-registry">Axiom Registry<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#axiom-registry" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Civil records, land titles, and post-disaster record reconstruction.</p>
+<p>Controls:</p>
+<ul>
+<li>births;</li>
+<li>deaths;</li>
+<li>marriages;</li>
+<li>guardianship;</li>
+<li>citizenship and residency;</li>
+<li>land and title ledgers;</li>
+<li>corporate beneficial ownership;</li>
+<li>disaster registry recovery;</li>
+<li>climate-displacement claims.</li>
+</ul>
+<p>Public face: continuity after collapse.</p>
+<p>Dark face: whoever wins registry reconciliation wins land, inheritance, aid, and legal existence.</p>
+<h3 id="axiom-civic">Axiom Civic<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#axiom-civic" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Election, public-communication, and democratic-process infrastructure.</p>
+<p>Controls:</p>
+<ul>
+<li>voter eligibility proofs;</li>
+<li>campaign-media authenticity;</li>
+<li>ballot custody trails where contracted;</li>
+<li>public consultation records;</li>
+<li>civil petition signatures;</li>
+<li>civic feed overlays;</li>
+<li>misinformation incident dossiers.</li>
+</ul>
+<p>Public face: trusted public process.</p>
+<p>Dark face: Axiom can shape which scandals become legally recognized political events.</p>
+<h3 id="axiom-index">Axiom Index<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#axiom-index" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Identity graph, fraud, KYC, sanctions, and risk intelligence division.</p>
+<p>Controls:</p>
+<ul>
+<li>beneficial-ownership graphs;</li>
+<li>sanctions screening;</li>
+<li>fraud scores;</li>
+<li>account/device/biometric graphing;</li>
+<li>hidden relation inference;</li>
+<li>insurer and bank identity confidence;</li>
+<li>public-private watchlist reconciliation.</li>
+</ul>
+<p>Public face: fraud prevention.</p>
+<p>Dark face: surveillance graph that follows people across names, bodies, borders, and Echo states.</p>
+<h3 id="axiom-echo">Axiom Echo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#axiom-echo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Posthumous identity, synthetic-person continuity, and estate-recognition division.</p>
+<p>Controls:</p>
+<ul>
+<li>Echo consent records;</li>
+<li>data-origin records;</li>
+<li>estate authority;</li>
+<li>synthetic voice/face/persona provenance;</li>
+<li>posthumous signatures;</li>
+<li>continuity confidence;</li>
+<li>deletion or suspension orders.</li>
+</ul>
+<p>Public face: dignity and continuity for the dead.</p>
+<p>Dark face: afterlife licensing and posthumous property politics.</p>
+<h3 id="axiom-relief">Axiom Relief<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#axiom-relief" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Humanitarian, refugee, disaster, and climate-displacement systems.</p>
+<p>Controls:</p>
+<ul>
+<li>identity recovery;</li>
+<li>aid eligibility;</li>
+<li>family reunification records;</li>
+<li>mobile civil identity;</li>
+<li>emergency ration credentials;</li>
+<li>settlement and relocation registries;</li>
+<li>destroyed-state record backups.</li>
+</ul>
+<p>Public face: no one lost to disaster.</p>
+<p>Dark face: relief access becomes registry compliance.</p>
+<h3 id="sovran-government-systems">SOVRAN Government Systems<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sovran-government-systems" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Retained as a powerful internal brand for state-facing deployments.</p>
+<p>Controls:</p>
+<ul>
+<li>national identity stacks;</li>
+<li>border systems;</li>
+<li>smart-city access;</li>
+<li>sovereign civil clouds;</li>
+<li>security-state integrations;</li>
+<li>emergency continuity dashboards;</li>
+<li>sealed government registries.</li>
+</ul>
+<p>Public face: digital sovereignty.</p>
+<p>Dark face: governments become tenants inside Axiom’s sovereignty stack.</p>
+<h3 id="veridian-feed-services">Veridian Feed Services<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#veridian-feed-services" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Folded-in consumer/platform authenticity brand.</p>
+<p>Controls:</p>
+<ul>
+<li>platform provenance marks;</li>
+<li>feed-ranking trust labels;</li>
+<li>creator authenticity;</li>
+<li>synthetic-media warnings;</li>
+<li>public-persona verification;</li>
+<li>bot-resistant civic channels.</li>
+</ul>
+<p>Public face: safer feeds.</p>
+<p>Dark face: provenance becomes soft censorship.</p>
+<h3 id="lattice-analytics">Lattice Analytics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#lattice-analytics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Folded-in graph analytics and relation-inference brand.</p>
+<p>Controls:</p>
+<ul>
+<li>identity graph models;</li>
+<li>kinship and association inference;</li>
+<li>insurance/fraud clusters;</li>
+<li>migration route reconstruction;</li>
+<li>Echo/person relation graphs;</li>
+<li>“hidden continuity” detection.</li>
+</ul>
+<p>Public face: reconciliation and anti-fraud.</p>
+<p>Dark face: privacy becomes structurally impossible.</p>
+<h2 id="geographic-footprint">Geographic Footprint<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#geographic-footprint" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Axiom should feel global, treaty-layered, and tech-forward. Tallinn is important, but not as the parent identity.</p>
+<h3 id="north-american-spine">North American Spine<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#north-american-spine" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Seattle / Vancouver corridor</strong> — platform provenance, cloud identity, software engineering, anti-fraud APIs, feed integration.</p>
+<p><strong>Northern Virginia / Washington corridor</strong> — federal contracts, security clearances, identity intelligence, defense evidence, sanctions, emergency continuity.</p>
+<p><strong>New York / New Jersey</strong> — finance KYC, beneficial ownership, insurance, legal discovery, identity-risk markets.</p>
+<p><strong>Austin / Denver / Phoenix</strong> — disaster-resilient datacenters, migration identity, state-service platforms, border-adjacent identity contracting.</p>
+<p>This gives Axiom Big Tech scale and national-security procurement without making it simply American.</p>
+<h3 id="european-legal-and-trust-spine">European Legal and Trust Spine<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#european-legal-and-trust-spine" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Brussels</strong> — EU identity wallet standards, eIDAS successor law, privacy negotiations, regulatory embedding.</p>
+<p><strong>Dublin / Amsterdam</strong> — platform jurisdiction, data-protection routing, cloud/legal operations.</p>
+<p><strong>The Hague</strong> — tribunals, war-crimes evidence, court admissibility, atrocity archive interfaces.</p>
+<p><strong>Geneva</strong> — humanitarian records, refugee identity, UNP-adjacent diplomacy, treaty language.</p>
+<p><strong>Zurich / Luxembourg</strong> — trust law, financial identity, escrow, corporate beneficial ownership, registry finance.</p>
+<p>Europe gives Axiom legal legitimacy and the language of rights, even when the system is coercive.</p>
+<h3 id="baltic--eastern-european-recovery-belt">Baltic / Eastern European Recovery Belt<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#baltic--eastern-european-recovery-belt" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Tallinn / Tartu</strong> — Axiom Tallinn, the cyber-resilience and registry-fork recovery lab. This is where the rejected parent name survives as a credible regional unit.</p>
+<p><strong>Kyiv / Lviv / Warsaw / Vilnius</strong> — wartime identity continuity, veteran records, casualty/Echo archives, occupation registry repair, battlefield evidence from the Baltic War and later conflicts.</p>
+<p>This belt is emotionally important: it lets Axiom claim it was born from defending civil memory under attack, not merely from monetizing identity.</p>
+<h3 id="south-asian-scale-spine">South Asian Scale Spine<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#south-asian-scale-spine" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Delhi / Mumbai / Bengaluru / Hyderabad</strong> — biometric scale, welfare authentication, identity graph engineering, mobile-first identity, anti-fraud systems, large-language administrative interfaces.</p>
+<p>South Asia gives Axiom experience with population-scale identity, welfare, clinics, migration, and informal-economy reconciliation. It also gives critics strong grounds to accuse Axiom of turning poverty into compliance data.</p>
+<h3 id="singapore--gulf--maritime-commercial-spine">Singapore / Gulf / Maritime-Commercial Spine<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#singapore--gulf--maritime-commercial-spine" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Singapore</strong> — cross-border commercial identity, arbitration, migration credentials, port/workforce identity, trade compliance, regional headquarters.</p>
+<p><strong>Dubai / Abu Dhabi / Doha / Riyadh</strong> — smart-city access, migrant-labor identity, sovereign digital infrastructure, biometric residency, high-security civil clouds.</p>
+<p>This spine gives Axiom revenue and operational leverage in places where state-tech and corporate infrastructure blend openly.</p>
+<h3 id="african-registry-and-relief-spine">African Registry and Relief Spine<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#african-registry-and-relief-spine" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Nairobi / Addis Ababa / Lagos / Kigali / Accra</strong> — aid eligibility, mobile identity, climate-displacement records, land disputes, informal settlement recognition, biometric rationing, development-bank registry programs.</p>
+<p>Axiom’s African footprint should be morally contested. It can genuinely restore identity and aid access while also extracting land, kinship, biometric, and displacement data from vulnerable populations.</p>
+<h3 id="latin-american-land-and-evidence-spine">Latin American Land and Evidence Spine<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#latin-american-land-and-evidence-spine" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>São Paulo / Brasília / Bogotá / Mexico City / Santiago</strong> — land titles, deforestation evidence, indigenous claims, urban informality, cartel/corruption evidence chains, migration records, corporate-beneficial ownership.</p>
+<p>This region gives Axiom story hooks around contested land, ecological evidence, commodity chains, and disappeared persons.</p>
+<h3 id="east-asian-interface">East Asian Interface<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#east-asian-interface" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Tokyo / Seoul / Taipei / Osaka</strong> — device identity, signed sensors, camera provenance, robotics/legal evidence, elder-care and posthumous persona systems.</p>
+<p><strong>Hong Kong / Shenzhen / Shanghai</strong> — contested commercial identity, hardware identity, platform provenance, semiconductor-device attestation, Chinese-bloc interface where Axiom’s role is tolerated, constrained, or mirrored by rivals.</p>
+<p>Axiom should not own China cleanly. It operates through treaty windows, commercial subsidiaries, and contested interfaces.</p>
+<h2 id="relationship-to-helvetia">Relationship to Helvetia<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#relationship-to-helvetia" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="../organizations/helvetia" class="internal alias" data-slug="organizations/helvetia">Helvetia</a> certifies lawful cognition. Axiom certifies admissible reality.</p>
+<p>They need each other:</p>
+<ul>
+<li>Helvetia-certified models require clean identity, consent, provenance, and evidence inputs.</li>
+<li>Axiom’s registry and feed systems use high-end inference that may require Helvetia certification.</li>
+<li>Echo continuity depends on both compute custody and identity/provenance recognition.</li>
+<li>AGI Compact enforcement depends on Axiom-style evidence trails: who ran what, where, with whose chips, on whose authority.</li>
+</ul>
+<p>Their conflict is structural:</p>
+<ul>
+<li>Helvetia may certify a model that Axiom says used inadmissible data.</li>
+<li>Axiom may recognize an Echo continuity claim that Helvetia refuses to maintain.</li>
+<li>Helvetia can freeze cognition; Axiom can freeze records.</li>
+<li>Both claim not to decide personhood while controlling the systems that make personhood operational.</li>
+</ul>
+<p>Street version:</p>
+<blockquote>
+<p>Helvetia keeps the minds in vaults. Axiom keeps the names in force.</p>
+</blockquote>
+<h2 id="relationship-to-qxz-meridian">Relationship to QXZ Meridian<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#relationship-to-qxz-meridian" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="../organizations/qxz-meridian" class="internal alias" data-slug="organizations/qxz-meridian">QXZ Meridian</a> needs Axiom for:</p>
+<ul>
+<li>disaster death registries;</li>
+<li>adaptation-body eligibility;</li>
+<li>climate liability evidence;</li>
+<li>rainfall and heat-disaster claims;</li>
+<li>insurance payouts;</li>
+<li>property loss after White Sky side effects;</li>
+<li>provenance of climate-attribution models and sensor records.</li>
+</ul>
+<p>Conflict:</p>
+<ul>
+<li>QXZ wants flexible records during emergencies.</li>
+<li>Axiom wants immutable provenance when it benefits Axiom and “reconciliation” when it does not.</li>
+<li>Victims suspect both companies manipulate attribution and aid eligibility.</li>
+<li>Axiom can make a climate disaster legally legible or legally foggy.</li>
+</ul>
+<h2 id="relationship-to-vezha-systems">Relationship to Vezha Systems<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#relationship-to-vezha-systems" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="../organizations/ukrainian-military-companies" class="internal alias" data-slug="organizations/ukrainian-military-companies">Vezha Systems</a> needs Axiom for:</p>
+<ul>
+<li>battlefield evidence;</li>
+<li>combatant identity;</li>
+<li>drone footage provenance;</li>
+<li>civil-defense registries;</li>
+<li>rescue verification;</li>
+<li>veteran records;</li>
+<li>casualty lists;</li>
+<li>Memorial Echo origins;</li>
+<li>postwar tribunals and reconstruction claims.</li>
+</ul>
+<p>Conflict:</p>
+<ul>
+<li>Vezha wants operational secrecy and deniability.</li>
+<li>Axiom wants admissible chain of custody.</li>
+<li>War crimes, rescue myths, and Champion legends become fights over record status.</li>
+<li>A Champion may be tactically victorious but legally unverifiable.</li>
+</ul>
+<h2 id="relationship-to-barents-research-group">Relationship to Barents Research Group<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#relationship-to-barents-research-group" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="../organizations/barents-research-group" class="internal alias" data-slug="organizations/barents-research-group">Barents Research Group</a> needs Axiom for:</p>
+<ul>
+<li>vessel identity;</li>
+<li>extraction rights;</li>
+<li>indigenous and local land claims;</li>
+<li>environmental evidence;</li>
+<li>Arctic casualty records;</li>
+<li>route incident provenance;</li>
+<li>mineral custody chains.</li>
+</ul>
+<p>Conflict:</p>
+<ul>
+<li>BRG turns measurement into ownership.</li>
+<li>Axiom turns ownership into registry.</li>
+<li>Local communities may reject both as colonial paperwork wearing neutral clothes.</li>
+</ul>
+<h2 id="relationship-to-synthetic-reality-and-polluted-feeds">Relationship to Synthetic Reality and Polluted Feeds<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#relationship-to-synthetic-reality-and-polluted-feeds" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Axiom is one of the main reasons polluted feeds do not collapse society entirely — and one of the reasons they remain politically captured.</p>
+<p>In <a href="../technologies/synthetic-reality-and-polluted-feeds" class="internal alias" data-slug="technologies/synthetic-reality-and-polluted-feeds">polluted feeds</a>, Axiom sells:</p>
+<ul>
+<li>verified origin trails;</li>
+<li>camera/device signatures;</li>
+<li>creator identity marks;</li>
+<li>civic channel integrity;</li>
+<li>campaign-media authenticity;</li>
+<li>atrocity evidence packaging;</li>
+<li>trust-ranked feed overlays;</li>
+<li>“unverified synthetic event” labels.</li>
+</ul>
+<p>This does not end propaganda. It stratifies reality.</p>
+<p>A poor district may know what happened but lack admissible proof. A corporate district may flood the world with Axiom-certified reality packages. Free-Net archives may preserve truths that courts refuse to touch.</p>
+<h2 id="relationship-to-echoes">Relationship to Echoes<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#relationship-to-echoes" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Echoes make Axiom existentially important.</p>
+<p>An <a href="../canon/world-rules/echo-identity-and-death" class="internal alias" data-slug="canon/world-rules/echo-identity-and-death">Echo</a> needs more than compute. It needs recognized continuity:</p>
+<ul>
+<li>who authorized reconstruction;</li>
+<li>what data traces were used;</li>
+<li>whether consent existed;</li>
+<li>whether the Echo corresponds to one person, many people, an estate, a brand, or a composite;</li>
+<li>whether it can sign, testify, inherit, work, vote, own property, or be deleted;</li>
+<li>whether a hostile synthetic double is fraud, speech, identity theft, or a new entity.</li>
+</ul>
+<p>Axiom does not claim to decide whether Echoes are people. It claims to decide whether an Echo’s continuity record is recognized.</p>
+<p>That distinction is enough to shape afterlife politics.</p>
+<h2 id="relationship-to-champions">Relationship to Champions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#relationship-to-champions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Champions depend on Axiom because public myth needs recognized events.</p>
+<p>A Champion may need:</p>
+<ul>
+<li>verified public identity;</li>
+<li>protected alias layers;</li>
+<li>deniable operation records;</li>
+<li>feed-authenticated victories;</li>
+<li>court-admissible atrocity evidence;</li>
+<li>reputation and authenticity marks;</li>
+<li>succession or Echo claims;</li>
+<li>posthumous persona rights.</li>
+</ul>
+<p>A Champion erased or downgraded by Axiom can become a living ghost: physically present, socially famous, and legally unresolved.</p>
+<p>Axiom can also manufacture legitimacy. A corporate-backed Champion with Axiom-certified footage, rescue records, and victim testimony may become more real to institutions than a local hero everyone personally saw.</p>
+<h2 id="public-face">Public Face<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#public-face" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Axiom presents itself as the immune system of civil reality:</p>
+<ul>
+<li>trusted identity;</li>
+<li>verified evidence;</li>
+<li>no document without provenance;</li>
+<li>one person, one recoverable civic presence;</li>
+<li>authentic public media;</li>
+<li>continuity after disaster;</li>
+<li>safe elections;</li>
+<li>dignity for the dead;</li>
+<li>no memory lost to war, flood, or fraud.</li>
+</ul>
+<p>It is persuasive because some of this is true.</p>
+<p>A family whose paper records burned, whose city flooded, whose government collapsed, or whose dead child exists only as scattered traces may genuinely need Axiom.</p>
+<h2 id="dark-face">Dark Face<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dark-face" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Axiom’s horror is not omniscience. It is administrative reality capture.</p>
+<p>It can:</p>
+<ul>
+<li>lower a person’s identity confidence;</li>
+<li>freeze documents during reconciliation;</li>
+<li>mark media as uncertified until it disappears from lawful feeds;</li>
+<li>break access to banking, housing, travel, clinics, schools, welfare, and work;</li>
+<li>expose people through persistent biometric or behavioral signatures;</li>
+<li>collapse witness protection, gender-transition privacy, asylum anonymity, and political reinvention;</li>
+<li>decide which land title survives disaster;</li>
+<li>make courts accept only corporate-certified evidence;</li>
+<li>turn feed authenticity into soft censorship;</li>
+<li>encode bloc politics into neutral trust rules;</li>
+<li>make civil death look like a clerical delay.</li>
+</ul>
+<p>Useful line:</p>
+<blockquote>
+<p>Civil death rarely comes as a sentence. It comes as a mismatch.</p>
+</blockquote>
+<h2 id="internal-contradiction">Internal Contradiction<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#internal-contradiction" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Axiom is necessary because reality became too cheap to fake and too expensive to verify.</p>
+<p>Axiom is dangerous because the cure is a private company that can decide which realities are actionable.</p>
+<p>It protects public truth by centralizing it.</p>
+<p>It protects identity by making identity revocable.</p>
+<p>It protects the dead by licensing their continuity.</p>
+<h2 id="street-level-consequences">Street-Level Consequences<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#street-level-consequences" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Ordinary people encounter Axiom when:</p>
+<ul>
+<li>a refugee proves they are still a citizen of a flooded or occupied place;</li>
+<li>a hospital refuses treatment because body-subscription identity does not match registry identity;</li>
+<li>a land claim is frozen after old deeds and new satellite records disagree;</li>
+<li>an activist video is true but uncertified;</li>
+<li>a dead parent appears as an Echo but fails continuity review;</li>
+<li>a voter line stops because liveness systems cannot classify modified bodies;</li>
+<li>a school expels a child whose guardianship record was forked by an inheritance dispute;</li>
+<li>a Champion’s famous rescue is downgraded to “unverified synthetic event”;</li>
+<li>a neighborhood becomes ineligible for climate compensation because Axiom cannot reconcile death, address, and sensor records.</li>
+</ul>
+<h2 id="useful-lines">Useful Lines<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#useful-lines" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>“No document without provenance.”</li>
+<li>“You are not deleted. You are pending reconciliation.”</li>
+<li>“A passport is only paper until Axiom believes it.”</li>
+<li>“They do not own truth. They own admissibility.”</li>
+<li>“Civil death rarely comes as a sentence. It comes as a mismatch.”</li>
+<li>“Axiom is where rumor goes to become law, or die.”</li>
+<li>“SOVRAN sold sovereignty. Axiom bought the receipts.”</li>
+</ul>
+<h2 id="open-questions">Open Questions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#open-questions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>What exact crisis forced the Axiom-SOVRAN merger: deepfake election collapse, registry cyberwar, climate-displacement identity loss, land-title fraud cascade, Echo inheritance scandal, or a chained crisis?</li>
+<li>Which company was morally worse before the merger: Axiom’s platform-proof empire or SOVRAN’s state-tech sovereignty stack?</li>
+<li>Did regulators approve the merger openly, or was it forced through under UNP emergency continuity authority?</li>
+<li>Which blocs maintain rival systems outside Axiom: China, India, Gulf states, Free-Net communes, religious registries, indigenous ledgers, criminal kinship systems, or military dead lists?</li>
+<li>How much of Echo personhood depends on Axiom versus Helvetia?</li>
+<li>Can a person choose to be unregistered without becoming socially dead?</li>
+<li>Which Champion first survived an Axiom downgrade and became more popular because of it?</li>
+</ul>
+<h2 id="related-pages">Related Pages<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#related-pages" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../organizations/great-corporate-persons" class="internal" data-slug="organizations/great-corporate-persons">great-corporate-persons</a></li>
+<li><a href="../organizations/helvetia" class="internal" data-slug="organizations/helvetia">helvetia</a></li>
+<li><a href="../organizations/tallinn-continuity-group" class="internal" data-slug="organizations/tallinn-continuity-group">tallinn-continuity-group</a></li>
+<li><a href="../canon/world-rules/digital-net" class="internal" data-slug="canon/world-rules/digital-net">digital-net</a></li>
+<li><a href="../technologies/synthetic-reality-and-polluted-feeds" class="internal" data-slug="technologies/synthetic-reality-and-polluted-feeds">synthetic-reality-and-polluted-feeds</a></li>
+<li><a href="../canon/world-rules/echo-identity-and-death" class="internal" data-slug="canon/world-rules/echo-identity-and-death">echo-identity-and-death</a></li>
+<li><a href="../organizations/united-nations-and-persons" class="internal" data-slug="organizations/united-nations-and-persons">united-nations-and-persons</a></li>
+<li><a href="../canon/world-rules/world-map-and-political-economy" class="internal" data-slug="canon/world-rules/world-map-and-political-economy">world-map-and-political-economy</a></li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-30" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#axiom" data-for="axiom">Axiom</a></li><li class="depth-1"><a href="#one-line-summary" data-for="one-line-summary">One-Line Summary</a></li><li class="depth-1"><a href="#canon-status" data-for="canon-status">Canon Status</a></li><li class="depth-1"><a href="#name-and-merger-logic" data-for="name-and-merger-logic">Name and Merger Logic</a></li><li class="depth-1"><a href="#what-it-is" data-for="what-it-is">What It Is</a></li><li class="depth-1"><a href="#continuity-layer" data-for="continuity-layer">Continuity Layer</a></li><li class="depth-1"><a href="#why-civilization-cannot-turn-it-off" data-for="why-civilization-cannot-turn-it-off">Why Civilization Cannot Turn It Off</a></li><li class="depth-1"><a href="#origins" data-for="origins">Origins</a></li><li class="depth-2"><a href="#pre-merger-axiom" data-for="pre-merger-axiom">Pre-Merger Axiom</a></li><li class="depth-2"><a href="#pre-merger-sovran" data-for="pre-merger-sovran">Pre-Merger SOVRAN</a></li><li class="depth-2"><a href="#the-merger" data-for="the-merger">The Merger</a></li><li class="depth-1"><a href="#corporate-hierarchy" data-for="corporate-hierarchy">Corporate Hierarchy</a></li><li class="depth-2"><a href="#axiom-root" data-for="axiom-root">Axiom Root</a></li><li class="depth-2"><a href="#axiom-id" data-for="axiom-id">Axiom ID</a></li><li class="depth-2"><a href="#axiom-proof" data-for="axiom-proof">Axiom Proof</a></li><li class="depth-2"><a href="#axiom-evidence" data-for="axiom-evidence">Axiom Evidence</a></li><li class="depth-2"><a href="#axiom-registry" data-for="axiom-registry">Axiom Registry</a></li><li class="depth-2"><a href="#axiom-civic" data-for="axiom-civic">Axiom Civic</a></li><li class="depth-2"><a href="#axiom-index" data-for="axiom-index">Axiom Index</a></li><li class="depth-2"><a href="#axiom-echo" data-for="axiom-echo">Axiom Echo</a></li><li class="depth-2"><a href="#axiom-relief" data-for="axiom-relief">Axiom Relief</a></li><li class="depth-2"><a href="#sovran-government-systems" data-for="sovran-government-systems">SOVRAN Government Systems</a></li><li class="depth-2"><a href="#veridian-feed-services" data-for="veridian-feed-services">Veridian Feed Services</a></li><li class="depth-2"><a href="#lattice-analytics" data-for="lattice-analytics">Lattice Analytics</a></li><li class="depth-1"><a href="#geographic-footprint" data-for="geographic-footprint">Geographic Footprint</a></li><li class="depth-2"><a href="#north-american-spine" data-for="north-american-spine">North American Spine</a></li><li class="depth-2"><a href="#european-legal-and-trust-spine" data-for="european-legal-and-trust-spine">European Legal and Trust Spine</a></li><li class="depth-2"><a href="#baltic--eastern-european-recovery-belt" data-for="baltic--eastern-european-recovery-belt">Baltic / Eastern European Recovery Belt</a></li><li class="depth-2"><a href="#south-asian-scale-spine" data-for="south-asian-scale-spine">South Asian Scale Spine</a></li><li class="depth-2"><a href="#singapore--gulf--maritime-commercial-spine" data-for="singapore--gulf--maritime-commercial-spine">Singapore / Gulf / Maritime-Commercial Spine</a></li><li class="depth-2"><a href="#african-registry-and-relief-spine" data-for="african-registry-and-relief-spine">African Registry and Relief Spine</a></li><li class="depth-2"><a href="#latin-american-land-and-evidence-spine" data-for="latin-american-land-and-evidence-spine">Latin American Land and Evidence Spine</a></li><li class="depth-2"><a href="#east-asian-interface" data-for="east-asian-interface">East Asian Interface</a></li><li class="depth-1"><a href="#relationship-to-helvetia" data-for="relationship-to-helvetia">Relationship to Helvetia</a></li><li class="depth-1"><a href="#relationship-to-qxz-meridian" data-for="relationship-to-qxz-meridian">Relationship to QXZ Meridian</a></li><li class="depth-1"><a href="#relationship-to-vezha-systems" data-for="relationship-to-vezha-systems">Relationship to Vezha Systems</a></li><li class="depth-1"><a href="#relationship-to-barents-research-group" data-for="relationship-to-barents-research-group">Relationship to Barents Research Group</a></li><li class="depth-1"><a href="#relationship-to-synthetic-reality-and-polluted-feeds" data-for="relationship-to-synthetic-reality-and-polluted-feeds">Relationship to Synthetic Reality and Polluted Feeds</a></li><li class="depth-1"><a href="#relationship-to-echoes" data-for="relationship-to-echoes">Relationship to Echoes</a></li><li class="depth-1"><a href="#relationship-to-champions" data-for="relationship-to-champions">Relationship to Champions</a></li><li class="depth-1"><a href="#public-face" data-for="public-face">Public Face</a></li><li class="depth-1"><a href="#dark-face" data-for="dark-face">Dark Face</a></li><li class="depth-1"><a href="#internal-contradiction" data-for="internal-contradiction">Internal Contradiction</a></li><li class="depth-1"><a href="#street-level-consequences" data-for="street-level-consequences">Street-Level Consequences</a></li><li class="depth-1"><a href="#useful-lines" data-for="useful-lines">Useful Lines</a></li><li class="depth-1"><a href="#open-questions" data-for="open-questions">Open Questions</a></li><li class="depth-1"><a href="#related-pages" data-for="related-pages">Related Pages</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../00-start-here/open-questions" class="internal">Open Questions</a></li><li><a href="../00-start-here/worldbuilding-review-and-design-readiness-plan-2026-05-22" class="internal">Worldbuilding Review and Design-Readiness Plan</a></li><li><a href="../design-bridges/digital-net-and-polluted-feeds" class="internal">Digital-Net and Polluted Feeds Design Bridge</a></li><li><a href="../" class="internal">index</a></li><li><a href="../organizations/chorus-exchange" class="internal">Chorus Exchange</a></li><li><a href="../organizations/great-corporate-persons" class="internal">Great Corporate Persons</a></li><li><a href="../organizations/tallinn-continuity-group" class="internal">Axiom Tallinn</a></li><li><a href="../organizations/verdant" class="internal">Verdant</a></li><li><a href="../raw/brainstorms/janus-kestrel-media-finance-nadir-2026-05-22" class="internal">Janus-Kestrel, Media-Finance, and Nadir Gridworks Megastructure Notes</a></li><li><a href="../raw/brainstorms/megacorp-6-food-nutrient-continuity-2026-05-22" class="internal">Megacorp 6 — Food, Nutrient, and Famine Continuity Brainstorm</a></li><li><a href="../raw/brainstorms/megacorp-7-body-continuity-2026-05-22" class="internal">Megacorp 7 — Body Continuity Brainstorm</a></li><li><a href="../raw/brainstorms/megacorp-8-threshold-logistics-2026-05-22" class="internal">Megacorp 8 — Threshold Logistics Brainstorm</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript.js" type="module" data-persist="true"></script></html>
